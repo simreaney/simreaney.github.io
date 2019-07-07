@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "en-UK"
 title                    : "Sim M. Reaney, Durham University"
 title_separator          : "-"
 name                     : &name "Sim Reaney"
@@ -80,9 +80,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
-  avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
+  name             : "Dr Sim M Reaney"
+  avatar           : "me-large-sq.jpg"
+  bio              : "Catchment hydrology, flooding and water quality"
   location         : "Durham, England"
   employer         :
   pubmed           : 
@@ -102,7 +102,7 @@ author:
   instagram        : "simreaney"
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : 
+  linkedin         : "https://www.linkedin.com/in/sim-reaney-ba85b033/?originalSubdomain=uk"
   orcid            : 
   pinterest        :
   soundcloud       :
