@@ -5,5 +5,6 @@ permalink: /talks/2009-04-01-From-scaling-up-to-scaling-down-land-management-imp
 date: 2009-04-01
 venue: 'In the proceedings of EGU General Assembly Conference Abstracts'
 citation: ' I. {Pattison},  S. {Lane},  R. {Hardy},  S. {Reaney}, &quot;From scaling up to scaling down land management impacts on downstream flood risk.&quot; In the proceedings of EGU General Assembly Conference Abstracts, 2009.'
+location: "Vienna, Austria"
 ---
 Use [Google Scholar](https://scholar.google.com/scholar?q=From+scaling+up+to+scaling+down+land+management+impacts+on+downstream+flood+risk){:target="_blank"} for full citation

@@ -5,5 +5,6 @@ permalink: /talks/2009-12-01-Towards-minimum-information-requirements-for-repres
 date: 2009-12-01
 venue: 'In the proceedings of AGU Fall Meeting Abstracts'
 citation: ' S. {Lane},  S. {Reaney},  L. {Heathwaite},  D. {Milledge}, &quot;Towards minimum information requirements for representing hydrological connectivity at the landscape scale (Invited).&quot; In the proceedings of AGU Fall Meeting Abstracts, 2009.'
+location: "San Francisco, USA"
 ---
 Use [Google Scholar](https://scholar.google.com/scholar?q=Towards+minimum+information+requirements+for+representing+hydrological+connectivity+at+the+landscape+scale+(Invited)){:target="_blank"} for full citation

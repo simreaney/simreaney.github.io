@@ -1,5 +1,5 @@
 ---
-title: "Teaching experience"
+title: "BSc Teaching experience"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2018-19-teaching-2

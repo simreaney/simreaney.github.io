@@ -1,5 +1,5 @@
 ---
-title: "Teaching experience"
+title: "MSc Teaching experience"
 collection: teaching
 type: "Postgraduate course"
 permalink: /teaching/2018-19-teaching-MSc
@@ -7,7 +7,7 @@ venue: "Durham University, Department of Geography"
 date: 2018-10-01
 location: "Durham, UK"
 ---
-I teach hydrological hazards on the MSc Risk in the department of Geography at Durham University. 
+I teach hydrological hazards on the MSc Risk in the department of Geography at Durham University.
 
 MSc Hydro-meteorological Hazards
 ======
