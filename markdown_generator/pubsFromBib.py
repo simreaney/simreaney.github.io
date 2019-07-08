@@ -89,10 +89,11 @@ for pubsource in publist:
             if "day" in b.keys(): 
                 pub_day = str(b["day"])
 
-                
-           # pub_date = pub_year+"-"+pub_month+"-"+pub_day
-            pub_date = pub_year.replace("{","")
-            pub_date = pub_date.replace("}","")
+            
+            pub_year = pub_year.replace("{","")
+            pub_year = pub_year.replace("}","")    
+            pub_date = pub_year+"-"+pub_month+"-"+pub_day
+
             
             #strip out {} as needed (some bibtex entries that maintain formatting)
             clean_title = b["title"].replace("{", "").replace("}","").replace("\\","").replace(" ","-")    
