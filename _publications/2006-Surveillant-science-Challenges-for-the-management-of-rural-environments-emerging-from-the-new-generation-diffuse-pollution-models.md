@@ -1,0 +1,11 @@
+---
+title: "Surveillant science: Challenges for the management of rural environments emerging from the new generation diffuse pollution models"
+collection: publications
+permalink: /publication/2006-Surveillant-science-Challenges-for-the-management-of-rural-environments-emerging-from-the-new-generation-diffuse-pollution-models
+date: 2006
+venue: 'JOURNAL OF AGRICULTURAL ECONOMICS'
+citation: ' SN Lane,  CJ Brookes,  AL Heathwaite,  S Reaney, &quot;Surveillant science: Challenges for the management of rural environments emerging from the new generation diffuse pollution models.&quot; JOURNAL OF AGRICULTURAL ECONOMICS, {2006}.'
+---
+"Current models of diffuse pollution are characterised by a progressive engagement with remotely-sensed data coupled with more elegant modelling approaches. Central to these new models is the concept of connectivity, which leads to the identification and prioritisation of those landscape units (e.g., fields) where the consequences of land management activities are most readily transmitted to watercourses. The practice of diffuse pollution modelling using such models encounters certain problems. Following Brewer we argue that interdisciplinarity offers the opportunity to overcome these problems through: (1) its explicit recognition of the framing implicit in model development; (2) an emphasis on context in problem-solving; (3) methodological pluralism; and (4) following from these other factors, the possibility of a different sort of engagement between land managers and modellers. Hence, the case for developing interdisciplinary approaches goes beyond the conventional dictates of problem-led research and points to very different ways of conducting diffuse pollution research, taking on board the full dimensions of interdisciplinarity, with its emphasis on reflexivity, contextuality, substance and engagement.."
+
+Use [Google Scholar](https://scholar.google.com/scholar?q=Surveillant+science:+Challenges+for+the+management+of+rural+environments+emerging+from+the+new+generation+diffuse+pollution+models){:target="_blank"} for full citation
