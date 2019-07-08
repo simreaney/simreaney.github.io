@@ -27,14 +27,14 @@ import re
 #todo: incorporate different collection types rather than a catch all publications, requires other changes to template
 publist = {
     
-        "proceeding": {
-        "file" : "export-bibtex.bbl",
-        "venuekey": "booktitle",
-        "venue-pretext": "In the proceedings of ",
-        "collection" : {"name":"publications",
-                        "permalink":"/publication/"}
+#    "proceeding": {
+ #       "file" : "export-bibtex.bbl",
+  #      "venuekey": "booktitle",
+   #     "venue-pretext": "In the proceedings of ",
+    #    "collection" : {"name":"publications",
+     #                   "permalink":"/publication/"}
         
-    },
+#    },
     
     "journal":{
         "file": "savedrecs.bib",
@@ -111,8 +111,9 @@ for pubsource in publist:
             #citation title
             citation = citation + "\"" + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + ".\""
             
-            print (b["title"])
+            #print (b["title"])
             
+            abstract = ""
             abstract = "\"" + html_escape(b["abstract"].replace("{", "").replace("}","").replace("\\","")) + ".\""
 
             #add venue logic depending on citation type
@@ -154,8 +155,9 @@ for pubsource in publist:
             if note:
                 md += "\n" + html_escape(b["note"]) + "\n"
                 
-            md += "\n" + abstract
-            md += "\n"
+            if (len(abstract) > 0):
+                md += "\n" + abstract
+                md += "\n"
 
             if url:
                 md += "\n[Access paper here](" + b["url"] + "){:target=\"_blank\"}\n" 
