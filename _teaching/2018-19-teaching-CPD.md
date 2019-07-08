@@ -1,5 +1,5 @@
 ---
-title: "MSc Teaching experience"
+title: "CPD Teaching experience"
 collection: teaching
 type: "CPD courses"
 permalink: /teaching/2018-19-teaching-CPD
@@ -15,4 +15,4 @@ The three day CPD course in catchment hydrological modelling teaches the applica
 
 CPD Drone mapping
 ======
-This course covers in one day how to capture imagery from a drone to enable the creation of fine scale topographic data, how to process the images into the datasets and how to use the data to give insights into the hydrological and sediment processes. 
+This course covers in one day how to capture imagery from a drone to enable the creation of fine scale topographic data, how to process the images into the datasets and how to use the data to give insights into the hydrological and sediment processes.
