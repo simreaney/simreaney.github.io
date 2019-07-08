@@ -27,22 +27,22 @@ import re
 #todo: incorporate different collection types rather than a catch all publications, requires other changes to template
 publist = {
     
-#    "proceeding": {
-#        "file" : "export-bibtex.bbl",
-#        "venuekey": "booktitle",
- #       "venue-pretext": "In the proceedings of ",
-#        "collection" : {"name":"talks",
- #                       "permalink":"/talks/"}
+    "proceeding": {
+        "file" : "export-bibtex.bbl",
+        "venuekey": "booktitle",
+        "venue-pretext": "In the proceedings of ",
+        "collection" : {"name":"talks",
+                        "permalink":"/talks/"}
         
-#    }
+    }
     
-    "journal":{
-        "file": "savedrecs.bib",
-        "venuekey" : "journal",
-        "venue-pretext" : "",
-        "collection" : {"name":"publications",
-                        "permalink":"/publication/"}
-    } 
+#    "journal":{
+#        "file": "savedrecs.bib",
+#        "venuekey" : "journal",
+#        "venue-pretext" : "",
+#        "collection" : {"name":"publications",
+#                        "permalink":"/publication/"}
+  #  } 
     
     
     
@@ -117,7 +117,7 @@ for pubsource in publist:
             #print (b["title"])
             
             abstract = ""
-            abstract = "\"" + html_escape(b["abstract"].replace("{", "").replace("}","").replace("\\","")) + ".\""
+        #    abstract = "\"" + html_escape(b["abstract"].replace("{", "").replace("}","").replace("\\","")) + ".\""
 
             #add venue logic depending on citation type
             venue = publist[pubsource]["venue-pretext"]+b[publist[pubsource]["venuekey"]].replace("{", "").replace("}","").replace("\\","")
