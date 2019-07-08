@@ -1,0 +1,656 @@
+@INPROCEEDINGS{2017AGUFM.H21D1488R,
+       author = {{Reaney}, S.~M. and {Pearson}, C. and {Barber}, N. and {Fraser}, A.},
+        title = "{Tacking Flood Risk from Watersheds using a Natural Flood Risk Management Toolkit}",
+     keywords = {1820 Floodplain dynamics, HYDROLOGY, 1821 Floods, HYDROLOGY, 1847 Modeling, HYDROLOGY, 4331 Disaster relief, NATURAL HAZARDS},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2017",
+       volume = {2017},
+        month = "Dec",
+          eid = {H21D-1488},
+        pages = {H21D-1488},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2017AGUFM.H21D1488R},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2017EGUGA..1917881M,
+       author = {{Mockler}, Eva and {Reaney}, Simeon and {Mellander}, Per-Erik and
+         {Wade}, Andrew and {Collins}, Adrian and {Arheimer}, Berit and
+         {Bruen}, Michael},
+        title = "{Catchment Models and Management Tools for diffuse Contaminants (Sediment, Phosphorus and Pesticides): DIFFUSE Project}",
+    booktitle = {EGU General Assembly Conference Abstracts},
+         year = "2017",
+       volume = {19},
+        month = "Apr",
+        pages = {17881},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2017EGUGA..1917881M},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2016AGUFM.H33J1695J,
+       author = {{Jonczyk}, J.~C. and {Owen}, G.~J. and {Snell}, M.~A. and {Barber}, N. and
+         {Benskin}, C. and {Reaney}, S.~M. and {Haygarth}, P. and
+         {Quinn}, P.~F. and {Barker}, P.~A. and {Aftab}, A.},
+        title = "{A New Approach To Soil Sampling For Risk Assessment Of Nutrient Mobilisation.}",
+     keywords = {1804 Catchment, HYDROLOGYDE: 1843 Land/atmosphere interactions, HYDROLOGYDE: 1848 Monitoring networks, HYDROLOGYDE: 1855 Remote sensing, HYDROLOGY},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2016",
+       volume = {2016},
+        month = "Dec",
+          eid = {H33J-1695},
+        pages = {H33J-1695},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2016AGUFM.H33J1695J},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2016AGUFM.H13D1409R,
+       author = {{Reaney}, S.~M. and {Suslovaite}, V. and {Burt}, T.},
+        title = "{Temporal dynamics and projected future changes in the nitrate leaching in a small river catchment dominated by under-drained clay soil grasslands: analysis of high-frequency monitoring data}",
+     keywords = {1630 Impacts of global change, GLOBAL CHANGEDE: 1813 Eco-hydrology, HYDROLOGYDE: 1834 Human impacts, HYDROLOGYDE: 1871 Surface water quality, HYDROLOGY},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2016",
+       volume = {2016},
+        month = "Dec",
+          eid = {H13D-1409},
+        pages = {H13D-1409},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2016AGUFM.H13D1409R},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2016AGUFM.H13D1396B,
+       author = {{Barber}, N. and {Reaney}, S.~M. and {Barker}, P.~A. and {Benskin}, C. and
+         {Burke}, S. and {Cleasby}, W. and {Haygarth}, P. and {Jonczyk}, J.~C. and
+         {Owen}, G.~J. and {Snell}, M.~A.},
+        title = "{The Treatment Train approach to reducing non-point source pollution from agriculture}",
+     keywords = {1630 Impacts of global change, GLOBAL CHANGEDE: 1813 Eco-hydrology, HYDROLOGYDE: 1834 Human impacts, HYDROLOGYDE: 1871 Surface water quality, HYDROLOGY},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2016",
+       volume = {2016},
+        month = "Dec",
+          eid = {H13D-1396},
+        pages = {H13D-1396},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2016AGUFM.H13D1396B},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2016AGUFM.H13D1395R,
+       author = {{Reaney}, S.~M. and {Snell}, M.~A. and {Barker}, P.~A. and {Aftab}, A. and
+         {Barber}, N.~J. and {Benskin}, C. and {Burke}, S. and {Cleasby}, W. and
+         {Haygarth}, P. and {Jonczyk}, J.~C.},
+        title = "{Spatio-temporal dynamics in phytobenthos structural properties reveal insights into agricultural catchment dynamics and nutrient fluxes}",
+     keywords = {1630 Impacts of global change, GLOBAL CHANGEDE: 1813 Eco-hydrology, HYDROLOGYDE: 1834 Human impacts, HYDROLOGYDE: 1871 Surface water quality, HYDROLOGY},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2016",
+       volume = {2016},
+        month = "Dec",
+          eid = {H13D-1395},
+        pages = {H13D-1395},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2016AGUFM.H13D1395R},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2016AGUFM.H13D1392R,
+       author = {{Reaney}, S.~M. and {Barker}, P.~A. and {Haygarth}, P. and
+         {Quinn}, P.~F. and {Aftab}, A. and {Barber}, N. and {Burke}, S. and
+         {Cleasby}, W. and {Jonczyk}, J.~C. and {Owen}, G.~J.},
+        title = "{Mitigating Agricultural Diffuse Pollution: Learning from The River Eden Demonstration Test Catchment Experiments}",
+     keywords = {1630 Impacts of global change, GLOBAL CHANGEDE: 1813 Eco-hydrology, HYDROLOGYDE: 1834 Human impacts, HYDROLOGYDE: 1871 Surface water quality, HYDROLOGY},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2016",
+       volume = {2016},
+        month = "Dec",
+          eid = {H13D-1392},
+        pages = {H13D-1392},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2016AGUFM.H13D1392R},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2015EGUGA..17.7574J,
+       author = {{Jonczyk}, Jennine and {Barber}, Nicholas and {Benskin}, Claire and
+         {Snell}, Maria and {Deasy}, Clare and {Reaney}, Sim and {Quinn}, Paul and
+         {Owen}, Gareth},
+        title = "{The challenge of lots of data: different ways to synthesise and visualise high frequency catchment data}",
+    booktitle = {EGU General Assembly Conference Abstracts},
+         year = "2015",
+       volume = {17},
+        month = "Apr",
+          eid = {7574},
+        pages = {7574},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2015EGUGA..17.7574J},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2015EGUGA..17.1001P,
+       author = {{Pearson}, Callum and {Reaney}, Sim and {Bracken}, Louise and
+         {Butler}, Lucy},
+        title = "{Investigating the potential to reduce flood risk through catchment-based land management techniques and interventions in the River Roe catchment, Cumbria,UK}",
+    booktitle = {EGU General Assembly Conference Abstracts},
+         year = "2015",
+       volume = {17},
+        month = "Apr",
+          eid = {1001},
+        pages = {1001},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2015EGUGA..17.1001P},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2015EGUGA..17..908N,
+       author = {{Neill}, Aaron and {Reaney}, Sim},
+        title = "{The value of oxygen-isotope data and multiple discharge records in calibrating a fully-distributed, physically-based rainfall-runoff model (CRUM3) to improve predictive capability}",
+    booktitle = {EGU General Assembly Conference Abstracts},
+         year = "2015",
+       volume = {17},
+        month = "Apr",
+          eid = {908},
+        pages = {908},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2015EGUGA..17..908N},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2015EGUGA..17..368J,
+       author = {{Joyce}, Hannah and {Reaney}, Sim},
+        title = "{Managing multiple diffuse pressures on water quality and ecological habitat: Spatially targeting effective mitigation actions at the landscape scale.}",
+    booktitle = {EGU General Assembly Conference Abstracts},
+         year = "2015",
+       volume = {17},
+        month = "Apr",
+          eid = {368},
+        pages = {368},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2015EGUGA..17..368J},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2014AGUFM.H23H0983B,
+       author = {{Barber}, N. and {Reaney}, S.~M.},
+        title = "{Designing Schemes to Mitigate Non-Point Source Water Pollution from Agriculture: The Value of High-Resolution Hydrochemical and Hydrophysical Data}",
+     keywords = {1812 Drought, HYDROLOGY, 1830 Groundwater/surface water interaction, HYDROLOGY, 1842 Irrigation, HYDROLOGY, 1871 Surface water quality, HYDROLOGY},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2014",
+       volume = {2014},
+        month = "Dec",
+          eid = {H23H-0983},
+        pages = {H23H-0983},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2014AGUFM.H23H0983B},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2014AGUFM.H23G0957R,
+       author = {{Reaney}, S.~M.},
+        title = "{Managing multiple non-point pressures on water quality and ecological habitat: Spatially targeting effective mitigation actions at the landscape scale.}",
+     keywords = {1805 Computational hydrology, HYDROLOGY, 1813 Eco-hydrology, HYDROLOGY, 1831 Groundwater quality, HYDROLOGY, 1875 Vadose zone, HYDROLOGY},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2014",
+       volume = {2014},
+        month = "Dec",
+          eid = {H23G-0957},
+        pages = {H23G-0957},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2014AGUFM.H23G0957R},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2014EGUGA..1615704P,
+       author = {{Perks}, Matthew and {Reaney}, Sim},
+        title = "{Time-integrated suspended sediment monitoring networks: Potential and implications for geomorphology}",
+    booktitle = {EGU General Assembly Conference Abstracts},
+         year = "2014",
+       volume = {16},
+        month = "May",
+          eid = {15704},
+        pages = {15704},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2014EGUGA..1615704P},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2014EGUGA..1613271J,
+       author = {{Jonczyk}, Jennine and {Haygarth}, Phil and {Quinn}, Paul and
+         {Reaney}, Sim},
+        title = "{The Influence of temporal sampling regime on the WFD classification of catchments within the Eden Demonstration Test Catchment Project}",
+    booktitle = {EGU General Assembly Conference Abstracts},
+         year = "2014",
+       volume = {16},
+        month = "May",
+          eid = {13271},
+        pages = {13271},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2014EGUGA..1613271J},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2013AGUFM.H53H1510P,
+       author = {{Perks}, M.~T. and {Reaney}, S.~M.},
+        title = "{Understanding fine sediment and phosphorous delivery in upland catchments}",
+     keywords = {1804 HYDROLOGY Catchment, 1862 HYDROLOGY Sediment transport, 1871 HYDROLOGY Surface water quality, 1848 HYDROLOGY Monitoring networks},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2013",
+       volume = {2013},
+        month = "Dec",
+          eid = {H53H-1510},
+        pages = {H53H-1510},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2013AGUFM.H53H1510P},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2013AGUFM.H44B..01R,
+       author = {{Reaney}, S.~M. and {Deasy}, C. and {Ockenden}, M. and {Perks}, M. and
+         {Quinton}, J.},
+        title = "{High temporal resolution water chemistry information for catchment understanding and management}",
+     keywords = {1804 HYDROLOGY Catchment, 1806 HYDROLOGY Chemistry of fresh water, 1834 HYDROLOGY Human impacts, 1880 HYDROLOGY Water management},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2013",
+       volume = {2013},
+        month = "Dec",
+          eid = {H44B-01},
+        pages = {H44B-01},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2013AGUFM.H44B..01R},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2013AGUFM.H11E1198F,
+       author = {{Freer}, J.~E. and {Odoni}, N.~A. and {Coxon}, G. and {Bloomfield}, J. and
+         {Clark}, M.~P. and {Greene}, S. and {Johnes}, P. and {Macleod}, C. and
+         {Reaney}, S.~M.},
+        title = "{Emergent structures and understanding from a comparative uncertainty analysis of the FUSE rainfall-runoff modelling platform for \&gt;1,100 catchments}",
+     keywords = {1804 HYDROLOGY Catchment, 1847 HYDROLOGY Modeling, 1846 HYDROLOGY Model calibration, 1873 HYDROLOGY Uncertainty assessment},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2013",
+       volume = {2013},
+        month = "Dec",
+          eid = {H11E-1198},
+        pages = {H11E-1198},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2013AGUFM.H11E1198F},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2013EGUGA..15.9902P,
+       author = {{Pattison}, Ian and {Reaney}, Sim and {Lane}, Stuart and
+         {Hardy}, Richard},
+        title = "{Rural Land Management: Simultaneous benefits for both floods and droughts?}",
+    booktitle = {EGU General Assembly Conference Abstracts},
+         year = "2013",
+       volume = {15},
+        month = "Apr",
+          eid = {EGU2013-9902},
+        pages = {EGU2013-9902},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2013EGUGA..15.9902P},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2012AGUFMIN51D1716J,
+       author = {{Johnes}, P. and {Greene}, S. and {Freer}, J.~E. and {Bloomfield}, J. and
+         {Macleod}, K. and {Reaney}, S.~M. and {Odoni}, N.~A.},
+        title = "{Improving National Capability in Biogeochemical Flux Modelling: the UK Environmental Virtual Observatory (EVOp)}",
+     keywords = {0414 BIOGEOSCIENCES / Biogeochemical cycles, processes, and modeling, 0470 BIOGEOSCIENCES / Nutrients and nutrient cycling, 1879 HYDROLOGY / Watershed, 1908 INFORMATICS / Cyberinfrastructure},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2012",
+       volume = {2012},
+        month = "Dec",
+          eid = {IN51D-1716},
+        pages = {IN51D-1716},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2012AGUFMIN51D1716J},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2012AGUFMIN33B1536V,
+       author = {{Vitolo}, C. and {Buytaert}, W. and {El-khatib}, Y. and
+         {Gemmell}, A.~L. and {Reaney}, S.~M. and {Beven}, K.},
+        title = "{Cloud-enabled Web Applications for Environmental Modelling}",
+     keywords = {1847 HYDROLOGY / Modeling, 1996 INFORMATICS / Web Services},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2012",
+       volume = {2012},
+        month = "Dec",
+          eid = {IN33B-1536},
+        pages = {IN33B-1536},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2012AGUFMIN33B1536V},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2012AGUFMIN11E1491B,
+       author = {{Buytaert}, W. and {Vitolo}, C. and {Reaney}, S.~M. and {Beven}, K.},
+        title = "{Hydrological models as web services: Experiences from the Environmental Virtual Observatory project}",
+     keywords = {1805 HYDROLOGY / Computational hydrology, 1847 HYDROLOGY / Modeling, 1936 INFORMATICS / Interoperability, 1976 INFORMATICS / Software tools and services},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2012",
+       volume = {2012},
+        month = "Dec",
+          eid = {IN11E-1491},
+        pages = {IN11E-1491},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2012AGUFMIN11E1491B},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2012AGUFM.C32B..01F,
+       author = {{Freer}, J.~E. and {Clark}, M.~P. and {Odoni}, N.~A. and {Coxon}, G. and
+         {McMillan}, H.~K. and {Souvignet}, M. and {Cloke}, H.~L. and
+         {Wetterhall}, F. and {Pappenberger}, F. and {Bloomfield}, J.},
+        title = "{Understanding the main uncertainties in hydrological impact ensembles of Regional Climate Models predictions for large catchments in the UK}",
+     keywords = {1630 GLOBAL CHANGE / Impacts of global change, 1804 HYDROLOGY / Catchment, 1807 HYDROLOGY / Climate impacts},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2012",
+       volume = {2012},
+        month = "Dec",
+          eid = {C32B-01},
+        pages = {C32B-01},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2012AGUFM.C32B..01F},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2012EGUGA..14.8360B,
+       author = {{Benskin}, C. and {Surridge}, B. and {Deasy}, C. and {Woods}, C. and
+         {Rimmer}, D. and {Lees}, E. and {Owens}, G. and {Jonczyk}, J. and
+         {Quinton}, J. and {Wilkinson}, M.},
+        title = "{The River EdenDTC Project: A National Demonstration Test Catchment}",
+    booktitle = {EGU General Assembly Conference Abstracts},
+         year = "2012",
+       volume = {14},
+        month = "Apr",
+        pages = {8360},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2012EGUGA..14.8360B},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2012EGUGA..14.7000M,
+       author = {{Milledge}, D. and {Lane}, S.~N. and {Heathwaite}, A.~L. and
+         {Reaney}, S.},
+        title = "{A Monte Carlo approach to the inverse problem of diffuse pollution risk in agricultural catchments}",
+    booktitle = {EGU General Assembly Conference Abstracts},
+         year = "2012",
+       volume = {14},
+        month = "Apr",
+        pages = {7000},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2012EGUGA..14.7000M},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2011AGUFM.H44F..08R,
+       author = {{Reaney}, S.~M. and {Bracken}, L. and {Lane}, S.~N. and {Milledge}, D. and
+         {Williams}, C.},
+        title = "{A framework to understand spatial and temporal connectivity dynamics at hill slope and catchment scales.}",
+     keywords = {1850 HYDROLOGY / Overland flow, 1866 HYDROLOGY / Soil moisture, 1871 HYDROLOGY / Surface water quality},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2011",
+       volume = {2011},
+        month = "Dec",
+          eid = {H44F-08},
+        pages = {H44F-08},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2011AGUFM.H44F..08R},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2011AGUFM.H41H1157R,
+       author = {{Reaney}, S.~M. and {Milledge}, D. and {Lane}, S.~N. and
+         {Heathwaite}, L. and {Shore}, M. and {Melland}, A. and {Jordan}, P.},
+        title = "{Understanding nutrient connectivity at the landscape scale: The use of the SCIMAP approach in the UK and Ireland}",
+     keywords = {0470 BIOGEOSCIENCES / Nutrients and nutrient cycling, 0496 BIOGEOSCIENCES / Water quality, 1804 HYDROLOGY / Catchment, 1871 HYDROLOGY / Surface water quality},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2011",
+       volume = {2011},
+        month = "Dec",
+          eid = {H41H-1157},
+        pages = {H41H-1157},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2011AGUFM.H41H1157R},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2010AGUFMEP21B0745H,
+       author = {{Hancock}, G.~R. and {Evans}, K. and {McDonnell}, J.~J. and {Hopp}, L. and
+         {Reaney}, S.},
+        title = "{Death and landscape dynamics: The effect of tree throw on sediment transport and landscape evolution}",
+     keywords = {0468 BIOGEOSCIENCES / Natural hazards, 1632 GLOBAL CHANGE / Land cover change, 1826 HYDROLOGY / Geomorphology: hillslope},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2010",
+       volume = {2010},
+        month = "Dec",
+          eid = {EP21B-0745},
+        pages = {EP21B-0745},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2010AGUFMEP21B0745H},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2010AGUFM.H51D0936M,
+       author = {{Milledge}, D. and {Lane}, S.~N. and {Heathwaite}, L. and {Reaney}, S.},
+        title = "{Inverse modelling of diffuse pollution risks in agricultural catchments}",
+     keywords = {0470 BIOGEOSCIENCES / Nutrients and nutrient cycling, 1806 HYDROLOGY / Chemistry of fresh water, 1847 HYDROLOGY / Modeling, 1879 HYDROLOGY / Watershed},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2010",
+       volume = {2010},
+        month = "Dec",
+          eid = {H51D-0936},
+        pages = {H51D-0936},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2010AGUFM.H51D0936M},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2010AGUFM.H51D0929R,
+       author = {{Reaney}, S.~M.},
+        title = "{Science in the clouds: UAVs and cloud computing methods for spatial diffuse pollution risk assessment (Invited)}",
+     keywords = {1855 HYDROLOGY / Remote sensing, 1895 HYDROLOGY / Instruments and techniques: monitoring, 1996 INFORMATICS / Web Services},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2010",
+       volume = {2010},
+        month = "Dec",
+          eid = {H51D-0929},
+        pages = {H51D-0929},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2010AGUFM.H51D0929R},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2010AGUFM.H33E1185R,
+       author = {{Reaney}, S.~M. and {Hopp}, L.},
+        title = "{Optimal sampling of soil depth variability for the prediction of hydrological response}",
+     keywords = {1847 HYDROLOGY / Modeling, 1849 HYDROLOGY / Numerical approximations and analysis, 1866 HYDROLOGY / Soil moisture},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2010",
+       volume = {2010},
+        month = "Dec",
+          eid = {H33E-1185},
+        pages = {H33E-1185},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2010AGUFM.H33E1185R},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2010AGUFM.H33A1124F,
+       author = {{Freer}, J.~E. and {Bloomfield}, J.~P. and {Johnes}, P.~J. and
+         {MacLeod}, C. and {Reaney}, S.},
+        title = "{A pilot Virtual Observatory (pVO) for integrated catchment science - Demonstration of national scale modelling of hydrology and biogeochemistry (Invited)}",
+     keywords = {0414 BIOGEOSCIENCES / Biogeochemical cycles, processes, and modeling, 1804 HYDROLOGY / Catchment, 1805 HYDROLOGY / Computational hydrology, 1880 HYDROLOGY / Water management},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2010",
+       volume = {2010},
+        month = "Dec",
+          eid = {H33A-1124},
+        pages = {H33A-1124},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2010AGUFM.H33A1124F},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2010AGUFM.H32A..01J,
+       author = {{Jonczyk}, J. and {Quinn}, P.~F. and {Haygarth}, P. and {Reaney}, S. and
+         {Wilkinson}, M. and {Burke}, S. and {McGonigle}, D. and {Harris}, B.},
+        title = "{The Demonstration Test Catchment Approach to Land and Water Management in the river Eden Watershed, UK. (Invited)}",
+     keywords = {1804 HYDROLOGY / Catchment, 1871 HYDROLOGY / Surface water quality, 1880 HYDROLOGY / Water management, 6620 PUBLIC ISSUES / Science policy},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2010",
+       volume = {2010},
+        month = "Dec",
+          eid = {H32A-01},
+        pages = {H32A-01},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2010AGUFM.H32A..01J},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2010EGUGA..12..925O,
+       author = {{Oven}, Katie and {Reaney}, Sim and {Ohlem{\"u}ller}, Ralf and
+         {Nodwell}, Sarah and {Curtis}, Sarah and {Riva}, Myl{\`e}ne and
+         {Dunn}, Christine and {Val}, Dimitri and {Burkhard}, Roland},
+        title = "{Mapping heat wave risk in the UK: Proactive planning for the 2050s}",
+    booktitle = {EGU General Assembly Conference Abstracts},
+         year = "2010",
+       volume = {12},
+        month = "May",
+        pages = {925},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2010EGUGA..12..925O},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2010EGUGA..12..807P,
+       author = {{Pattison}, Ian and {Lane}, Stuart and {Hardy}, Richard and
+         {Reaney}, Sim},
+        title = "{Downscaling catchment scale flood risk to contributing sub-catchments to determine the optimum location for flood management.}",
+    booktitle = {EGU General Assembly Conference Abstracts},
+         year = "2010",
+       volume = {12},
+        month = "May",
+        pages = {807},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2010EGUGA..12..807P},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2010EGUGA..12..804P,
+       author = {{Pattison}, Ian and {Lane}, Stuart and {Hardy}, Richard and
+         {Reaney}, Sim},
+        title = "{Determining which land management practices reduce catchment scale flood risk and where to implement them for optimum effect}",
+    booktitle = {EGU General Assembly Conference Abstracts},
+         year = "2010",
+       volume = {12},
+        month = "May",
+        pages = {804},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2010EGUGA..12..804P},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2009AGUFM.H51G0840M,
+       author = {{Milledge}, D. and {Heathwaite}, L. and {Lane}, S.~N. and
+         {Reaney}, S.~M.},
+        title = "{SCIMAP: Modelling Diffuse Pollution in Large River Basins}",
+     keywords = {0470 BIOGEOSCIENCES / Nutrients and nutrient cycling, 0496 BIOGEOSCIENCES / Water quality, 1804 HYDROLOGY / Catchment, 1847 HYDROLOGY / Modeling},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2009",
+       volume = {2009},
+        month = "Dec",
+          eid = {H51G-0840},
+        pages = {H51G-0840},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2009AGUFM.H51G0840M},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2009AGUFM.H32A..06L,
+       author = {{Lane}, S.~N. and {Reaney}, S.~M. and {Heathwaite}, L. and
+         {Milledge}, D.},
+        title = "{Towards minimum information requirements for representing hydrological connectivity at the landscape scale (Invited)}",
+     keywords = {1804 HYDROLOGY / Catchment, 1847 HYDROLOGY / Modeling, 1871 HYDROLOGY / Surface water quality, 1874 HYDROLOGY / Ungaged basins},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2009",
+       volume = {2009},
+        month = "Dec",
+          eid = {H32A-06},
+        pages = {H32A-06},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2009AGUFM.H32A..06L},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2009AGUFM.H32A..02L,
+       author = {{Leibowitz}, S.~G. and {McDonnell}, J.~J. and {Sayama}, T. and
+         {Hopp}, L. and {Reaney}, S.~M.},
+        title = "{Spatial and Temporal Influences on Hydrologic Connectivity: A Mathematical Formalization}",
+     keywords = {1839 HYDROLOGY / Hydrologic scaling, 1860 HYDROLOGY / Streamflow},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2009",
+       volume = {2009},
+        month = "Dec",
+          eid = {H32A-02},
+        pages = {H32A-02},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2009AGUFM.H32A..02L},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2009AGUFM.H23I..08R,
+       author = {{Reaney}, S.~M. and {Lane}, S.~N. and {Heathwaite}, L.},
+        title = "{Simulating the Spatial Distribution of Hydrological Connectivity Under Possible Future Climates - Impacts on River Flow Dynamics and Non-Point Source Pollution}",
+     keywords = {1807 HYDROLOGY / Climate impacts, 1847 HYDROLOGY / Modeling, 1850 HYDROLOGY / Overland flow, 1879 HYDROLOGY / Watershed},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2009",
+       volume = {2009},
+        month = "Dec",
+          eid = {H23I-08},
+        pages = {H23I-08},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2009AGUFM.H23I..08R},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2009EGUGA..11.9555P,
+       author = {{Pattison}, I. and {Lane}, S.~N. and {Hardy}, R.~J. and {Reaney}, S.},
+        title = "{Long term changes in flood risk in the Eden Catchment, Cumbria: Links to changes in Weather Types and Land Use}",
+    booktitle = {EGU General Assembly Conference Abstracts},
+         year = "2009",
+       volume = {11},
+        month = "Apr",
+        pages = {9555},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2009EGUGA..11.9555P},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2009EGUGA..11.9517P,
+       author = {{Pattison}, I. and {Lane}, S.~N. and {Hardy}, R.~J. and {Reaney}, S.},
+        title = "{Importance of sub-catchments peak flow relative timing on downstream flood risk}",
+    booktitle = {EGU General Assembly Conference Abstracts},
+         year = "2009",
+       volume = {11},
+        month = "Apr",
+        pages = {9517},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2009EGUGA..11.9517P},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2009EGUGA..11.9453P,
+       author = {{Pattison}, I. and {Lane}, S.~N. and {Hardy}, R.~J. and {Reaney}, S.},
+        title = "{From scaling up to scaling down land management impacts on downstream flood risk}",
+    booktitle = {EGU General Assembly Conference Abstracts},
+         year = "2009",
+       volume = {11},
+        month = "Apr",
+        pages = {9453},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2009EGUGA..11.9453P},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2008AGUFM.H21E0877R,
+       author = {{Reaney}, S.~M. and {Fowler}, H.~J.},
+        title = "{Estimation of climate change impacts on river flow and catchment hydrological connectivity incorporating uncertainty from multiple climate models, stochastic downscaling and hydrological model parameterisation error sources}",
+     keywords = {1804 Catchment, 1805 Computational hydrology, 1847 Modeling, 1873 Uncertainty assessment (3275), 3305 Climate change and variability (1616, 1635, 3309, 4215, 4513)},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2008",
+       volume = {2008},
+        month = "Dec",
+          eid = {H21E-0877},
+        pages = {H21E-0877},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2008AGUFM.H21E0877R},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2007AGUFM.H53J..07R,
+       author = {{Reaney}, S.~M. and {Heathwaite}, L. and {Lane}, S.~N. and {Buckley}, C.},
+        title = "{Spatially based management of agricultural phosphorus pollution from diffuse sources: the SCIMAP risk based approach}",
+     keywords = {0402 Agricultural systems, 1804 Catchment, 1815 Erosion, 1847 Modeling},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2007",
+       volume = {2007},
+        month = "Dec",
+          eid = {H53J-07},
+        pages = {H53J-07},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2007AGUFM.H53J..07R},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{2007AGUFM.H44C..02L,
+       author = {{Lane}, S.~N. and {Burt}, T.~P. and {Dugdale}, L.~J. and {Dixon}, J. and
+         {Heathwaite}, A.~L. and {Maltby}, A. and {Reaney}, S.~M.},
+        title = "{The Control of Salmonid Populations by Hydrological Connectivity: an Analysis at the Local, Reach and Watershed scales}",
+     keywords = {0439 Ecosystems, structure and dynamics (4815), 1804 Catchment, 1813 Eco-hydrology, 1879 Watershed},
+    booktitle = {AGU Fall Meeting Abstracts},
+         year = "2007",
+       volume = {2007},
+        month = "Dec",
+          eid = {H44C-02},
+        pages = {H44C-02},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2007AGUFM.H44C..02L},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}

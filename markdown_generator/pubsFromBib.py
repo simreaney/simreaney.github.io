@@ -27,6 +27,15 @@ import re
 #todo: incorporate different collection types rather than a catch all publications, requires other changes to template
 publist = {
     
+        "proceeding": {
+        "file" : "export-bibtex.bbl",
+        "venuekey": "booktitle",
+        "venue-pretext": "In the proceedings of ",
+        "collection" : {"name":"publications",
+                        "permalink":"/publication/"}
+        
+    },
+    
     "journal":{
         "file": "savedrecs.bib",
         "venuekey" : "journal",
@@ -34,6 +43,10 @@ publist = {
         "collection" : {"name":"publications",
                         "permalink":"/publication/"}
     } 
+    
+    
+    
+    
 }
 
 html_escape_table = {
@@ -98,8 +111,9 @@ for pubsource in publist:
             #citation title
             citation = citation + "\"" + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + ".\""
             
-            abstract = ""
-            abstract = abstract + "\"" + html_escape(b["abstract"].replace("{", "").replace("}","").replace("\\","")) + ".\""
+            print (b["title"])
+            
+            abstract = "\"" + html_escape(b["abstract"].replace("{", "").replace("}","").replace("\\","")) + ".\""
 
             #add venue logic depending on citation type
             venue = publist[pubsource]["venue-pretext"]+b[publist[pubsource]["venuekey"]].replace("{", "").replace("}","").replace("\\","")
@@ -140,7 +154,7 @@ for pubsource in publist:
             if note:
                 md += "\n" + html_escape(b["note"]) + "\n"
                 
-            md += abstract
+            md += "\n" + abstract
             md += "\n"
 
             if url:
