@@ -15,26 +15,29 @@ Education
 * Ph.D in Modelling runoff generation and connectivity for semi-arid hillslopes and small catchments, University of Leeds, 1999 - 2003
 Field investigations into runoff generation, developed a hydrological simulation model and a novel agent based approach. Supervised by Prof. Mike Kirkby and Prof. Louise Bracken
 
-
 Work experience
 ======
 ## RCUK Post-Doctoral Research Fellow
 2007 - 2012
 Department of Geography, Durham University, United Kingdom
+
 I held an RCUK postdoctoral research fellowship in the Institute of Hazard and Risk and Resilience and the Department of Geography at Durham University. The main theme of my research was hazards and risks related to water and I focused on the hazard that has the greatest capability to cause widespread impacts – climate change. These potential impacts were approached through better understanding of catchment hydrological processes and the use of simulation modelling techniques to determine how the system may change under projected futures.  I investigated how projected climate change may alter the hydrological functioning of catchments and how these changes may affect flooding, drought and diffuse pollution delivery to water courses.
 
 ## Post-Doctoral Research Associate
 2005-2007
-Department of Geography, Durham University, United Kingdom
+Department of Geography, Durham University, United Kingdom.
+
 I worked on a NERC funded project to develop the SCIMAP diffuse pollution risk mapping toolset. This work involved terrain analysis development within open source GIS systems and the engagement with stakeholders, both within the catchments and Defra.
 
 ## Environmental Scientist and Visiting Researcher at the University of Leeds
+2002 - 2005
 Cascade Consulting, Manchester, UK.
 
 I worked on a UK Water Industry Research (UKWIR) funded project on the potential impact of projected climate change on water quality for UK Rivers. This work involved the development of water quality models for nitrogen (NH<sub>4</sub> and NO<sub>3</sub>) and dissolved oxygen.
 
 ## Research Assistant, King’s College London, UK.
 1998-1999
+
 I worked on an EU funded research project, MODULUS, to develop a hydrological simulation model for semi-arid environments. This model was applied to southern Spain and Greece.
 
 
