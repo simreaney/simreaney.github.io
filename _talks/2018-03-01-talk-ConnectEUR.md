@@ -4,7 +4,7 @@ collection: talks
 type: "Talk"
 permalink: /talks/2018-03-01-talk-ConnectEUR
 venue: "University of Palermo"
-date: 2019-03-01
+date: 2018-03-01
 location: "Palermo, Italy"
 ---
 
