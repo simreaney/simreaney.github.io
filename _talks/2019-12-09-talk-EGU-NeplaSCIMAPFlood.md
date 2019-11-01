@@ -1,0 +1,18 @@
+---
+title: "Catchment scale flood management using SCIMAP-Flood: Spatial targeting of flood hazard reduction measures in the East Rapti catchment, Nepal"
+collection: talks
+type: "Talk"
+permalink: /talks/2019-12-09-talk-EGU-NeplaSCIMAPFlood
+venue: "EGU"
+date: 2019-04-09
+location: "Vienna, Austria"
+---
+
+Callum Pearson, Sim M. Reaney, Nick J. Rosser, Andrew R.G. Large, Matthew T. Perks, and
+Borbála Hortobágyi 
+
+Practical approaches for managing flood hazards are moving from mitigation solely at the point of the impact, and towards an integrated catchment management approach which considers the source areas, flow pathways of flood waters and the impacted communities. However, there is uncertainty associated with providing catchment scale solutions which is primarily a function of spatial and temporal variability in patterns of rainfall, land cover, and hydrological connectivity across a catchment. These factors mean that flood waters are not produced in a homogenous way from one event to the next, resulting in a distribution of travel times to points of impact, such as towns and key infrastructure. There must also be careful consideration of the potential for a reduction in the flood hazard in one sub-catchment to increase the hazard elsewhere due to tributary timing and synchronisation.
+
+Our approach acknowledges and works with spatial and temporal complexity of flood events at the catchment scale to test the variability of a range of storm events, which when evaluated collectively can help guide potential management solutions. This is achieved through the adoption of SCIMAP-Flood, a decision support framework that works at the catchment scale. SCIMAP-Flood identifies critical source areas for flood waters using a combination of mapping flood water generation areas based on spatial rainfall patterns and land cover, the incorporation of transmission times across a catchment, and modelling of hydrological connectivity. The framework requires limited data input (rainfall pattern, land cover, and topographic elevation), and can be applied to catchments with limited resources using global, regional and local datasets. The simplicity and spatially detailed characteristics of the SCIMAP-Flood outputs can be used by a variety of stakeholders to aid process understanding across a catchment and to identify areas that are most likely to generate flood waters during a storm event. Accordingly, the SCIMAP-Flood output can be utilised to create catchment scale flood management scenarios which spatially target areas generating flood water. The success of these scenarios can also be tested using a physically-based, spatially distributed, hydrological model.
+
+The SCIMAP-Flood framework has been applied to East Rapti catchment in Nepal. The 3,084 km2 catchment, located to the south-west of Kathmandu, is representative of a typical medium-sized Nepalese catchment with the monsoonal flood waters originating in the mountainous regions and impacting on the more densely populated Terai plains. The approach has been calibrated and tested against the flood extent from the 2017 monsoon. The approach has estimated peak flood discharges across the catchment with a variety of techniques including remote sensing, gauging and discharge estimation. The presented SCIMAP-Flood output for the East Rapti catchment identifies locations where flood management measures would be most suitable by having a positive effect at the multiple impact zones across the catchment. If these practices are adopted, this may reduce the dependency upon hard engineering solutions as protection from flooding.
