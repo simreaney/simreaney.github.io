@@ -4,7 +4,7 @@ collection: teaching
 type: "CPD courses"
 permalink: /teaching/2018-19-teaching-CPD
 venue: "Durham University, Department of Geography"
-date: 2018-10-01
+date: 2019-10-01
 location: "Durham, UK"
 ---
 I teach two CPD courses, one on catchment hydrological modelling and one on fine scale topographic mapping with drones.

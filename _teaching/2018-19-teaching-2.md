@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2018-19-teaching-2
 venue: "Durham University, Department of Geography"
-date: 2018-10-01
+date: 2019-10-01
 location: "Durham, UK"
 ---
 I teach hydrology across the different levels within the BSc Geography in the department of Geography at Durham University. This teaching covers field based measurement, theory of hydrological processes and simulation modelling of catchments and flood inundation.
