@@ -7,6 +7,8 @@ venue: "AGU"
 date: 2019-12-09
 location: "San Francisco, USA"
 ---
+Callum Pearson, Sim M Reaney, Nick J Rosser and Andy R Large
+
 
 Practical approaches for managing flood hazards are moving away from mitigation solely at the point of the impact, and towards an integrated catchment management approach which considers flood source areas, flow pathways of flood waters and impacted communities. Our three stage approach acknowledges this and, through developing understanding of the spatial and temporal complexity of flood events at the catchment scale, tests sustainable flood management solutions.
 Our approach adopts SCIMAP-Flood, a catchment scale decision support framework that has the advantage in these remote areas of only requiring limited data input. SCIMAP-Flood identifies critical source areas for flood waters using a combination of mapping flood water generation areas based on spatial rainfall patterns and land cover, the incorporation of travel times across a catchment, and modelling of hydrological connectivity. Outputs are used to create catchment scale flood management scenarios which target flood source areas.
