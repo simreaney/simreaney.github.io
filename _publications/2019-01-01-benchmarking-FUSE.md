@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2019-01-01-benchmarking-FUSE
 date: 2019-01-01
 venue: 'Hydrology and Earth System Science'
-citation: 'Rosanna A. Lane, Gemma Coxon, Jim E. Freer, Thorsten Wagener, Penny J. Johnes, John P. Bloomfield, Sheila Greene, Christopher J. A. Macleod & Sim M. Reaney Benchmarking the predictive capability of hydrological models for river flow and flood peak predictions across over 1000 catchments in Great Britain. Hydrology and Earth System Science. 2019;23:4011-4032.'
+citation: 'Rosanna A. Lane, Gemma Coxon, Jim E. Freer, Thorsten Wagener, Penny J. Johnes, John P. Bloomfield, Sheila Greene, Christopher J. A. Macleod & Sim M. Reaney 2019: Benchmarking the predictive capability of hydrological models for river flow and flood peak predictions across over 1000 catchments in Great Britain. Hydrology and Earth System Science. 23:4011-4032.'
 ---
 "Benchmarking model performance across large samples of catchments is useful to guide model selection and future model development. Given uncertainties in the observational data we use to drive and evaluate hydrological models, and uncertainties in the structure and parameterisation of models we use to produce hydrological simulations and predictions, it is essential that model evaluation is undertaken within an uncertainty analysis framework. Here, we benchmark the capability of several lumped hydrological models across Great Britain by focusing on daily flow and peak flow simulation. Four hydrological model structures from the Framework for Understanding Structural Errors (FUSE) were applied to over 1000 catchments in England, Wales and Scotland. Model performance was then evaluated using standard performance metrics for daily flows and novel performance metrics for peak flows considering parameter uncertainty.
 
@@ -12,4 +12,4 @@ Our results show that lumped hydrological models were able to produce adequate s
 
 This research evaluates what conceptual lumped models can achieve as a performance benchmark and provides interesting insights into where and why these simple models may fail. The large number of river catchments included in this study makes it an appropriate benchmark for any future developments of a national model of Great Britain."
 
-Use [Google Scholar](https://scholar.google.com/scholar?q=benchmarking+the+predictive+capability+of+hydrological+models+for+river+flow+and+flood+peak+predictions+across+over+1000+catchments+in+Great+Britain){:target="_blank"} for full citation
+[Full text](https://www.hydrol-earth-syst-sci.net/23/4011/2019/){:target="_blank"}

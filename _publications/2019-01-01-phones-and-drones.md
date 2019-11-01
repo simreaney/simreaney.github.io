@@ -1,5 +1,5 @@
 ---
-title: " Identifying critical source areas using multiple methods for effective diffuse pollution mitigation"
+title: "Identifying critical source areas using multiple methods for effective diffuse pollution mitigation"
 collection: publications
 permalink: /publication/2019-01-01-phones-and-drones
 date: 2019-01-01
