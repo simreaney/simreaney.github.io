@@ -1,4 +1,12 @@
-Monitoring changes in diffuse pollution source risk with time-lapse photography
+---
+title: "Monitoring changes in diffuse pollution source risk with time-lapse photography"
+excerpt: "Monitoring changes in diffuse pollution source risk with time-lapse photography<br/>"
+collection: portfolio
+---
+
+
+
+
 ===============================================================================
 
 There are many factors within the landscape that can affect diffuse pollution source risk that vary over the year. Examples include the snow cover dynamics driving overland flow not directly connected to precipitation on that day, the changes in solar receipt resulting from
