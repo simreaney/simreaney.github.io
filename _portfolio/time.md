@@ -25,17 +25,11 @@ A single camera was installed in the Dacre Beck sub-catchment. This
 location was selected due to the suitability of the topography for the
 approach and local issues with snow melt that are most relevant at this
 site. The camera location and a typical image are shown in figure 1
-below. The camera installed was a Canon 5D mk I DSLR with a 24mm f2.8
-lens set to f5.0 and with a fixed ISO of 200 in aperture priority mode.
-This setup gave a horizontal angle of view of 73.7°. The camera was
-triggered to take an image every 10 minutes and has been installed since
-Jan 2014.
+below. The camera installed was a Canon 5D mk I DSLR with a 24mm f2.8 lens set to f5.0 and with a fixed ISO of 200 in aperture priority mode. This setup gave a horizontal angle of view of 73.7°. The camera was triggered to take an image every 10 minutes and has been installed since Jan 2014.
 
-  ![](TimeLapseDTC-Figure01.png)
+  <img src='TimeLapseDTC-Figure01.png'>
 
-Figure 1: The location of the time-lapse camera and a typical acquired
-image from the site from 24/06/14. The red triangle in the map shows the
-camera direction and angle of view of the images.
+Figure 1: The location of the time-lapse camera and a typical acquired image from the site from 24/06/14. The red triangle in the map shows the camera direction and angle of view of the images.
 
 Converting Images to Information
 --------------------------------
@@ -56,12 +50,9 @@ steps:
 3.  The red, green and blue components of the colour were extracted for
     analysis.
 
-    a.  For 'clear skies', the index was defined as blue / ((green +
-        red) / 2) and hence the lower values represent cloudy days and
-        higher values one represent blue sky days
+    a.  For 'clear skies', the index was defined as blue / ((green + red) / 2) and hence the lower values represent cloudy days and higher values one represent blue sky days
 
-    b.  For the 'snowiness', the index was defined as blue / green with
-        values towards one representing snow cover
+    b.  For the 'snowiness', the index was defined as blue / green with values towards one representing snow cover
 
 The changes in the overall scene were assessed by comparing the
 statistical differences between pairs of images. Two approaches were
@@ -80,7 +71,8 @@ year for the clear skies and snowiness indexes along with example
 images. These initial results are based on the midday images from each
 day.
 
-![](TimeLapseDTC-Figure02.png)
+<img src='TimeLapseDTC-Figure02.png'>
+
 Figure 2 Changes in the clear skies and snowiness index over the 2014 calendar year.
 
 From the results, it can be seen that the snowiness index correctly
@@ -96,12 +88,12 @@ Figure 3 below shows the changes over time for the daily differences
 when compared to the previous day and to the mean image. The mean image
 is shown in figure 4.
 
-![](TimeLapseDTC-Figure03.png) 3
+<img src='TimeLapseDTC-Figure03.png'>
 
 Figure 3 Changes over time for the daily differences when compared to
 the previous day and to the mean image
 
-![](TimeLapseDTC-Figure04.png)
+<img src='TimeLapseDTC-Figure04.png'>
 Figure 4, the average image from all midday images in 2014
 
 From the results in Figure 3 it can be seen that the difference based
