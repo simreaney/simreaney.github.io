@@ -5,10 +5,6 @@ collection: portfolio
 ---
 
 
-
-
-===============================================================================
-
 There are many factors within the landscape that can affect diffuse pollution source risk that vary over the year. Examples include the snow cover dynamics driving overland flow not directly connected to precipitation on that day, the changes in solar receipt resulting from
 cloud cover and land cover changes resulting from agricultural
 practices. An approach that was trialled within the first phase of DTC
@@ -54,17 +50,15 @@ steps:
 
     b.  For the 'snowiness', the index was defined as blue / green with values towards one representing snow cover
 
+The approach taken to find 'interesting' images was based on the calculated change in the scene between days.
 The changes in the overall scene were assessed by comparing the
-statistical differences between pairs of images. Two approaches were
-tested, the first compared the current day to the previous day and the
-second approach compared each day to the averaged scene from the whole
-year. The differences between the images were defined as the 'Manhattan'
+statistical differences between pairs of images. Two approaches were tested, the first compared the current day to the previous day and the second approach compared each day to the averaged scene from the whole year. The differences between the images were defined as the 'Manhattan'
 difference whereby the mean movement in brightness levels per pixel is
 calculated after the images have been converted to greyscale and
 normalised.
 
-Initial Results
----------------
+### Initial Results for Blue Sky and Snow
+
 
 In figure 2 below, there are the initial results for the 2014 calendar
 year for the clear skies and snowiness indexes along with example
@@ -83,6 +77,8 @@ cloud cover year the year with relatively few days being cloud free, 8.5% of day
 waterproof housing of the camera install. This condensation reduces the
 image quality for fine detail but it is still possible to extract
 information on the sky status.
+
+### Initial Results for Scene 'Intrestingness'
 
 Figure 3 below shows the changes over time for the daily differences
 when compared to the previous day and to the mean image. The mean image
@@ -104,7 +100,7 @@ approach successfully identified the increased snow cover in February
 clear skies in April 2014 and the reverse in August and finally the
 occurrence of snowfall in December 2014.
 
-### Concluding Remarks
+## Concluding Remarks
 
 -   Time-lapse photography of the catchment and landscape has the capability to add significant contextual information to complement and support the in-stream water chemistry datasets
 
