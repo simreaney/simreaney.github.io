@@ -7,15 +7,12 @@ collection: portfolio
 
 There are many factors within the landscape that can affect diffuse pollution source risk that vary over the year. Examples include the snow cover dynamics driving overland flow not directly connected to precipitation on that day, the changes in solar receipt resulting from
 cloud cover and land cover changes resulting from agricultural
-practices. An approach that was trialled within the first phase of DTC
-was the use of a time-lapse camera to create a visual record on the
+practices. An approach that was trialled within the first phase of DTC was the use of a time-lapse camera to create a visual record on the
 landscape, which could then be processed to give a continuous record of
 the factors. It is hoped that this extra information would provide
-useful context and background information foe the interpretation of the
-in-stream monitoring data.
+useful context and background information for the interpretation of in-stream water quality and river flow monitoring results.
 
-Location and Equipment
-----------------------
+### Location and Equipment
 
 A single camera was installed in the Dacre Beck sub-catchment. This
 location was selected due to the suitability of the topography for the
