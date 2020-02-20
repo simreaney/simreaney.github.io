@@ -33,14 +33,14 @@ CRUM3: a fully distributed hydrological simulation model operating at the catchm
 **The Tutta Beck Catchment**
 The project appraised the effectiveness of the modelled scenarios on reducing peak discharge at Greta Bridge. Flooding was suffered in 2012, anecdotal records show that levels reached close to the properties on a number of occasions. This appraisal was achieved through a comparison of maximum modelled discharge using existing catchment characteristics against the maximum modelled discharge using the flood mitigation scenarios.
 
-![Tutta Beck SCIMAP Flood Results](Tutta-Tutta-SCIMAP-Flood-Gen.png)
+![Tutta Beck SCIMAP Flood Results](Tutta-SCIMAP-Flood-Gen.png)
 
 Key flood risk reduction scenarios tested using CRUM3 include large scale and spatially targeted land cover change and soil aeration, other measures investigated included woody debris dams, and spatially targeted attenuation & interception of overland flows.
 
 **Recommendations**
 It is widely accepted that changes in land management can have some effect on flood magnitude, however in many cases there needs to be a complementary hard engineering scheme. A key aim of this research is to deliver catchment management in more palatable way for flood risk management authorities, it is to this end that the range of mitigation features are being investigated.
 
-![Tutta Footer](Tutta-footer.png)
+![Tutta Footer](tutta-footer.png)
 
 **Further Information**
 The thesis associated with this Masters project, which contains a full breakdown of the methodology employed, results attained and suggestions for areas of further research is available at http://etheses.dur.ac.uk/
