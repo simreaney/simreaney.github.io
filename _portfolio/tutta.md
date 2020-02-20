@@ -24,7 +24,7 @@ This post provides an overview of the research being undertaken by Mr Alex Frase
 **Methodology**
 The project methodology was developed to produce a suite of measures that could be applied to similar catchments across the country and in a format accessible to flood risk management authorities. There are two components to this approach:
 
-![NFM-Workflow-Tutta](tutta/Tutta-workflow.png)
+![NFM-Workflow-Tutta](Tutta-workflow.png)
 
 SCIMAP-Flood: risk mapping framework that enables analysis on a sub-field scale but across the catchment’s extent using limited data inputs. It identifies key sources and flow routes through analysis of topography and land use, to give an understanding of the surface runoff regime at a catchment scale (www.scimap.org.uk)
 
