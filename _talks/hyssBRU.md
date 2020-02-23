@@ -6,4 +6,4 @@ collection: talks
 
 Reaney, S., Kirkby M. and Bull L. 2001 Defining HYSS Based Response Units (HyssBRU) for hydrological modelling in a semi-arid environment COST 623 Strasbourg Sept 2001
 
-[reaney COST623 2001 Poster (pdf)](http://www.dur.ac.uk/sim.reaney/reaney_cost623_2001.pdf)
+[Reaney COST623 2001 Poster (pdf)](reaney_cost623_2001.pdf)
