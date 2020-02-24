@@ -1,6 +1,6 @@
 ---
 title: "Tutta Beck Natural Flood Risk Management project"
-excerpt: "The potential for using natural flood management & SuDS techniques at the landscape scale: an application to the Tutta Beck catchment, County Durham>"
+excerpt: "The potential for using natural flood management & SuDS techniques at the landscape scale: an application to the Tutta Beck catchment, County Durham"
 collection: portfolio
 ---
 **The potential for using natural flood management & SuDS techniques at the landscape scale: an application to the Tutta Beck catchment, County Durham**
