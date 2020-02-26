@@ -14,6 +14,6 @@ I am a catchment hydrologist working across flood hazards and water quality degr
 * How does the spatial and temporal rainfall storm structure flood generation?
 * How does hydrological connectivity affect flood generation at the landscape scale?
 
-![Front Page Banner](images/FrontPageBanner.jpg)
+![Front Page Banner](images/frontPageBanner.jpg)
 
 My work has often been undertaken with stakeholders, including Defra, the Environment Agency and River Trusts in the UK, and through the co-development of the research questions and approaches I have developed tools and software that is routinely used for catchment management. The main tool is the [SCIMAP](http://www.scimap.org.uk) diffuse pollution risk mapping approach that is widely used in the UK and overseas. This work was part of an impact case study in 2015. I have also written the CRUM3 fully distributed catchment hydrological model that has been used for natural flood risk management and water resources assessment with local flood action groups in a series of MRes, PhD and other projects.
