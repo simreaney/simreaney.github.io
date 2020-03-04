@@ -2,7 +2,7 @@
 title: "The identification of sediment and connectivity patterns to map critical source areas across scales for effective mitigation of diffuse sediment pollution"
 collection: talks
 type: "Talk"
-permalink: /talks/2019-12-09-talk-AGU-NepalFlooding
+permalink: /talks/2019-12-09-talk-EGU-PhonesAndDrones
 venue: "EGU"
 date: 2019-04-09
 location: "Vienna, Austria"
