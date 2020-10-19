@@ -84,6 +84,12 @@ var APP_DATA = {
           "pitch": 0.0035264116712383498,
           "rotation": 0,
           "target": "5-sands-area-right-bank-2"
+        },
+        {
+          "yaw": -2.7986783731857354,
+          "pitch": -0.015178706323878188,
+          "rotation": 0,
+          "target": "9-cricket-pitch-and-river-eden-left-bank"
         }
       ],
       "infoHotspots": []
@@ -116,7 +122,14 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
-      "linkHotspots": [],
+      "linkHotspots": [
+        {
+          "yaw": -0.42721489339605334,
+          "pitch": 0.050071609152251284,
+          "rotation": 0,
+          "target": "7-bridge-over-the-river-eden"
+        }
+      ],
       "infoHotspots": []
     },
     {
@@ -149,8 +162,8 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -0.04324769279165608,
-          "pitch": 0.08809387884346798,
+          "yaw": -0.043247676810958424,
+          "pitch": 0.08809388211496838,
           "rotation": 0,
           "target": "14-flood-gates-edge-of-playing-field"
         },
@@ -159,6 +172,12 @@ var APP_DATA = {
           "pitch": 0.05168139362304203,
           "rotation": 0,
           "target": "10-swimming-pool-car-park"
+        },
+        {
+          "yaw": 2.2347807345065878,
+          "pitch": 0.057658751819353427,
+          "rotation": 0,
+          "target": "6-lower-part-of-appleby-high-street"
         }
       ],
       "infoHotspots": []
@@ -191,7 +210,14 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
-      "linkHotspots": [],
+      "linkHotspots": [
+        {
+          "yaw": -1.9210003101167388,
+          "pitch": 0.10052353911792267,
+          "rotation": 0,
+          "target": "6-lower-part-of-appleby-high-street"
+        }
+      ],
       "infoHotspots": []
     },
     {
@@ -268,8 +294,8 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": -1.3560529063665072,
-          "pitch": -0.014629836473455171,
+          "yaw": -1.3579356453393796,
+          "pitch": -0.014643471214711212,
           "rotation": 0,
           "target": "3-flood-water-mark"
         },
@@ -278,6 +304,12 @@ var APP_DATA = {
           "pitch": -0.01596510665715556,
           "rotation": 0,
           "target": "4-appleby-high-street"
+        },
+        {
+          "yaw": 1.1773018643479354,
+          "pitch": 0.0519261147367569,
+          "rotation": 0,
+          "target": "7-bridge-over-the-river-eden"
         }
       ],
       "infoHotspots": []
@@ -328,6 +360,12 @@ var APP_DATA = {
           "pitch": 0.22004712827897066,
           "rotation": 0,
           "target": "5-sands-area-right-bank-2"
+        },
+        {
+          "yaw": -0.5160884263827263,
+          "pitch": -0.07788917210513269,
+          "rotation": 0,
+          "target": "9-cricket-pitch-and-river-eden-left-bank"
         }
       ],
       "infoHotspots": []
@@ -398,7 +436,26 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
-      "linkHotspots": [],
+      "linkHotspots": [
+        {
+          "yaw": 1.3780746977062677,
+          "pitch": 0.13166977882142383,
+          "rotation": 0,
+          "target": "7-bridge-over-the-river-eden"
+        },
+        {
+          "yaw": 0.0017173204247118434,
+          "pitch": -0.0037090081954804788,
+          "rotation": 0,
+          "target": "1-property-level-protection-sands"
+        },
+        {
+          "yaw": 0.715193982690959,
+          "pitch": 0.1057067335712567,
+          "rotation": 0,
+          "target": "5-sands-area-right-bank-2"
+        }
+      ],
       "infoHotspots": []
     },
     {
@@ -435,6 +492,18 @@ var APP_DATA = {
           "pitch": -0.035029980406463324,
           "rotation": 0,
           "target": "8-river-eden-near-swimming-baths"
+        },
+        {
+          "yaw": 0.5953633075046554,
+          "pitch": 0.0373275389954717,
+          "rotation": 0,
+          "target": "14-flood-gates-edge-of-playing-field"
+        },
+        {
+          "yaw": -0.5688184570734087,
+          "pitch": -0.03750095549197319,
+          "rotation": 0,
+          "target": "9-cricket-pitch-and-river-eden-left-bank"
         }
       ],
       "infoHotspots": []
@@ -580,6 +649,18 @@ var APP_DATA = {
           "pitch": 0.0030707034937282884,
           "rotation": 0,
           "target": "13-flood-gates-by-toilets"
+        },
+        {
+          "yaw": -2.905758058604256,
+          "pitch": 0.14114978259320488,
+          "rotation": 0,
+          "target": "3-flood-water-mark"
+        },
+        {
+          "yaw": 1.3283950820654784,
+          "pitch": 0.17429426470881815,
+          "rotation": 0,
+          "target": "10-swimming-pool-car-park"
         }
       ],
       "infoHotspots": []
