@@ -9,14 +9,21 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* BSc. in Geography, King's College London, 1997
-* Ph.D in Modelling runoff generation and connectivity for semi-arid hillslopes and small catchments, University of Leeds, 1999 - 2003
-Field investigations into runoff generation, developed a hydrological simulation model and a novel agent based approach. Supervised by Prof. Mike Kirkby and Prof. Louise Bracken
-
 Work experience
 ======
+## Co-Director of the Institute of Hazard, Risk and Resilience (IHRR)
+2020 - to date
+Institute of Hazard, Risk and Resilience, Durham University, United Kingdom
+
+##Associate Professor in Catchment Hydrology
+2020 - to date
+Department of Geography, Durham University, United Kingdom
+
+## Lecturer in Catchment Hydrology
+2012 - 2020
+Department of Geography, Durham University, United Kingdom
+
+
 ## RCUK Post-Doctoral Research Fellow
 2007 - 2012
 Department of Geography, Durham University, United Kingdom
@@ -40,7 +47,11 @@ I worked on a UK Water Industry Research (UKWIR) funded project on the potential
 
 I worked on an EU funded research project, MODULUS, to develop a hydrological simulation model for semi-arid environments. This model was applied to southern Spain and Greece.
 
-
+Education
+======
+* BSc. in Geography, King's College London, 1997
+* Ph.D in Modelling runoff generation and connectivity for semi-arid hillslopes and small catchments, University of Leeds, 1999 - 2003
+Field investigations into runoff generation, developed a hydrological simulation model and a novel agent based approach. Supervised by Prof. Mike Kirkby and Prof. Louise Bracken
 
 Skills
 ======
