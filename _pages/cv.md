@@ -18,10 +18,13 @@ Institute of Hazard, Risk and Resilience, Durham University, United Kingdom
 ## Associate Professor in Catchment Hydrology
 2020 - to date
 Department of Geography, Durham University, United Kingdom
+In this role, I am focusing on the combination of diffuse pollution and flood hazards in a wide range of environments.  This work will continue to develop the catchment modelling and SCIMAP toolkit to be applicable to a wider range of issues and environments.
+I am teaching on both the BSc Geography and MSc Risk within the Geography department in Durham. I teach on catchment and flood simulation modelling and on hydrological processes. 
 
 ## Lecturer in Catchment Hydrology
 2012 - 2020
-Department of Geography, Durham University, United Kingdom
+Within this role I worked on catchment hydrological processes including climate change, flood hazards and diffuse pollution. This work was largely focused on the UK and much work was structured around the Defra Eden DRC project, for which I was I Co-Investigator. This project looked at how to manage the landscape differently to reduce diffuse pollution whilst minimising impacts on farm business. I worked on the development of the SCIMAP diffuse pollution risk mapping toolkit.
+I also started to test the approaches developed in the UK on flood source mapping and simulation modelling to new sites including Nepal and Java, Indonesia.  
 
 
 ## RCUK Post-Doctoral Research Fellow
