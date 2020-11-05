@@ -15,7 +15,7 @@ Work experience
 2020 - to date
 Institute of Hazard, Risk and Resilience, Durham University, United Kingdom
 
-##Associate Professor in Catchment Hydrology
+## Associate Professor in Catchment Hydrology
 2020 - to date
 Department of Geography, Durham University, United Kingdom
 
