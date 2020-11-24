@@ -1,5 +1,5 @@
 ---
-title: "SCIMAP Web Application"
+title: "The SCIMAP Web Application"
 excerpt: "Web Application for Diffuse Pollution and Flood Source Area Mapping"
 collection: portfolio
 ---
