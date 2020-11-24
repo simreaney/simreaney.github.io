@@ -3,12 +3,15 @@ title: "SCIMAP Web Application"
 excerpt: "Web Application for Diffuse Pollution and Flood Source Area Mapping"
 collection: portfolio
 ---
-*Enabling access to non-point source risk mapping tools using Open Source Software and Open Geospatial Consortium (OGC) standards: the development of the SCIMAP WebApp**
+# Enabling access to non-point source risk mapping tools using Open Source Software and Open Geospatial Consortium (OGC) standards: the development of the SCIMAP WebApp
 
 Sim Reaney¹ and Peter Wells²
 * (1): Department of Geography, Durham University
 * (2): Lutra Consulting
 
+Presented at 11th International Conference on Hydroinfomatics (HIC 2014), 17-21 Aug 2014, New York City, USA. City College of New York.
+
+**Abstract**
 Non-point (diffuse) pollution is a key environmental pressure effecting water quality and ecology in lakes and rivers. Many governmental and NGO bodies are working to tacking the problem but their efforts are constrained by the complexities of the problem. To enable the spatial targeting of the mitigation measures at the landscape scale, the SCIMAP risk mapping approach was developed by Durham and Lancaster Universities in the UK. The approach was well received but the desktop implementation created problems for users.  NGO users generally did not have the required datasets or GIS skills. Governmental users within a corporate managed IT environment were not able to install the desktop software. Using web based technologies, it has been possible to overcome the problems faced by both sets of users. 
 
 The SCIMAP WebApp is a rich internet application consisting of a GIS user interface that allows users to easily generate risk maps for diffuse pollution. All the calculation and modelling procedures are completely linked and automated, the calculation of the risk maps be achieved in a more efficient and timely manner, and therefore contributing to improve decision-making. The application is a web-based and can be accessed through most of the modern web browsers. The web application was entirely developed using Open Source Software and OGC standards.
