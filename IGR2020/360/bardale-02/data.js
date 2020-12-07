@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-gptempdownload-3",
-      "name": "GPTempDownload 3",
+      "name": "Bardale Beck 02",
       "levels": [
         {
           "tileSize": 256,
