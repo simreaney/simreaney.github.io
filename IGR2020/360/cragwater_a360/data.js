@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-pano0001-panorama",
-      "name": "PANO0001 Panorama",
+      "name": "Cragwater Catchment Aerial Panorama",
       "levels": [
         {
           "tileSize": 256,

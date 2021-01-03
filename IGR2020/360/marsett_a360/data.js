@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-marsett-air-panorama_8k",
-      "name": "Marsett air panorama_8K",
+      "name": "Marsett air panorama",
       "levels": [
         {
           "tileSize": 256,

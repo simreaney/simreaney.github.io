@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-201201-0010366-131",
-      "name": "201201-0010366-131",
+      "name": "Cragwater Gauging Site",
       "levels": [
         {
           "tileSize": 256,

@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-r0010359-103",
-      "name": "R0010359-103",
+      "name": "Off Stake Lane",
       "levels": [
         {
           "tileSize": 256,

@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-201201-0010364-133",
-      "name": "201201-0010364-133",
+      "name": "Steep grazing land cover",
       "levels": [
         {
           "tileSize": 256,

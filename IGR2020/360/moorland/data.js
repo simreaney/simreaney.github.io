@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-r0010360-104",
-      "name": "R0010360-104",
+      "name": "Moorland",
       "levels": [
         {
           "tileSize": 256,

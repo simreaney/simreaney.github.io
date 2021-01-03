@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-201201-0010369-137",
-      "name": "201201-0010369-137",
+      "name": "Raydale Beck Gauging Site",
       "levels": [
         {
           "tileSize": 256,

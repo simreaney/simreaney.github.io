@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-201201-0010373-140",
-      "name": "201201-0010373-140",
+      "name": "Bardale Beck Gauging Site",
       "levels": [
         {
           "tileSize": 256,

@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-r0010361-105",
-      "name": "R0010361-105",
+      "name": "Peatlands",
       "levels": [
         {
           "tileSize": 256,

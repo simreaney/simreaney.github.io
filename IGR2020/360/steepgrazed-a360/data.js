@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-steep-grazed-panorama-20k",
-      "name": "Steep Grazed Panorama 20K",
+      "name": "Steep Grazed Aerial Panorama",
       "levels": [
         {
           "tileSize": 256,

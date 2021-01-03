@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-201127-0010362-132",
-      "name": "201127-0010362-132",
+      "name": "Raydale beck above Semerwater Gauging Site",
       "levels": [
         {
           "tileSize": 256,
