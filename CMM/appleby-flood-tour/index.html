@@ -1,133 +1,63 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Appleby Flood Tour</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
-<style> @-ms-viewport { width: device-width; } </style>
-<link rel="stylesheet" href="vendor/reset.min.css">
-<link rel="stylesheet" href="style.css">
-</head>
-<body class="multiple-scenes view-control-buttons">
-
-<div id="pano"></div>
-
-<div id="sceneList">
-  <ul class="scenes">
-
-      <a href="javascript:void(0)" class="scene" data-id="0-sands-area-right-bank-of-eden">
-        <li class="text">Sands area, right bank of Eden</li>
-      </a>
-
-      <a href="javascript:void(0)" class="scene" data-id="1-property-level-protection-sands">
-        <li class="text">Property level protection, Sands</li>
-      </a>
-
-      <a href="javascript:void(0)" class="scene" data-id="2-raised-infrastructure">
-        <li class="text">Raised infrastructure</li>
-      </a>
-
-      <a href="javascript:void(0)" class="scene" data-id="3-flood-water-mark">
-        <li class="text">Flood water mark</li>
-      </a>
-
-      <a href="javascript:void(0)" class="scene" data-id="4-appleby-high-street">
-        <li class="text">Appleby High Street</li>
-      </a>
-
-      <a href="javascript:void(0)" class="scene" data-id="5-sands-area-right-bank-2">
-        <li class="text">Sands area, right bank 2</li>
-      </a>
-
-      <a href="javascript:void(0)" class="scene" data-id="6-lower-part-of-appleby-high-street">
-        <li class="text">Lower part of Appleby High Street</li>
-      </a>
-
-      <a href="javascript:void(0)" class="scene" data-id="7-bridge-over-the-river-eden">
-        <li class="text">Bridge over the River Eden</li>
-      </a>
-
-      <a href="javascript:void(0)" class="scene" data-id="8-river-eden-near-swimming-baths">
-        <li class="text">River Eden near Swimming baths</li>
-      </a>
-
-      <a href="javascript:void(0)" class="scene" data-id="9-cricket-pitch-and-river-eden-left-bank">
-        <li class="text">Cricket Pitch and River Eden Left bank</li>
-      </a>
-
-      <a href="javascript:void(0)" class="scene" data-id="10-swimming-pool-car-park">
-        <li class="text">Swimming pool car park</li>
-      </a>
-
-      <a href="javascript:void(0)" class="scene" data-id="11-doomsgate">
-        <li class="text">Doomsgate</li>
-      </a>
-
-      <a href="javascript:void(0)" class="scene" data-id="12-bridge-over-eden-downstream">
-        <li class="text">Bridge over Eden downstream</li>
-      </a>
-
-      <a href="javascript:void(0)" class="scene" data-id="13-flood-gates-by-toilets">
-        <li class="text">Flood Gates by toilets</li>
-      </a>
-
-      <a href="javascript:void(0)" class="scene" data-id="14-flood-gates-edge-of-playing-field">
-        <li class="text">Flood Gates edge of playing field</li>
-      </a>
-
-  </ul>
-</div>
-
-<div id="titleBar">
-  <h1 class="sceneName"></h1>
-</div>
-
-<a href="javascript:void(0)" id="autorotateToggle">
-  <img class="icon off" src="img/play.png">
-  <img class="icon on" src="img/pause.png">
-</a>
-
-<a href="javascript:void(0)" id="fullscreenToggle">
-  <img class="icon off" src="img/fullscreen.png">
-  <img class="icon on" src="img/windowed.png">
-</a>
-
-<a href="javascript:void(0)" id="sceneListToggle">
-  <img class="icon off" src="img/expand.png">
-  <img class="icon on" src="img/collapse.png">
-</a>
-
-<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
-  <img class="icon" src="img/up.png">
-</a>
-<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
-  <img class="icon" src="img/down.png">
-</a>
-<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
-  <img class="icon" src="img/left.png">
-</a>
-<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
-  <img class="icon" src="img/right.png">
-</a>
-<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
-  <img class="icon" src="img/plus.png">
-</a>
-<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
-  <img class="icon" src="img/minus.png">
-</a>
-
-<script src="vendor/es5-shim.js"></script>
-<script src="vendor/eventShim.js"></script>
-<script src="vendor/classList.js"></script>
-<script src="vendor/requestAnimationFrame.js" ></script>
-<script src="vendor/screenfull.min.js" ></script>
-<script src="vendor/bowser.min.js" ></script>
-<script src="vendor/marzipano.js" ></script>
-
-<script src="data.js"></script>
-<script src="index.js"></script>
-
-
-</body>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="mobile-web-app-capable" content="yes" />
+		<style type="text/css" title="Default">
+			/* fullscreen */
+			html {
+				height:100%;
+			}
+			body {
+				height:100%;
+				margin: 0px;
+				overflow:hidden; /* disable scrollbars */
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* remove highlight on tab for iOS/Android */
+			}
+			/* fix for scroll bars on webkit & >=Mac OS X Lion */ 
+			::-webkit-scrollbar {
+				background-color: rgba(0,0,0,0.5);
+				width: 0.75em;
+			}
+			::-webkit-scrollbar-thumb {
+    			background-color:  rgba(255,255,255,0.5);
+			}
+		</style>	
+	</head>
+	<body>
+<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - -->
+		<script type="text/javascript" src="pano2vr_player.js">
+		</script>
+		<script type="text/javascript" src="skin.js">
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyA_yVYqPqjFuFwfI-YBESiNaG1u_y8afvo"></script>
+		<script src="webxr/three.min.js"></script>
+		<script src="webxr/webxr-polyfill.min.js"></script>
+		<div id="container" style="width:100%;height:100%;overflow:hidden;">
+		<br>Loading...<br><br>
+		</div>
+		<script type="text/javascript">
+	
+			// create the panorama player with the container
+			pano=new pano2vrPlayer("container");
+			// add the skin object
+			skin=new pano2vrSkin(pano);
+			// load the configuration
+		
+			window.addEventListener("load", function() {
+				pano.readConfigUrlAsync("pano.xml");
+			});
+		</script>
+		<noscript>
+			<p><b>Please enable Javascript!</b></p>
+		</noscript>
+<!-- - - - - - - 8<- - - - - - cut here - - - - - 8<- - - - - - - --> 
+		<!-- Hack needed to hide the url bar on iOS 9, iPhone 5s --> 
+		<div style="width:1px;height:1px;"></div>
+	</body>
 </html>
