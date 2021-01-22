@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node1" appversion="6.1.10" apprev="18007">
+  <panorama id="node1">
+    <input overlap="1" levelbiashidpi="1.000" height="1440" leveltilesize="510" width="1440" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" levelingpitch="0" levelbias="0.400">
+      <level height="1440" predecode="0" width="1440" preload="0"/>
+      <level height="720" predecode="0" width="720" preload="0"/>
+      <level height="360" predecode="1" width="360" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start pan="0" fov="70" projection="4" tilt="0"/>
+      <flyin pan="0" fov="170" projection="9" tilt="-90"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max fovstereographic="270" scaletofit="1" pan="360" fov="120" fovfisheye="360" tilt="90"/>
+    </view>
+    <userdata title="DCIM\100GOPRO\GS__0032.JPG" datetime="28/09/2020 11:51" source="" latitude="55.344147" nodeid="node1" heading="0" description="" tags="Warkworth" altitude="50.33" copyright="" info="" longitude="-1.594946" author="" comment="" customnodeid=""/>
+    <hotspots height="20" width="180" wordwrap="1">
+      <label background="1" backgroundcolor="0xffffff" bordercolor="0x000000" borderalpha="1" height="20" borderradius="1" width="180" wordwrap="1" border="1" textalpha="1" backgroundalpha="1" enabled="1" textcolor="0x000000"/>
+      <polystyle backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1" mode="0" handcursor="1" backgroundalpha="0.25098"/>
+      <hotspot target="$fwd" title="DCIM\100GOPRO\GS__0033.JPG" distance="7.72694" pan="-86.7001" url="{node2}" skinid="ht_node" description="" id="Point01" tilt="0"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomoutpause="1" zoomin="0" zoomout="0" type="crossdissolve" zoomspeed="2" zoomafteroutfov="20" softedge="0" blendtime="1" enabled="1" zoomafterinfov="90" blendcolor="0x000000"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control rubberband="0" lockedkeyboard="0" speedwheel="1" simulatemass="1" invertcontrol="1" lockedkeyboardzoom="0" contextfullscreen="1" dblclickfullscreen="0" sensitivity="8" contextprojections="0" lockedmouse="0" invertwheel="0" lockedwheel="0"/>
+  </panorama>
+  <panorama id="node2">
+    <input overlap="1" levelbiashidpi="1.000" height="1440" leveltilesize="510" width="1440" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" levelingpitch="0" levelbias="0.400">
+      <level height="1440" predecode="0" width="1440" preload="0"/>
+      <level height="720" predecode="0" width="720" preload="0"/>
+      <level height="360" predecode="1" width="360" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start pan="0" fov="70" projection="4" tilt="0"/>
+      <flyin pan="0" fov="170" projection="9" tilt="-90"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max fovstereographic="270" scaletofit="1" pan="360" fov="120" fovfisheye="360" tilt="90"/>
+    </view>
+    <userdata title="DCIM\100GOPRO\GS__0033.JPG" datetime="28/09/2020 11:52" source="" latitude="55.344151" nodeid="node2" heading="0" description="" tags="Warkworth" altitude="50.00" copyright="" info="" longitude="-1.594824" author="" comment="" customnodeid=""/>
+    <hotspots height="20" width="180" wordwrap="1">
+      <label background="1" backgroundcolor="0xffffff" bordercolor="0x000000" borderalpha="1" height="20" borderradius="1" width="180" wordwrap="1" border="1" textalpha="1" backgroundalpha="1" enabled="1" textcolor="0x000000"/>
+      <polystyle backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1" mode="0" handcursor="1" backgroundalpha="0.25098"/>
+      <hotspot target="$fwd" title="DCIM\100GOPRO\GS__0032.JPG" distance="7.72694" pan="93.2998" url="{node1}" skinid="ht_node" description="" id="Point01" tilt="0"/>
+      <hotspot target="$fwd" title="DCIM\100GOPRO\GS__0035.JPG" distance="29.722" pan="-78.1256" url="{node3}" skinid="ht_node" description="" id="Point02" tilt="0"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomoutpause="1" zoomin="0" zoomout="0" type="crossdissolve" zoomspeed="2" zoomafteroutfov="20" softedge="0" blendtime="1" enabled="1" zoomafterinfov="90" blendcolor="0x000000"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control rubberband="0" lockedkeyboard="0" speedwheel="1" simulatemass="1" invertcontrol="1" lockedkeyboardzoom="0" contextfullscreen="1" dblclickfullscreen="0" sensitivity="8" contextprojections="0" lockedmouse="0" invertwheel="0" lockedwheel="0"/>
+  </panorama>
+  <panorama id="node3">
+    <input overlap="1" levelbiashidpi="1.000" height="1440" leveltilesize="510" width="1440" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" levelingpitch="0" levelbias="0.400">
+      <level height="1440" predecode="0" width="1440" preload="0"/>
+      <level height="720" predecode="0" width="720" preload="0"/>
+      <level height="360" predecode="1" width="360" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start pan="0" fov="70" projection="4" tilt="0"/>
+      <flyin pan="0" fov="170" projection="9" tilt="-90"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max fovstereographic="270" scaletofit="1" pan="360" fov="120" fovfisheye="360" tilt="90"/>
+    </view>
+    <userdata title="DCIM\100GOPRO\GS__0035.JPG" datetime="28/09/2020 11:53" source="" latitude="55.344206" nodeid="node3" heading="0" description="" tags="Warkworth" altitude="50.04" copyright="" info="" longitude="-1.594364" author="" comment="" customnodeid=""/>
+    <hotspots height="20" width="180" wordwrap="1">
+      <label background="1" backgroundcolor="0xffffff" bordercolor="0x000000" borderalpha="1" height="20" borderradius="1" width="180" wordwrap="1" border="1" textalpha="1" backgroundalpha="1" enabled="1" textcolor="0x000000"/>
+      <polystyle backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1" mode="0" handcursor="1" backgroundalpha="0.25098"/>
+      <hotspot target="$fwd" title="DCIM\100GOPRO\GS__0033.JPG" distance="29.722" pan="101.874" url="{node2}" skinid="ht_node" description="" id="Point01" tilt="0"/>
+      <hotspot target="$fwd" title="DCIM\100GOPRO\GS__0036.JPG" distance="31.2103" pan="-75.5582" url="{node4}" skinid="ht_node" description="" id="Point02" tilt="0"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomoutpause="1" zoomin="0" zoomout="0" type="crossdissolve" zoomspeed="2" zoomafteroutfov="20" softedge="0" blendtime="1" enabled="1" zoomafterinfov="90" blendcolor="0x000000"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control rubberband="0" lockedkeyboard="0" speedwheel="1" simulatemass="1" invertcontrol="1" lockedkeyboardzoom="0" contextfullscreen="1" dblclickfullscreen="0" sensitivity="8" contextprojections="0" lockedmouse="0" invertwheel="0" lockedwheel="0"/>
+  </panorama>
+  <panorama id="node4">
+    <input overlap="1" levelbiashidpi="1.000" height="1440" leveltilesize="510" width="1440" leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" levelingpitch="0" levelbias="0.400">
+      <level height="1440" predecode="0" width="1440" preload="0"/>
+      <level height="720" predecode="0" width="720" preload="0"/>
+      <level height="360" predecode="1" width="360" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start pan="0" fov="70" projection="4" tilt="0"/>
+      <flyin pan="0" fov="170" projection="9" tilt="-90"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max fovstereographic="270" scaletofit="1" pan="360" fov="120" fovfisheye="360" tilt="90"/>
+    </view>
+    <userdata title="DCIM\100GOPRO\GS__0036.JPG" datetime="28/09/2020 11:55" source="" latitude="55.344276" nodeid="node4" heading="0" description="" tags="Warkworth" altitude="50.81" copyright="" info="" longitude="-1.593886" author="" comment="" customnodeid=""/>
+    <hotspots height="20" width="180" wordwrap="1">
+      <label background="1" backgroundcolor="0xffffff" bordercolor="0x000000" borderalpha="1" height="20" borderradius="1" width="180" wordwrap="1" border="1" textalpha="1" backgroundalpha="1" enabled="1" textcolor="0x000000"/>
+      <polystyle backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1" mode="0" handcursor="1" backgroundalpha="0.25098"/>
+      <hotspot target="$fwd" title="DCIM\100GOPRO\GS__0035.JPG" distance="31.2103" pan="104.441" url="{node3}" skinid="ht_node" description="" id="Point01" tilt="0"/>
+      <hotspot target="$fwd" title="DCIM\100GOPRO\GS__0037.JPG" distance="48.8574" pan="-76.7105" url="{node5}" skinid="ht_node" description="" id="Point02" tilt="0"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomoutpause="1" zoomin="0" zoomout="0" type="crossdissolve" zoomspeed="2" zoomafteroutfov="20" softedge="0" blendtime="1" enabled="1" zoomafterinfov="90" blendcolor="0x000000"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control rubberband="0" lockedkeyboard="0" speedwheel="1" simulatemass="1" invertcontrol="1" lockedkeyboardzoom="0" contextfullscreen="1" dblclickfullscreen="0" sensitivity="8" contextprojections="0" lockedmouse="0" invertwheel="0" lockedwheel="0"/>
+  </panorama>
+  <panorama id="node5">
+    <input overlap="1" levelbiashidpi="1.000" height="1440" leveltilesize="510" width="1440" leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" levelingroll="0" levelingpitch="0" levelbias="0.400">
+      <level height="1440" predecode="0" width="1440" preload="0"/>
+      <level height="720" predecode="0" width="720" preload="0"/>
+      <level height="360" predecode="1" width="360" preload="1"/>
+      <preview strip="1" color="0x808080"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start pan="0" fov="70" projection="4" tilt="0"/>
+      <flyin pan="0" fov="170" projection="9" tilt="-90"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max fovstereographic="270" scaletofit="1" pan="360" fov="120" fovfisheye="360" tilt="90"/>
+    </view>
+    <userdata title="DCIM\100GOPRO\GS__0037.JPG" datetime="28/09/2020 11:56" source="" latitude="55.344377" nodeid="node5" heading="0" description="" tags="Warkworth" altitude="51.18" copyright="" info="" longitude="-1.593134" author="" comment="" customnodeid=""/>
+    <hotspots height="20" width="180" wordwrap="1">
+      <label background="1" backgroundcolor="0xffffff" bordercolor="0x000000" borderalpha="1" height="20" borderradius="1" width="180" wordwrap="1" border="1" textalpha="1" backgroundalpha="1" enabled="1" textcolor="0x000000"/>
+      <polystyle backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1" mode="0" handcursor="1" backgroundalpha="0.25098"/>
+      <hotspot target="$fwd" title="DCIM\100GOPRO\GS__0036.JPG" distance="48.8574" pan="103.289" url="{node4}" skinid="ht_node" description="" id="Point01" tilt="0"/>
+    </hotspots>
+    <media/>
+    <transition zoomfov="20" zoomoutpause="1" zoomin="0" zoomout="0" type="crossdissolve" zoomspeed="2" zoomafteroutfov="20" softedge="0" blendtime="1" enabled="1" zoomafterinfov="90" blendcolor="0x000000"/>
+    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+    <control rubberband="0" lockedkeyboard="0" speedwheel="1" simulatemass="1" invertcontrol="1" lockedkeyboardzoom="0" contextfullscreen="1" dblclickfullscreen="0" sensitivity="8" contextprojections="0" lockedmouse="0" invertwheel="0" lockedwheel="0"/>
+  </panorama>
+  <masternode>
+    <userdata title="" datetime="" source="" latitude="" nodeid="master" heading="0" description="" tags="" copyright="" info="" longitude="" author="" comment="" customnodeid=""/>
+  </masternode>
+</tour>
