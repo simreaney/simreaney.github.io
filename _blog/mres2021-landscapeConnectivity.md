@@ -1,7 +1,7 @@
 ---
 title: "MRes Opportunity: Landscape evolution and hydrological connectivity"
 collection: blog
-type: "Blog"
+type: "blog"
 permalink: /blog/mres2021-landscapeConnectivity
 venue: "Durham University"
 date: 2021-04-22
