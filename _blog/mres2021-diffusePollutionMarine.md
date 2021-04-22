@@ -1,7 +1,7 @@
 ---
 title: "MRes Opportunity: Diffuse pollution, land cover change and marine impacts"
 collection: blog
-type: "Talk"
+type: "Blog"
 permalink: /blog/mres2021-diffusePollutionMarine
 venue: "Durham University"
 date: 2021-04-22
