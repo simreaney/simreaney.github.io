@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Researching catchment hydrology, flood hazards and water quality"
+title: "Researching the Integration between Flood Hazards and Diffuse Pollution"
 excerpt: "I am a catchment hydrologist working across flood hazards and water quality degradation"
 author_profile: true
 redirect_from:
@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am an Associate Professor in the [Department of Geography](https://www.dur.ac.uk/research/directory/staff/?mode=staff&id=2325) and the Co-Director of the [Institute of Hazard, Risk and Resilience](https://www.durham.ac.uk/research/institutes-and-centres/hazard-risk-resilience/) at [Durham University](https://www.dur.ac.uk/), UK. As a catchment hydrologist, I work across flood hazards and water quality degradation in temperate, tropical and mountain environments. My research integrates analysis and simulation modelling with novel field measurement to enable new insights into catchment hydrological functioning and new approaches to managing the environment. Most recently, new field data has included working collaboratively to build the most detailed water quality time series from a grassland agricultural system, a new hydro-meteorological monitoring network and extensive mapping of flood impacts and river form using helicopter-based photogrammetry. This information is being used to address scientific questions of:
+I am an Associate Professor in the [Department of Geography](https://www.dur.ac.uk/research/directory/staff/?mode=staff&id=2325) and the Co-Director of the [Institute of Hazard, Risk and Resilience](https://www.durham.ac.uk/research/institutes-and-centres/hazard-risk-resilience/) at [Durham University](https://www.dur.ac.uk/), UK. As a catchment hydrologist, I work across flood hazards and diffuse pollution in temperate, tropical and mountain environments. My research integrates analysis and simulation modelling with novel field measurement to enable new insights into catchment hydrological functioning and new approaches to managing the environment. Most recently, new field data has included working collaboratively to build the most detailed water quality time series from a grassland agricultural system, a new hydro-meteorological monitoring network and extensive mapping of flood impacts and river form using helicopter-based photogrammetry. This information is being used to address scientific questions of:
 * How does the landscape and weather effect diffuse pollution of sediment and nutrients?
 * How does the spatial and temporal structure of rainfall affect flood hazard generation?
 * How do can the issues of floods and diffuse pollution be reduced by working at the landscape scale with nature based solutions and natural flood risk management?
