@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Researching the Integration between Flood Hazards and Diffuse Pollution"
+title: "Researching Flood Hazards and Diffuse Pollution"
 excerpt: "I am a catchment hydrologist working across flood hazards and water quality degradation"
 author_profile: true
 redirect_from:
