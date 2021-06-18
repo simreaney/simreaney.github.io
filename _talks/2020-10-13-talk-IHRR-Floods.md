@@ -1,5 +1,5 @@
 ---
-title: "Managing Flood (and other) Risks"
+title: "Managing Floods (and other) Risks"
 collection: talks
 type: "Talk"
 permalink: /talks/2020-10-13-talk-IHRR-Floods
