@@ -9,3 +9,5 @@ location: "San Francisco, USA"
 type: "Talk"
 ---
 Use [Google Scholar](https://scholar.google.com/scholar?q=The+Treatment+Train+approach+to+reducing+non+point+source+pollution+from+agriculture){:target="_blank"} for full citation
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wQ2ko6Wtl2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

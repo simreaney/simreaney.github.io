@@ -3,7 +3,7 @@ title: "The SCIMAP Toolkit:Sediment, Nutrients and FIOs"
 collection: talks
 type: "Talk"
 permalink: /talks/2020-07-21-talk-CDUG-SCIMAP
-venue: "EGU"
+venue: "Catchment Data User Group meeting 2020"
 date: 2020-07-21
 location: "Online"
 ---
