@@ -19,9 +19,9 @@ Institute of Hazard, Risk and Resilience, Durham University, United Kingdom
 2020 - to date
 Department of Geography, Durham University, United Kingdom
 In this role, I am focusing on the combination of diffuse pollution and flood hazards in a wide range of environments.  This work will continue to develop the catchment modelling and SCIMAP toolkit to be applicable to a wider range of issues and environments.
-I am teaching on both the BSc Geography and MSc Risk within the Geography department in Durham. I teach on catchment and flood simulation modelling and on hydrological processes. 
+I am teaching on both the BSc Geography and MSc Risk within the Geography department in Durham. I teach on catchment and flood simulation modelling and on hydrological processes.
 
-## Lecturer in Catchment Hydrology
+## Assistant Professor in Catchment Hydrology
 2012 - 2020
 Within this role I worked on catchment hydrological processes including climate change, flood hazards and diffuse pollution. This work was largely focused on the UK and much work was structured around the Defra Eden DRC project, for which I was I Co-Investigator. This project looked at how to manage the landscape differently to reduce diffuse pollution whilst minimising impacts on farm business. I worked on the development of the SCIMAP diffuse pollution risk mapping toolkit.
 I also started to test the approaches developed in the UK on flood source mapping and simulation modelling to new sites including Nepal and Java, Indonesia.  
@@ -66,7 +66,8 @@ Skills
 
 Research Grants
 ==========
-1.  2018-20 CoI, NERC, Java Flood One. £464k
+1.  2022-22 CoI, NERC,Synthesising evidence in economics of biodiversity
+1.  2018-22 CoI, NERC, Java Flood One. £464k
 1.  2018-19, CoI, Royal Academy of Medicine, GCRF Networking Grant for Managed Aquifer Recharge with Check Dams in Botswana. £25k
 1.	2018-19 CoI, Defra, Demonstration Test Catchments for the River Eden, Phase three. £166k total. PI Prof. Phil Haygarth at Lancaster.  
 2.	2018 PI Durham HEFCE GCRF, Flood hazards in Java, Indonesia. £60k
