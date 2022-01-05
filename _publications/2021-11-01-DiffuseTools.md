@@ -16,3 +16,5 @@ Here we develop high-resolution quantitative modelling to
 surface runoff transport, and subsurface pathways are not considered here.
 
 [Full text](https://www.epa.ie/publications/research/water/Research_Report_396.pdf)
+
+[Video overview](https://youtu.be/BNEe6rhUUng)
