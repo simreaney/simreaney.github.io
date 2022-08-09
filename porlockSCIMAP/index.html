@@ -25,13 +25,13 @@
   </style>
 </head>
 <body>
-  <h1> SCIMAP Sediment pathways for Porlock Vale Streams</h1>
+  <h1> SCIMAP Sediment for Porlock Vale Streams</h1>
   <div id="map"></div>
   <script>
   var map = L.map('map').setView([51.194456577198935, -3.5877242987727787], 13.0);
 
   var group = new L.featureGroup();
-  map1 = L.tileLayer('https://simreaney.github.io/arkengarthdaleSCIMAP/top10pcent/{z}/{x}/{y}.jpg', {
+  map1 = L.tileLayer('https://simreaney.github.io/porlockSCIMAP/top10pcent/{z}/{x}/{y}.jpg', {
     minZoom: 8,
     maxZoom: 18,
     tms: false,
@@ -39,7 +39,7 @@
     name: 'Top 10% source areas for sediment based on SCIMAP'
   }).addTo(group);
 
-  map2 = L.tileLayer('https://simreaney.github.io/arkengarthdaleSCIMAP/connectivity/{z}/{x}/{y}.jpg', {
+  map2 = L.tileLayer('https://simreaney.github.io/porlockSCIMAP/connectivity/{z}/{x}/{y}.jpg', {
     minZoom: 8,
     maxZoom: 18,
     tms: false,
@@ -47,7 +47,7 @@
     name: 'Hydrological connectivity based on the Network Index'
   }).addTo(group);
 
-  map3 = L.tileLayer('https://simreaney.github.io/arkengarthdaleSCIMAP/mobPot/{z}/{x}/{y}.jpg', {
+  map3 = L.tileLayer('https://simreaney.github.io/porlockSCIMAP/mobPot/{z}/{x}/{y}.jpg', {
     minZoom: 8,
     maxZoom: 18,
     tms: false,
@@ -55,7 +55,7 @@
     name: 'Potential physcial mobilsiation of sediment'
   }).addTo(group);
 
-  map4 = L.tileLayer('https://simreaney.github.io/arkengarthdaleSCIMAP/inStreamConcn/{z}/{x}/{y}.jpg', {
+  map4 = L.tileLayer('https://simreaney.github.io/porlockSCIMAP/inStreamConcn/{z}/{x}/{y}.jpg', {
     minZoom: 8,
     maxZoom: 18,
     tms: false,
