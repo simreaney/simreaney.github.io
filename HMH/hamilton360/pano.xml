@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node20" appversion="6.1.15" apprev="18116">
+  <panorama id="node1">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="343.03">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="343.03" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 13:58" latitude="52.658569" nodeid="node1" altitude="92.77" longitude="-1.066617"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="327.044" tilt="0" url="{node2}" description="" id="Point01" distance="66.8562" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="296.019" tilt="0" url="{node24}" description="" id="Point02" distance="586.286" title="" target="-172.529/0/70" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node2">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="61.51">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="61.51" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 13:59" latitude="52.659147" nodeid="node2" altitude="88.85" longitude="-1.066344"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="225.523" tilt="0" url="{node1}" description="" id="Point01" distance="66.8562" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="60.652" tilt="0" url="{node3}" description="" id="Point02" distance="9.0078" title="" target="$fwd" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node3">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="54.95">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="54.95" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 14:00" latitude="52.659228" nodeid="node3" altitude="88.27" longitude="-1.066342"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="234.092" tilt="0" url="{node2}" description="" id="Point01" distance="9.0078" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="22.6644" tilt="0" url="{node4}" description="" id="Point02" distance="34.724" title="" target="$fwd" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node4">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="270.43">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="270.43" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 14:01" latitude="52.659492" nodeid="node4" altitude="86.50" longitude="-1.066067"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="418.144" tilt="0" url="{node3}" description="" id="Point01" distance="34.724" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="198.679" tilt="0" url="{node5}" description="" id="Point02" distance="24.5009" title="" target="$fwd" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node5">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="302.79">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="302.79" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 14:02" latitude="52.659561" nodeid="node5" altitude="86.24" longitude="-1.065722"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="411.039" tilt="0" url="{node4}" description="" id="Point01" distance="24.5009" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="315.325" tilt="0" url="{node7}" description="" id="Point02" distance="35.4261" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="307.126" tilt="0" url="{node6}" description="" id="Point03" distance="37.4687" title="" target="94.7593/0/70" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node6">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node6/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="334.97">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="334.97" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 14:04" latitude="52.659897" nodeid="node6" altitude="84.46" longitude="-1.065764"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="454.759" tilt="0" url="{node7}" description="" id="Point01" distance="5.59541" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="334.97" tilt="0" url="{node8}" description="" id="Point02" distance="11.7867" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="159.306" tilt="0" url="{node5}" description="" id="Point03" distance="37.4687" title="" target="51.039/0/70" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node7">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="343.72">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="343.72" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 14:04" latitude="52.659872" nodeid="node7" altitude="84.57" longitude="-1.065836"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="176.255" tilt="0" url="{node5}" description="" id="Point01" distance="35.4261" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="283.509" tilt="0" url="{node6}" description="" id="Point02" distance="5.59541" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="325.283" tilt="0" url="{node8}" description="" id="Point03" distance="15.3546" title="" target="97.3819/0/70" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node8">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node8/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="115.41">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="115.41" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 14:05" latitude="52.660003" nodeid="node8" altitude="83.73" longitude="-1.065764"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="295.41" tilt="0" url="{node6}" description="" id="Point01" distance="11.7867" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="97.3819" tilt="0" url="{node9}" description="" id="Point02" distance="4.79437" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="276.973" tilt="0" url="{node7}" description="" id="Point03" distance="15.3546" title="" target="-76.4906/0/70" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node9">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node9/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="131.49">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="131.49" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 14:06" latitude="52.660044" nodeid="node9" altitude="83.50" longitude="-1.065742"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="293.462" tilt="0" url="{node8}" description="" id="Point01" distance="4.79437" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="113.409" tilt="0" url="{node10}" description="" id="Point02" distance="45.8526" title="" target="$fwd" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node10">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node10/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="294.45">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="294.45" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 14:07" latitude="52.660436" nodeid="node10" altitude="82.13" longitude="-1.065531"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="456.369" tilt="0" url="{node9}" description="" id="Point01" distance="45.8526" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="301.823" tilt="0" url="{node11}" description="" id="Point02" distance="109.319" title="" target="$fwd" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node11">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node11/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="311.08">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="311.08" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 14:09" latitude="52.661411" nodeid="node11" altitude="76.62" longitude="-1.065739"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="138.453" tilt="0" url="{node10}" description="" id="Point01" distance="109.319" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="323.953" tilt="0" url="{node12}" description="" id="Point02" distance="39.3514" title="" target="$fwd" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node12">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node12/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="266.54">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="266.54" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 14:10" latitude="52.661756" nodeid="node12" altitude="75.13" longitude="-1.065869"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="99.4136" tilt="0" url="{node11}" description="" id="Point01" distance="39.3514" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="250.511" tilt="0" url="{node13}" description="" id="Point02" distance="43.9633" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="345.04" tilt="0" url="{node20}" description="" id="Point03" distance="317.41" title="" target="$fwd" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node13">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node13/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="246.36">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="246.36" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 14:11" latitude="52.662136" nodeid="node13" altitude="73.02" longitude="-1.065689"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="410.331" tilt="0" url="{node12}" description="" id="Point01" distance="43.9633" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="222.025" tilt="0" url="{node14}" description="" id="Point02" distance="77.2497" title="" target="$fwd" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node14">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node14/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="255.6">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="255.6" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 14:13" latitude="52.662769" nodeid="node14" altitude="70.49" longitude="-1.065217"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="411.265" tilt="0" url="{node13}" description="" id="Point01" distance="77.2497" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="260.104" tilt="0" url="{node15}" description="" id="Point02" distance="25.7656" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="154.229" tilt="0" url="{node24}" description="" id="Point03" distance="341.138" title="" target="$fwd" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node15">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node15/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="306.6">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="306.6" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 14:14" latitude="52.663000" nodeid="node15" altitude="69.80" longitude="-1.065247"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="131.104" tilt="0" url="{node14}" description="" id="Point01" distance="25.7656" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="369.179" tilt="0" url="{node16}" description="" id="Point02" distance="339.983" title="" target="50.4149/0/70" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node16">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node16/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="293.39">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="293.39" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 14:37" latitude="52.664408" nodeid="node16" altitude="67.83" longitude="-1.069722"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="410.415" tilt="0" url="{node17}" description="" id="Point01" distance="21.0457" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="175.972" tilt="0" url="{node15}" description="" id="Point02" distance="339.983" title="" target="131.104/0/70" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node17">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node17/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="355.53">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="355.53" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 14:38" latitude="52.664322" nodeid="node17" altitude="68.02" longitude="-1.070000"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="520.451" tilt="0" url="{node18}" description="" id="Point01" distance="125.985" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="292.555" tilt="0" url="{node16}" description="" id="Point02" distance="21.0457" title="" target="$fwd" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node18">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node18/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="343.8">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="343.8" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 14:41" latitude="52.663228" nodeid="node18" altitude="72.97" longitude="-1.070486"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="515.823" tilt="0" url="{node19}" description="" id="Point01" distance="59.2846" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="328.721" tilt="0" url="{node17}" description="" id="Point02" distance="125.985" title="" target="$fwd" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node19">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node19/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="249.91">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="249.91" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 14:44" latitude="52.662700" nodeid="node19" altitude="75.45" longitude="-1.070608"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="81.5174" tilt="0" url="{node20}" description="" id="Point01" distance="42.5687" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="241.933" tilt="0" url="{node18}" description="" id="Point02" distance="59.2846" title="" target="$fwd" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node20">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node20/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="339.11">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="339.11" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 14:45" latitude="52.662325" nodeid="node20" altitude="77.80" longitude="-1.070481"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="237.614" tilt="0" url="{node12}" description="" id="Point01" distance="317.41" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="350.717" tilt="0" url="{node19}" description="" id="Point02" distance="42.5687" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="241.946" tilt="0" url="{node21}" description="" id="Point03" distance="858.976" title="" target="14.3975/0/70" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node21">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node21/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="21.52">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="21.52" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 15:03" latitude="52.661361" nodeid="node21" altitude="77.68" longitude="-1.057844"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="14.3975" tilt="0" url="{node22}" description="" id="Point01" distance="70.7097" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="104.346" tilt="0" url="{node20}" description="" id="Point02" distance="858.976" title="" target="-9.2827/0/70" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node22">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node22/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="128.36">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="128.36" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 15:04" latitude="52.661992" nodeid="node22" altitude="74.19" longitude="-1.057714"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="203.834" tilt="0" url="{node23}" description="" id="Point01" distance="140.102" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="301.237" tilt="0" url="{node21}" description="" id="Point02" distance="70.7097" title="" target="$fwd" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node23">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node23/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="226.37">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="226.37" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 15:07" latitude="52.662308" nodeid="node23" altitude="72.40" longitude="-1.059725"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="340.38" tilt="0" url="{node24}" description="" id="Point01" distance="39.3511" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="121.846" tilt="0" url="{node22}" description="" id="Point02" distance="140.102" title="" target="$fwd" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <panorama id="node24">
+    <input width="1824" levelbiashidpi="1.000" overlap="1" levelbias="0.400" leveltilesize="510" levelingroll="0" levelingpitch="0" height="1824" leveltileurl="tiles/node24/cf_%c/l_%l/c_%x/tile_%y.jpg">
+      <level width="1824" preload="0" predecode="0" height="1824"/>
+      <level width="912" preload="0" predecode="0" height="912"/>
+      <level width="456" preload="1" predecode="1" height="456"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="0" pannorth="253.46">
+      <start pan="0" tilt="0" fov="70" projection="4"/>
+      <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max pan="360" tilt="90" fov="120" fovfisheye="360" scaletofit="1" fovstereographic="270"/>
+    </view>
+    <userdata author="" copyright="" description="" source="" heading="253.46" title="" tags="Hamilton|Leicester|SuDS|360 jpg" customnodeid="" info="" comment="" datetime="24/09/2020 15:08" latitude="52.662164" nodeid="node24" altitude="73.04" longitude="-1.060258"/>
+    <hotspots wordwrap="1" width="180" height="20">
+      <label wordwrap="1" textcolor="0x000000" backgroundcolor="0xffffff" textalpha="1" border="1" width="180" backgroundalpha="1" borderradius="1" borderalpha="1" bordercolor="0x000000" enabled="1" background="1" height="20"/>
+      <polystyle backgroundcolor="0x55007f" mode="0" handcursor="1" backgroundalpha="0.25098" borderalpha="1" bordercolor="0xffffff"/>
+      <hotspot pan="332.085" tilt="0" url="{node14}" description="" id="Point01" distance="341.138" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="187.471" tilt="0" url="{node23}" description="" id="Point02" distance="39.3511" title="" target="$fwd" skinid="ht_node"/>
+      <hotspot pan="386.444" tilt="0" url="{node1}" description="" id="Point03" distance="586.286" title="" target="-32.9563/0/70" skinid="ht_node"/>
+    </hotspots>
+    <media/>
+    <transition type="crossdissolve" zoomspeed="2" zoomoutpause="1" softedge="0" blendtime="1" blendcolor="0x000000" zoomfov="20" zoomout="0" zoomafterinfov="90" zoomin="0" enabled="1" zoomafteroutfov="20"/>
+    <flyintransition speed="2.00" enabled="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control speedwheel="1" contextvr="1" contextfullscreen="1" contextprojections="0" lockedmouse="0" dblclickfullscreen="0" sensitivity="8" lockedwheel="0" invertcontrol="1" simulatemass="1" lockedkeyboardzoom="0" rubberband="0" lockedkeyboard="0" invertwheel="0"/>
+  </panorama>
+  <masternode>
+    <userdata author="" copyright="" description="" source="" heading="0" title="" tags="" customnodeid="" info="" comment="" datetime="" latitude="" nodeid="master" longitude=""/>
+  </masternode>
+</tour>
