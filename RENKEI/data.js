@@ -24,9 +24,9 @@ var APP_DATA = {
       ],
       "faceSize": 1824,
       "initialViewParameters": {
+        "yaw": -0.13753545455618976,
         "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "fov": 1.176005207095135
       },
       "linkHotspots": [],
       "infoHotspots": []
@@ -54,6 +54,37 @@ var APP_DATA = {
         }
       ],
       "faceSize": 1824,
+      "initialViewParameters": {
+        "pitch": 0,
+        "yaw": 0,
+        "fov": 1.5707963267948966
+      },
+      "linkHotspots": [],
+      "infoHotspots": []
+    },
+    {
+      "id": "2-ujigawa-open-laboratory",
+      "name": "Ujigawa Open Laboratory",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        }
+      ],
+      "faceSize": 1680,
       "initialViewParameters": {
         "pitch": 0,
         "yaw": 0,
