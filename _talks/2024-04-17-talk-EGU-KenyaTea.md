@@ -9,6 +9,7 @@ location: "Vienna, Austria"
 ---
 
 Aaron Neill (1), Suzanne Jacobs (2), Lutz Breuer (3), and Sim Reaney (4)  
+  
 1 Institute of Hazard, Risk and Resilience, Durham University, Durham, United Kingdom (aaron.james.neill@gmail.com)
 2 Centre for International Development and Environmental Research (ZEU), Justus Liebig University, Giessen, Germany.
 3 Institute for Landscape Ecology and Resources Management (ILR), Justus Liebig University, Giessen, Germany.

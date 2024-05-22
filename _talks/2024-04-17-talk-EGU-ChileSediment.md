@@ -9,6 +9,7 @@ location: "Vienna, Austria"
 ---
 
 Rebekah Harries (1), Sim Reaney (1), Germán Aguilar (2), and Linda Kirstein (3)  
+
 1 Durham University, Institute of Hazard, Risk and Resilience, UK
 2 Universidad de Chile, Advanced Mining Technology Center, Santiago, Chile
 3 University of Edinburgh, Grant Institute, School of Geosciences, UK
