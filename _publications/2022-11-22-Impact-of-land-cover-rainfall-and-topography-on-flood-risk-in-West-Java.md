@@ -2,7 +2,7 @@
 title: "Impact of land cover, rainfall and topography on flood risk in West Java"
 collection: publications
 permalink: /publication/2022-11-22-Impact-of-land-cover-rainfall-and-topography-on-flood-risk-in-West-Java
-date: 2022-11-22
+date: 2022-12-02
 venue: 'Natural Hazards'
 citation: 'Rahayu R., Mathias, S. A., Reaney S., Vesuviano G., Suwarman R., Ramdhan A. M. (2023) Impact of land cover, rainfall and topography on flood risk in West Java. Natural Hazards 116, 1735–1758 https://doi.org/10.1007/s11069-022-05737-6'
 ---
