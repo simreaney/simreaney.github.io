@@ -44,6 +44,7 @@ The connectivity predictions are based on the Network Index (Lane et al., 2004) 
 SCIMAP produces individual maps of sources and connectivity that can then be combined to give an ‘at a point’ diffuse pollution risk. These risks are then routed and accumulated through the landscape to show how the risks from different parts of the landscape combine and increase the further downstream/catchment as a risk load in the river channel or lake. These risk loads are then diluted using the accumulated, rainfall weighted, catchment area to give the final map in figure 1. This map shows in red, the areas where the risks from diffuse pollution are accumulating faster than there is water to dilute them and the areas in green are when there is more dilution than risk. In the case of the catchment in Figure 1, it is the areas highlighted in red where a land manager would target their ground investigation or mitigation actions first. The fine spatial resolution of the approach of 5m, means that the erosion risk and connectivity predictions are at the sub-field scale and hence the manager can target measures at this fine spatial scale.
 
 ![Figure1](Figure1.png)
+![Figure1](scimapWebApp/Figure1.png)
 
 Figure One: Example data layers from SCIMAP applied to the Morland catchment, Cumbria, UK
 
