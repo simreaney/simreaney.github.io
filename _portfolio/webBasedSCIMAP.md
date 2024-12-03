@@ -58,7 +58,7 @@ The application is a web-based tool and can be accessed through most modern web 
 
 The SCIMAP WebApp user interface is intuitive and process-driven. It allows users with little or no GIS experience to define their study area by simply clicking on a background map. SCIMAP then calculates the area draining to that point and displays it in an interactive map. Uploading an existing study area is also supported.
 
-[![Figure2](images/Figure2-300x83.png)](https://community.dur.ac.uk/sim.reaney/wp-content/2015/06/Figure2.png)
+![Figure2](Figure2.png)
 
 Figure Two: Creating a new catchment.
 
@@ -80,7 +80,7 @@ Implementation of core SCIMAP processes as GRASS (6.x) modules has significantly
 
  
 
-[![Figure3](images/Figure3-223x300.png)](https://community.dur.ac.uk/sim.reaney/wp-content/2015/06/Figure3.png)
+![Figure3](Figure3.png)
 
 Figure Three: SCIMAP WebApp high-level architecture.
 
