@@ -3,24 +3,7 @@
 (WaSC operational)
 [optional]","EA Permit Reference
 (EA Consents Database)","WaSC Supplementary Permit Ref.
-[optional]",Activity Reference on Permit,Storm Discharge Asset Type,"Outlet Discharge NGR
-(EA Consents Database)","WFD Waterbody ID (Cycle 2)
-(discharge outlet)","WFD Waterbody Catchment Name (Cycle 2)
-(discharge outlet)","Receiving Water / Environment (common name)
-(EA Consents Database)",Shellfish Water (only populate for storm overflow with a Shellfish Water EDM requirement),Bathing Water (only populate for storm overflow with a Bathing Water EDM requirement),"Treatment Method
-(over & above Storm Tank settlement / screening)",Initial EDM Commission Date,Total Duration (hrs) all spills prior to processing through 12-24h count method,Counted spills using 12-24h count method,Long-term average spill count,"No. full years EDM data
-(years)","EDM Operation -
-% of reporting period EDM operational","EDM Operation -
-Reporting % -
-Primary Reason <90%","EDM Operation -
-Action taken / planned -
-Status & timeframe","High Spill Frequency -
-Operational Review -
-Primary Reason","High Spill Frequency -
-Action taken / planned -
-Status & timeframe","High Spill Frequency -
-Environmental Enhancement -
-Planning Position (Hydraulic capacity)",Unique ID
+[optional]",Activity Reference on Permit,Storm Discharge Asset Type,Outlet Discharge NGR (EA Consents Database),WFD Waterbody ID (Cycle 2) (discharge outlet),WFD Waterbody Catchment Name (Cycle 2) (discharge outlet),Receiving Water / Environment (common name) (EA Consents Database),Shellfish Water (only populate for storm overflow with a Shellfish Water EDM requirement),Bathing Water (only populate for storm overflow with a Bathing Water EDM requirement),Treatment Method (over & above Storm Tank settlement / screening),Initial EDM Commission Date,Total Duration (hrs) all spills prior to processing through 12-24h count method,Counted spills using 12-24h count method,Long-term average spill count,No. full years EDM data (years),EDM Operation - % of reporting period EDM operational,EDM Operation -Reporting % - Primary Reason <90%,EDM Operation - Action taken / planned - Status & timeframe,High Spill Frequency - Operational Review - Primary Reason,High Spill Frequency - Action taken / planned - Status & timeframe,High Spill Frequency - Environmental Enhancement - Planning Position (Hydraulic capacity),Unique ID
 Northumbrian Water,KIMBERLEY GARDENS CSO (DER 82),KIMBERLEY GARDENS CSO (DER 82),245/1308,6NW000001,,SO on sewer network,NZ2123051430,GB103024077590,Twizell Burn from Source to Cong Burn,TWIZELL BURN TRIBUTARY,,,Not Applicable,Commissioned pre-2016 - full year data expected,246.00,36,33.53,10+ (installed pre-2013),96.30,,,Data collection - Confirmed exceptional weather – Remaining spills not above SOAF threshold,,"Stage 1a: Confirmed ""exceptional weather"" issue",6NW000001
 Northumbrian Water,FRONT STREET CSO,North of Front Street combined,245/1331,6NW000002,,SO on sewer network,NZ2141051180,GB103024077590,Twizell Burn from Source to Cong Burn,STANLEY BURN TRIBUTARY,,,Not Applicable,Commissioned pre-2016 - full year data expected,13.00,17,12.54,10+ (installed pre-2013),95.26,,,,,,6NW000002
 Northumbrian Water,DENE GROVE CSO,DENE GROVE CSO,253/1921,6NW000003,,SO on sewer network,NZ2766015342,GB103025072596,Skerne from Demons Beck to Tees,COCKER BECK,,,Not Applicable,Commissioned pre-2016 - full year data expected,4.75,5,3.62,10+ (installed pre-2013),99.99,,,,,,6NW000003
