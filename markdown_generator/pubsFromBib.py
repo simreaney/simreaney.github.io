@@ -26,27 +26,21 @@ import re
 
 #todo: incorporate different collection types rather than a catch all publications, requires other changes to template
 publist = {
-    
     "proceeding": {
-        "file" : "export-bibtex.bbl",
+        "file" : "proceedings.bib",
         "venuekey": "booktitle",
         "venue-pretext": "In the proceedings of ",
-        "collection" : {"name":"talks",
-                        "permalink":"/talks/"}
+        "collection" : {"name":"publications",
+                        "permalink":"/publication/"}
         
-    }
-    
-#    "journal":{
-#        "file": "savedrecs.bib",
-#        "venuekey" : "journal",
-#        "venue-pretext" : "",
-#        "collection" : {"name":"publications",
-#                        "permalink":"/publication/"}
-  #  } 
-    
-    
-    
-    
+    },
+    "journal":{
+        "file": "pubs.bib",
+        "venuekey" : "journal",
+        "venue-pretext" : "",
+        "collection" : {"name":"publications",
+                        "permalink":"/publication/"}
+    } 
 }
 
 html_escape_table = {
@@ -89,11 +83,8 @@ for pubsource in publist:
             if "day" in b.keys(): 
                 pub_day = str(b["day"])
 
-            
-            pub_year = pub_year.replace("{","")
-            pub_year = pub_year.replace("}","")    
+                
             pub_date = pub_year+"-"+pub_month+"-"+pub_day
-
             
             #strip out {} as needed (some bibtex entries that maintain formatting)
             clean_title = b["title"].replace("{", "").replace("}","").replace("\\","").replace(" ","-")    
@@ -113,11 +104,6 @@ for pubsource in publist:
 
             #citation title
             citation = citation + "\"" + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + ".\""
-            
-            #print (b["title"])
-            
-            abstract = ""
-        #    abstract = "\"" + html_escape(b["abstract"].replace("{", "").replace("}","").replace("\\","")) + ".\""
 
             #add venue logic depending on citation type
             venue = publist[pubsource]["venue-pretext"]+b[publist[pubsource]["venuekey"]].replace("{", "").replace("}","").replace("\\","")
@@ -157,10 +143,6 @@ for pubsource in publist:
             ## Markdown description for individual page
             if note:
                 md += "\n" + html_escape(b["note"]) + "\n"
-                
-            if (len(abstract) > 0):
-                md += "\n" + abstract
-                md += "\n"
 
             if url:
                 md += "\n[Access paper here](" + b["url"] + "){:target=\"_blank\"}\n" 
@@ -169,7 +151,7 @@ for pubsource in publist:
 
             md_filename = os.path.basename(md_filename)
 
-            with open("../_publications/" + md_filename, 'w') as f:
+            with open("../_publications/" + md_filename, 'w', encoding="utf-8") as f:
                 f.write(md)
             print(f'SUCESSFULLY PARSED {bib_id}: \"', b["title"][:60],"..."*(len(b['title'])>60),"\"")
         # field may not exist for a reference
