@@ -66,7 +66,9 @@ Skills
 
 Research Grants
 ==========
-1.  2022-22 CoI, NERC,Synthesising evidence in economics of biodiversity
+1.  2022-26 NERC, Assessing and Managing the Impacts of Mixtures of Chemicals on UK Freshwater Biodiversity in a Changing World ‘ECOMIX’. NE/X015750/1 £1.6m / £286k to DU
+1.  2022-23, UK Space Agency R2-D2: Resilience to Recovery – Data for Disasters 
+1.  2022-22 CoI, NERC, Synthesising evidence in economics of biodiversity
 1.  2018-22 CoI, NERC, Java Flood One. £464k
 1.  2018-19, CoI, Royal Academy of Medicine, GCRF Networking Grant for Managed Aquifer Recharge with Check Dams in Botswana. £25k
 1.	2018-19 CoI, Defra, Demonstration Test Catchments for the River Eden, Phase three. £166k total. PI Prof. Phil Haygarth at Lancaster.  
