@@ -135,6 +135,11 @@ var addressPoints = [
     -122.4193286
   ],
   [
+    "Identifying the source of anthropic pressures on in-stream benthic algae communities within the River Eden catchment, UK<br />EGU; Vienna, Austria",
+    48.2083537,
+    16.3725042
+  ],
+  [
     "Towards minimum information requirements for representing hydrological connectivity at the landscape scale (Invited)<br />In the proceedings of AGU Fall Meeting Abstracts; San Francisco, USA",
     37.7792588,
     -122.4193286
@@ -185,8 +190,8 @@ var addressPoints = [
     -122.4193286
   ],
   [
-    "The River EdenDTC Project: A National Demonstration Test Catchment<br />In the proceedings of EGU General Assembly Conference Abstracts; San Francisco, USA",
-    37.7792588,
-    -122.4193286
+    "The River EdenDTC Project: A National Demonstration Test Catchment<br />In the proceedings of EGU General Assembly Conference Abstracts; Vienna, Austria",
+    48.2083537,
+    16.3725042
   ]
 ];
