@@ -115,9 +115,9 @@ var addressPoints = [
     -122.4193286
   ],
   [
-    "Using distributed, landscape based, ecosystem services to mitigate flood risk within the River Eden catchment: The ALFA approach<br />; Carlise, England",
-    54.891312299999996,
-    -2.941769427503867
+    "Using distributed, landscape based, ecosystem services to mitigate flood risk within the River Eden catchment: The ALFA approach<br />; Carlisle, England",
+    54.8948478,
+    -2.9362311
   ],
   [
     "Modelling tools for catchment hydrological connectivity: Terrain analysis, dynamic simulation and software agents<br />; Durham, UK",
@@ -243,6 +243,11 @@ var addressPoints = [
     "A framework to understand spatial and temporal connectivity dynamics at hill slope and catchment scales.<br />; San Francisco, USA",
     37.7792588,
     -122.4193286
+  ],
+  [
+    "Modelling tools for catchment science and management<br />; Xining, Qinghai, China",
+    36.824463,
+    101.440811
   ],
   [
     "Spatio-temporal dynamics in phytobenthos structural properties reveal insights into agricultural catchment dynamics and nutrient fluxes<br />; San Francisco, USA",

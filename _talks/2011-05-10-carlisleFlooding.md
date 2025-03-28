@@ -4,7 +4,7 @@ collection: talks
 permalink: /talks/2011-05-10-carlisleFlooding
 date: 2011-09-15
 citation: 'S.M. REANEY1, D.G. MILLEDGE1, S.N. LANE2, A.L. HEATHWAITE3, M. SHORE4, A. MELLAND4 & P JORDAN4 2011: , Understanding nutrient connectivity at the landscape scale: The use of the SCIMAP approach in the UK and Ireland..&quot; Catchment Science, 2011.'
-location: "Carlise, England"
+location: "Carlisle, England"
 type: "Talk"
 ---
 

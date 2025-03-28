@@ -3,7 +3,7 @@ title: "Understanding nutrient connectivity at the landscape scale: The use of t
 collection: talks
 permalink: /talks/2011-07-01-SCIMAPinUKandIreland
 date: 2011-09-15
-citation: 'S.M. REANEY1, D.G. MILLEDGE1, S.N. LANE2, A.L. HEATHWAITE3, M. SHORE4, A. MELLAND4 & P JORDAN4 2011: , Understanding nutrient connectivity at the landscape scale: The use of the SCIMAP approach in the UK and Ireland..&quot; Catchment Science, 2011.'
+citation: 'S.M. REANEY 1, D.G. MILLEDGE 1, S.N. LANE 2, A.L. HEATHWAITE 3, M. SHORE 4, A. MELLAND 4 & P JORDAN 4 2011: , Understanding nutrient connectivity at the landscape scale: The use of the SCIMAP approach in the UK and Ireland..&quot; Catchment Science, 2011.'
 location: "Dublin, Ireland"
 type: "Talk"
 ---
