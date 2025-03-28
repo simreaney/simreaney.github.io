@@ -1,5 +1,5 @@
 ---
-title: "The SCIMAP Toolkit:Sediment, Nutrients and FIOs"
+title: "The SCIMAP Toolkit: Sediment, Nutrients and FIOs"
 collection: talks
 type: "Talk"
 permalink: /talks/2020-07-21-talk-CDUG-SCIMAP
