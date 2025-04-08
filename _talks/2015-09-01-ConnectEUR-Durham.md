@@ -2,7 +2,7 @@
 title: "Modelling tools for catchment hydrological connectivity: Terrain analysis, dynamic simulation and software agents"
 collection: talks
 type: "Talk"
-permalink: /talks/2016-09-01-ConnectEUR-Durham
+permalink: /talks/2015-09-01-ConnectEUR-Durham
 venue: "Durham University"
 date: 2015-09-01
 location: "Durham, UK"
