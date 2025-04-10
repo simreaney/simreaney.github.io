@@ -4,7 +4,6 @@ excerpt: "The River Eden Demonstration Test Catchment project (2009-2018) was a 
 collection: portfolio
 ---
 
- 
 Some risks are large and obvious– floods, landslides and earthquakes, for example. However, others can be more long-term and subtle, and a key example of this type of problem is water pollution in rivers and lakes. The pollution impacts the ecology and can cause issues for the users of the water environment. Within many landscapes, the main pressure driving the failure to achieve good status under the EU Water Framework Directive derives from diffuse pollution of sediment, phosphorus and nitrogen from agricultural landscapes. The River Eden Demonstration Test Catchment project (2009-2018) was a collaborative project between Durham, Lancaster, Newcastle Universities and the Eden Rivers Trust tackling these diffuse pollution impacts on fresh water and ecology. The project uses an interdisciplinary approach that includes physical process monitoring, social attitude analysis, and environment simulation modelling. By integrating these approaches, the aim is to improve the water quality & freshwater ecological health whilst minimising impacts on farm businesses.
 ![](unknown.png)
  
