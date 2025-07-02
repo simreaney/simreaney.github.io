@@ -11,42 +11,44 @@ redirect_from:
 
 Work experience
 ======
-## Co-Director of the Institute of Hazard, Risk and Resilience (IHRR)
-2020 - to date
-Institute of Hazard, Risk and Resilience, Durham University, United Kingdom
+## Professor in Catchment Hydrology, Department of Geography, Durham University   
+2025 - to date  
 
-## Associate Professor in Catchment Hydrology
-2020 - to date
-Department of Geography, Durham University, United Kingdom
-In this role, I am focusing on the combination of diffuse pollution and flood hazards in a wide range of environments.  This work will continue to develop the catchment modelling and SCIMAP toolkit to be applicable to a wider range of issues and environments.
-I am teaching on both the BSc Geography and MSc Risk within the Geography department in Durham. I teach on catchment and flood simulation modelling and on hydrological processes.
+## Co-Director of the Institute of Hazard, Risk and Resilience (IHRR), Durham University  
+2020 - to date  
+Institute of Hazard, Risk and Resilience, Durham University, United Kingdom  
 
-## Assistant Professor in Catchment Hydrology
-2012 - 2020
+## Associate Professor in Catchment Hydrology, Department of Geography, Durham University
+2020 - 2025  
+In this role, I focused on the combination of diffuse pollution and flood hazards in a wide range of environments.  This work  continued to develop the catchment modelling and SCIMAP toolkit to be applicable to a wider range of issues and environments.
+I taught on both the BSc Geography and MSc Risk within the Geography Department in Durham on catchment and flood simulation modelling and hydrological processes.   
+
+## Assistant Professor in Catchment Hydrology, Department of Geography, Durham University
+2012 - 2020  
 Within this role I worked on catchment hydrological processes including climate change, flood hazards and diffuse pollution. This work was largely focused on the UK and much work was structured around the Defra Eden DRC project, for which I was I Co-Investigator. This project looked at how to manage the landscape differently to reduce diffuse pollution whilst minimising impacts on farm business. I worked on the development of the SCIMAP diffuse pollution risk mapping toolkit.
 I also started to test the approaches developed in the UK on flood source mapping and simulation modelling to new sites including Nepal and Java, Indonesia.  
 
 
-## RCUK Post-Doctoral Research Fellow
-2007 - 2012
+## RCUK Post-Doctoral Research Fellow, Department of Geography, Durham University
+2007 - 2012  
 Department of Geography, Durham University, United Kingdom
 
 I held an RCUK postdoctoral research fellowship in the Institute of Hazard and Risk and Resilience and the Department of Geography at Durham University. The main theme of my research was hazards and risks related to water and I focused on the hazard that has the greatest capability to cause widespread impacts – climate change. These potential impacts were approached through better understanding of catchment hydrological processes and the use of simulation modelling techniques to determine how the system may change under projected futures.  I investigated how projected climate change may alter the hydrological functioning of catchments and how these changes may affect flooding, drought and diffuse pollution delivery to water courses.
 
-## Post-Doctoral Research Associate
-2005-2007
+## Post-Doctoral Research Associate, Department of Geography, Durham University
+2005-2007  
 Department of Geography, Durham University, United Kingdom.
 
 I worked on a NERC funded project to develop the SCIMAP diffuse pollution risk mapping toolset. This work involved terrain analysis development within open source GIS systems and the engagement with stakeholders, both within the catchments and Defra.
 
 ## Environmental Scientist and Visiting Researcher at the University of Leeds
-2002 - 2005
+2002 - 2005  
 Cascade Consulting, Manchester, UK.
 
 I worked on a UK Water Industry Research (UKWIR) funded project on the potential impact of projected climate change on water quality for UK Rivers. This work involved the development of water quality models for nitrogen (NH<sub>4</sub> and NO<sub>3</sub>) and dissolved oxygen.
 
 ## Research Assistant, King’s College London, UK.
-1998-1999
+1998-1999  
 
 I worked on an EU funded research project, MODULUS, to develop a hydrological simulation model for semi-arid environments. This model was applied to southern Spain and Greece.
 
@@ -67,7 +69,7 @@ Skills
 Research Grants
 ==========
 1.  2022-26 NERC, Assessing and Managing the Impacts of Mixtures of Chemicals on UK Freshwater Biodiversity in a Changing World ‘ECOMIX’. NE/X015750/1 £1.6m / £286k to DU
-1.  2022-23, UK Space Agency R2-D2: Resilience to Recovery – Data for Disasters 
+1.  2022-23, UK Space Agency R2-D2: Resilience to Recovery – Data for Disasters
 1.  2022-22 CoI, NERC, Synthesising evidence in economics of biodiversity
 1.  2018-22 CoI, NERC, Java Flood One. £464k
 1.  2018-19, CoI, Royal Academy of Medicine, GCRF Networking Grant for Managed Aquifer Recharge with Check Dams in Botswana. £25k
