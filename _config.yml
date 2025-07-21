@@ -84,7 +84,7 @@ analytics:
 author:
   name             : "Dr Sim M. Reaney"
   avatar           : "me-large-sq_2020.jpg"
-  bio              : "Associate Professor in Catchment Hydrology"
+  bio              : "Professor in Catchment Hydrology"
   location         : "Durham, England"
   employer         : "Durham University"
   pubmed           :
@@ -107,7 +107,7 @@ author:
   lastfm           :
   linkedin         : "https://www.linkedin.com/in/sim-reaney-ba85b033/?originalSubdomain=uk"
   orcid            : "https://orcid.org/0000-0003-3063-2044"
-  vimeo            : "simreaney"
+  vimeo            :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
@@ -206,7 +206,7 @@ defaults:
       author_profile: true
       read_time: true
       comments: true
-      share: true
+      share: false
       related: true
   # _pages
   - scope:
@@ -222,7 +222,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comments: true
   # _publications
   - scope:
@@ -231,7 +231,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comments: true
   # _portfolio
   - scope:
@@ -240,7 +240,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       comment: true
   # _talks
   - scope:
@@ -249,7 +249,7 @@ defaults:
     values:
       layout: talk
       author_profile: true
-      share: true
+      share: false
   #_blog
   - scope:
       path: ""
@@ -257,7 +257,7 @@ defaults:
     values:
       layout: pages
       author_profile: true
-      share: true
+      share: false
 
 # Sass/SCSS
 sass:
