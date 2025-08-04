@@ -15,7 +15,7 @@ Work experience
 2025 - to date  
 
 ## Co-Director of the Institute of Hazard, Risk and Resilience (IHRR), Durham University  
-2020 - to date  
+2020 - 2025 
 Institute of Hazard, Risk and Resilience, Durham University, United Kingdom  
 
 ## Associate Professor in Catchment Hydrology, Department of Geography, Durham University
