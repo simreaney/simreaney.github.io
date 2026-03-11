@@ -3,7 +3,7 @@ title: "Web based SCIMAP"
 date: "2016-01-20"
 coverImage: "Figure2.png"
 collection: portfolio
-excerpt: Enabling access to non-point source risk mapping tools using Open Source Software and Open Geospatial Consortium (OGC) standards: the development of the SCIMAP WebApp
+excerpt: "Enabling access to non-point source risk mapping tools using Open Source Software and Open Geospatial Consortium (OGC) standards: the development of the SCIMAP WebApp"
 ---
 # Enabling access to non-point source risk mapping tools using Open Source Software and Open Geospatial Consortium (OGC) standards: the development of the SCIMAP WebApp
 

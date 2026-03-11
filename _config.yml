@@ -3,19 +3,92 @@
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
+# `jekyll serve -l -H localhost`. If you change this file, please restart the 
+# server process.
 
-minimal_mistakes_skin: "dark" #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
-
-# Site Settings
-locale                   : "en-UK"
+# Basic Site Settings
+locale                   : "en-GB"
+site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Sim M. Reaney, Durham University"
 title_separator          : "-"
 name                     : &name "Sim Reaney"
 description              : &description "personal description"
-url                      : https://simreaney.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://simreaney.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "simreaney/simreaney.github.io"
+
+# Site Author - The following control what appear as part of the author content on the side bar.
+#               If a field is blank the icon and link will not appear, otherwise it will be shown.
+#               Additional customization can be done by editing /_includes/author-profile.html
+author:
+  # Biographic information
+  avatar           : "me-large-sq_2020.jpg"
+  name             : "Dr Sim M. Reaney"
+  pronouns         : # example: "she/her"
+  bio              : "Professor in Catchment Hydrology"
+  location         : "Durham, England"
+  employer         : "Durham University"
+  uri              : # URL
+  email            :
+
+  # Academic websites
+  academia         : # URL
+  arxiv            : # URL
+  googlescholar    : "https://scholar.google.com/citations?user=kncbfdAAAAAJ&hl=en"
+  inspire-hep      : # URL
+  impactstory      : # URL
+  orcid            : "https://orcid.org/0000-0003-3063-2044"
+  semantic         : # URL
+  ssrn             : # URL
+  pubmed           :
+  researchgate     : # URL
+  scopus           : # URL
+  zotero           : # URL
+
+  # Repositories and software development
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  github           : "simreaney"
+  kaggle           : # Username
+
+  # Social media
+  artstation       : # Username
+  bluesky          : # Username
+  facebook         :
+  flickr           :
+  foursquare       :
+  goodreads        : # Username
+  instagram        : "simreaney"
+  keybase          :
+  lastfm           :
+  linkedin         : "https://www.linkedin.com/in/sim-reaney-ba85b033/?originalSubdomain=uk"
+  mastodon         : # URL
+  medium           : # URL
+  pinterest        : # Username
+  soundcloud       :
+  stackoverflow    : # User number or user number and name
+  steam            :
+  telegram         : # URL
+  tumblr           :
+  twitter          :
+  vine             :
+  weibo            :
+  wikipedia        :
+  xing             :
+  youtube          : "UCiILp2LnofI0Hy04_Itl7gw"
+  zhihu            : # Username
+
+# Publication Category - The following the list of publication categories and their headings
+publication_category:
+  books:
+    title: 'Books'
+  manuscripts:
+    title: 'Journal Articles'
+  conferences:
+    title: 'Conference Papers'
+
+# Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -49,6 +122,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
+  hide                   : false     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 # SEO Related
@@ -59,12 +133,13 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : &twitter
 facebook:
   username               :
   app_id                 :
   publisher              :
 og_image                 :  # Open Graph/Twitter default site image
+og_description           :  # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -75,49 +150,9 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
     tracking_id          : "UA-159042183-1"
-
-
-# Site Author
-author:
-  name             : "Dr Sim M. Reaney"
-  avatar           : "me-large-sq_2020.jpg"
-  bio              : "Professor in Catchment Hydrology"
-  location         : "Durham, England"
-  employer         : "Durham University"
-  pubmed           :
-  googlescholar    : "https://scholar.google.com/citations?user=kncbfdAAAAAJ&hl=en"
-  email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
-  bluesky          :
-  github           : "simreaney"
-  google_plus      :
-  keybase          :
-  instagram        : "simreaney"
-  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
-  lastfm           :
-  linkedin         : "https://www.linkedin.com/in/sim-reaney-ba85b033/?originalSubdomain=uk"
-  orcid            : "https://orcid.org/0000-0003-3063-2044"
-  vimeo            :
-  soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            :
-  tumblr           :
-  twitter          :
-  vine             :
-  weibo            :
-  xing             :
-  youtube          : "UCiILp2LnofI0Hy04_Itl7gw"
-  wikipedia        :
 
 
 # Reading Files
@@ -130,23 +165,26 @@ exclude:
   - "*.sublime-workspace"
   - .asset-cache
   - .bundle
+  - .github
   - .jekyll-assets-cache
   - .sass-cache
-  - CHANGELOG
-  - Capfile
-  - Gemfile
-  - Gruntfile.js
-  - LICENSE
-  - README
-  - Rakefile
   - assets/js/_main.js
   - assets/js/plugins
   - assets/js/vendor
+  - CHANGELOG
+  - Capfile
   - config
+  - Dockerfile
+  - Gemfile
+  - Gruntfile.js
   - gulpfile.js
+  - LICENSE
+  - local
   - log
   - node_modules
-  - package.json
+  - package.json*
+  - Rakefile
+  - README
   - tmp
   - vendor
 keep_files:
@@ -206,7 +244,7 @@ defaults:
       author_profile: true
       read_time: true
       comments: true
-      share: false
+      share: true
       related: true
   # _pages
   - scope:
@@ -255,21 +293,21 @@ defaults:
       path: ""
       type: blog
     values:
-      layout: pages
+      layout: single
       author_profile: true
       share: false
 
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
 # Outputting
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: Europe/London # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/London # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
@@ -321,7 +359,7 @@ tag_archive:
 
 
 # HTML Compression
-# - http://jch.penibelst.de/
+# - https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
