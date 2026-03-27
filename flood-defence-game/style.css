@@ -1,0 +1,216 @@
+/* ============================================
+   FLOOD DEFENCE – Stylesheet
+   Low-poly cartoon aesthetic
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1a1a2e;
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+    user-select: none;
+}
+
+#game-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+/* ---- HUD ---- */
+#hud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    background: linear-gradient(180deg, rgba(20, 20, 40, 0.95), rgba(20, 20, 40, 0.8));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18px;
+    z-index: 10;
+    border-bottom: 2px solid #3a3a5c;
+    backdrop-filter: blur(6px);
+}
+
+#hud-left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#hud-left span {
+    color: #e0e0e0;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#money-display {
+    color: #5ddf5d !important;
+    font-size: 18px !important;
+    font-family: 'Fredoka One', cursive;
+}
+
+#income-display {
+    color: #a0d8a0 !important;
+}
+
+#turn-display {
+    color: #88c8f8 !important;
+}
+
+#hud-center h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 22px;
+    color: #6ec6ff;
+    text-shadow: 0 2px 8px rgba(100, 180, 255, 0.3);
+    letter-spacing: 1px;
+}
+
+#hud-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.tool-btn {
+    background: #2a2a4a;
+    border: 2px solid #4a4a6a;
+    color: #ccc;
+    padding: 6px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    transition: all 0.2s;
+}
+
+.tool-btn:hover {
+    background: #3a3a5a;
+    border-color: #6a6a8a;
+}
+
+.tool-btn.active {
+    background: #3a5a3a;
+    border-color: #5ddf5d;
+    color: #5ddf5d;
+    box-shadow: 0 0 10px rgba(93, 223, 93, 0.2);
+}
+
+.action-btn {
+    background: linear-gradient(135deg, #e67e22, #d35400);
+    border: 2px solid #e67e22;
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    transition: all 0.2s;
+}
+
+.action-btn:hover {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    transform: scale(1.05);
+}
+
+/* ---- Canvas ---- */
+#game-canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    cursor: pointer;
+}
+
+/* ---- Tooltip ---- */
+#tooltip {
+    position: absolute;
+    background: rgba(20, 20, 40, 0.92);
+    color: #ddd;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    pointer-events: none;
+    border: 1px solid #4a4a6a;
+    z-index: 20;
+    white-space: nowrap;
+}
+
+/* ---- Overlays ---- */
+#flood-alert, #game-over {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+}
+
+#flood-alert-content, #game-over-content {
+    background: linear-gradient(135deg, #1a2a4a, #1a1a3a);
+    border: 2px solid #4a6a9a;
+    border-radius: 16px;
+    padding: 30px 50px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+#flood-alert-content h2 {
+    font-family: 'Fredoka One', cursive;
+    color: #4da6ff;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+#game-over-content h2 {
+    font-family: 'Fredoka One', cursive;
+    color: #ff6b6b;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#flood-alert-content p, #game-over-content p {
+    color: #c0c0d0;
+    font-size: 15px;
+    margin-bottom: 18px;
+    max-width: 400px;
+    line-height: 1.5;
+    white-space: pre-line;
+}
+
+#flood-alert-ok, #game-over-restart {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    border: none;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.2s;
+}
+
+#game-over-restart {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+#flood-alert-ok:hover, #game-over-restart:hover {
+    transform: scale(1.08);
+}
+
+.hidden {
+    display: none !important;
+}
