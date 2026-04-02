@@ -6,7 +6,7 @@ collection: portfolio
 
 Sim Reaney and Simon Mathias, Durham University
 
-The risk pose by flooding in Indonesia is significant, with many communities experiencing multiple flood events each year, leading to multiple impacts including physical damage, economic loss, displacement and mental health issues. Within the last ten years, there have been 84 significant flood events in Indonesia that have caused 5.3 billion USD of damage, effecting 3m people, and 1498 people have been killed. If we consider Jakarta alone, then the impacts from fluvial flooding alone are estimated to cost USD 321 million per year.
+The risk posed by flooding in Indonesia is significant, with many communities experiencing multiple flood events each year, leading to multiple impacts including physical damage, economic loss, displacement and mental health issues. Within the last ten years, there have been 84 significant flood events in Indonesia that have caused 5.3 billion USD of damage, affecting 3m people, and 1498 people have been killed. If we consider Jakarta alone, then the impacts from fluvial flooding alone are estimated to cost USD 321 million per year.
 
 <img src='/images/shutterstock_516663475_600px.jpg'>
 

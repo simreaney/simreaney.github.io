@@ -75,7 +75,7 @@ waterproof housing of the camera install. This condensation reduces the
 image quality for fine detail but it is still possible to extract
 information on the sky status.
 
-### Initial Results for Scene 'Intrestingness'
+### Initial Results for Scene 'Interestingness'
 
 Figure 3 below shows the changes over time for the daily differences
 when compared to the previous day and to the mean image. The mean image
