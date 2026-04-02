@@ -228,9 +228,6 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
-  blog:
-      output: false
-      permalink: /:collection/:path/
 
 
 # Defaults
@@ -286,14 +283,6 @@ defaults:
       type: talks
     values:
       layout: talk
-      author_profile: true
-      share: false
-  #_blog
-  - scope:
-      path: ""
-      type: blog
-    values:
-      layout: single
       author_profile: true
       share: false
 
