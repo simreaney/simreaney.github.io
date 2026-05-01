@@ -847,48 +847,71 @@ function drawHouse(cx, cy, color, cell) {
 }
 
 function drawWall(cx, cy) {
-    const s = CONFIG.HEX_SIZE * 0.68;
+    const s = CONFIG.HEX_SIZE * 0.7;
+    const wallW = s * 1.8;
+    const wallH = s * 0.5;
+    const topDepth = s * 0.18;
 
+    const left = cx - wallW * 0.5;
+    const right = cx + wallW * 0.5;
+    const top = cy - s * 0.08;
+    const bottom = top + wallH;
+
+    // Ground shadow for depth.
     ctx.fillStyle = 'rgba(0,0,0,0.18)';
     ctx.beginPath();
-    ctx.ellipse(cx, cy + s * 0.52, s * 0.96, s * 0.12, 0, 0, Math.PI * 2);
+    ctx.ellipse(cx, bottom + s * 0.26, wallW * 0.52, s * 0.11, 0, 0, Math.PI * 2);
     ctx.fill();
 
     const topFace = [
-        { x: cx - s * 0.98, y: cy - s * 0.16 },
-        { x: cx, y: cy - s * 0.32 },
-        { x: cx + s * 0.98, y: cy - s * 0.16 },
-        { x: cx, y: cy + s * 0.02 },
+        { x: left, y: top },
+        { x: right, y: top },
+        { x: right - s * 0.16, y: top - topDepth },
+        { x: left + s * 0.16, y: top - topDepth },
     ];
-    const wallDrop = s * 0.22;
-    const leftFace = [
-        topFace[0],
-        topFace[3],
-        { x: topFace[3].x, y: topFace[3].y + wallDrop },
-        { x: topFace[0].x, y: topFace[0].y + wallDrop },
-    ];
-    const rightFace = [
-        topFace[3],
-        topFace[2],
-        { x: topFace[2].x, y: topFace[2].y + wallDrop },
-        { x: topFace[3].x, y: topFace[3].y + wallDrop },
+    const frontFace = [
+        { x: left, y: top },
+        { x: right, y: top },
+        { x: right, y: bottom },
+        { x: left, y: bottom },
     ];
 
-    fillPolygon(leftFace, '#879497');
-    fillPolygon(rightFace, '#6f7d80');
-    fillPolygon(topFace, '#bcc7c9');
-    fillPolygon([topFace[0], topFace[1], topFace[3]], 'rgba(255,255,255,0.16)');
-
+    fillPolygon(frontFace, '#8f9da0');
+    fillPolygon(topFace, '#c0cbcd');
+    strokePolygon(frontFace, CONFIG.WALL_OUTLINE, 1.1);
     strokePolygon(topFace, CONFIG.WALL_OUTLINE, 1.1);
-    strokePolygon(leftFace, CONFIG.WALL_OUTLINE, 1);
-    strokePolygon(rightFace, CONFIG.WALL_OUTLINE, 1);
 
-    for (let offset = -0.45; offset <= 0.45; offset += 0.45) {
-        ctx.strokeStyle = 'rgba(79, 94, 97, 0.55)';
-        ctx.lineWidth = 1;
+    const merlonCount = 5;
+    const gap = wallW * 0.035;
+    const merlonW = (wallW - gap * (merlonCount - 1)) / merlonCount;
+    const merlonH = wallH * 0.28;
+
+    for (let i = 0; i < merlonCount; i++) {
+        const x = left + i * (merlonW + gap);
+        const merlonFront = [
+            { x, y: top },
+            { x: x + merlonW, y: top },
+            { x: x + merlonW, y: top - merlonH },
+            { x, y: top - merlonH },
+        ];
+        const merlonTop = [
+            { x, y: top - merlonH },
+            { x: x + merlonW, y: top - merlonH },
+            { x: x + merlonW - s * 0.1, y: top - merlonH - topDepth * 0.62 },
+            { x: x + s * 0.1, y: top - merlonH - topDepth * 0.62 },
+        ];
+
+        fillPolygon(merlonFront, '#9eabad');
+        fillPolygon(merlonTop, '#d2dbdc');
+        strokePolygon(merlonFront, CONFIG.WALL_OUTLINE, 1);
+    }
+
+    ctx.strokeStyle = 'rgba(79, 94, 97, 0.35)';
+    ctx.lineWidth = 1;
+    for (let y = top + wallH * 0.28; y < bottom; y += wallH * 0.26) {
         ctx.beginPath();
-        ctx.moveTo(cx + offset * s, cy - s * 0.08);
-        ctx.lineTo(cx + offset * s, cy + s * 0.22);
+        ctx.moveTo(left + s * 0.03, y);
+        ctx.lineTo(right - s * 0.03, y);
         ctx.stroke();
     }
 }
