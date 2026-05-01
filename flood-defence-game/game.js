@@ -14,6 +14,7 @@ const CONFIG = {
     START_MONEY: 200,
     HOUSE_INCOME: 5,
     WALL_COST: 500,
+    WALL_HEIGHT: 1,
 
     // Flood frequency – configurable!
     // Each entry: { magnitude: metres, returnPeriod: turns }
@@ -29,9 +30,9 @@ const CONFIG = {
     RIVER_COLOR: '#2e86c1',
     RIVER_COLOR_DARK: '#1a5276',
     WATER_FLOOD_COLOR: 'rgba(52, 152, 219, 0.55)',
-    WALL_COLOR: '#7f8c8d',
-    WALL_OUTLINE: '#4a4a4a',
-    HOUSE_COLORS: ['#c0392b', '#d35400', '#e67e22', '#8e44ad', '#2980b9', '#27ae60'],
+    WALL_COLOR: '#97a7aa',
+    WALL_OUTLINE: '#4f5e61',
+    HOUSE_COLORS: ['#d96c4f', '#c98742', '#d4a65a', '#8ca35b', '#5d8eb0', '#b98570'],
 };
 
 // ===================== STATE ================================
@@ -51,6 +52,7 @@ function initState() {
         floodStartTime: 0,
         waterParticles: [], // animated particles for water effects
         housesBuiltThisTurn: 0,
+        overtoppedWalls: 0,
     };
 }
 
@@ -360,6 +362,7 @@ function simulateFlood() {
     const mag = sampleFloodMagnitude();
     state.lastFloodMag = Math.round(mag * 100) / 100;
     state.floodStartTime = Date.now(); // Track when flood starts for animation
+    state.overtoppedWalls = 0;
 
     // Clear previous flood state
     for (let c = 0; c < CONFIG.GRID_COLS; c++) {
@@ -400,12 +403,16 @@ function simulateFlood() {
             visited.add(key);
 
             const cell = state.grid[nb.col][nb.row];
-            if (cell.building === 'wall') continue;   // wall blocks
-            if (cell.isRiver || cell.elevation < mag) {
+            const wallCrest = cell.elevation + CONFIG.WALL_HEIGHT;
+            const overtoppedWall = cell.building === 'wall' && wallCrest < mag;
+            const floodableLand = cell.building === 'wall' ? overtoppedWall : cell.elevation < mag;
+
+            if (cell.isRiver || floodableLand) {
                 cell.flooded = true;
                 // Stagger flood animation based on BFS distance
                 cell.floodedTime = state.floodStartTime + distance * 50;
                 queue.push({ col: nb.col, row: nb.row, distance: distance + 1 });
+                if (overtoppedWall) state.overtoppedWalls++;
             }
         }
     }
@@ -460,130 +467,241 @@ function centerCamera() {
     camY = (canvas.height - totalH) / 2 + 28; // offset for HUD
 }
 
+function clamp(value, min, max) {
+    return Math.min(max, Math.max(min, value));
+}
+
+function hexToRgb(color) {
+    const normalized = color.replace('#', '');
+    const expanded = normalized.length === 3
+        ? normalized.split('').map((channel) => channel + channel).join('')
+        : normalized;
+    const intValue = parseInt(expanded, 16);
+    return {
+        r: (intValue >> 16) & 255,
+        g: (intValue >> 8) & 255,
+        b: intValue & 255,
+    };
+}
+
+function shadeHex(color, amount) {
+    const { r, g, b } = hexToRgb(color);
+    const target = amount < 0 ? 0 : 255;
+    const mix = Math.abs(amount);
+    return `rgb(${Math.round(r + (target - r) * mix)}, ${Math.round(g + (target - g) * mix)}, ${Math.round(b + (target - b) * mix)})`;
+}
+
+function drawPolygonPath(points) {
+    ctx.beginPath();
+    ctx.moveTo(points[0].x, points[0].y);
+    for (let i = 1; i < points.length; i++) {
+        ctx.lineTo(points[i].x, points[i].y);
+    }
+    ctx.closePath();
+}
+
+function fillPolygon(points, fillStyle) {
+    drawPolygonPath(points);
+    ctx.fillStyle = fillStyle;
+    ctx.fill();
+}
+
+function strokePolygon(points, strokeStyle, lineWidth = 1) {
+    drawPolygonPath(points);
+    ctx.strokeStyle = strokeStyle;
+    ctx.lineWidth = lineWidth;
+    ctx.stroke();
+}
+
+function shiftPoints(points, dx, dy) {
+    return points.map((point) => ({ x: point.x + dx, y: point.y + dy }));
+}
+
+function getHexSkewX() {
+    return CONFIG.HEX_SIZE * 0.24;
+}
+
+function getHexTopLift(cell) {
+    return cell.isRiver ? 7 : 10 + cell.elevation * 2.15;
+}
+
+function getHexDepth(cell) {
+    return cell.isRiver ? 10 : 14 + cell.elevation * 2.8;
+}
+
 function getElevationColor(elevation) {
-    // Rich terrain palette: lush green lowlands -> golden-brown highlands
-    const t = Math.min(elevation / 5, 1);
-    const r = Math.round(46 + t * 140);   // 46 -> 186
-    const g = Math.round(160 + t * (-80)); // 160 -> 80
-    const b = Math.round(50 + t * 10);     // 50 -> 60
-    return `rgb(${r},${g},${b})`;
+    const t = clamp(elevation / 5, 0, 1);
+    // Low: hsl(128 64% 62%) vivid emerald  →  High: hsl(38 54% 52%) warm tawny
+    const h = Math.round(128 - t * 90);
+    const s = Math.round(64 - t * 10);
+    const l = Math.round(62 - t * 10);
+    return `hsl(${h} ${s}% ${l}%)`;
 }
 
 function getElevationColorDark(elevation) {
-    const t = Math.min(elevation / 5, 1);
-    const r = Math.round(34 + t * 110);
-    const g = Math.round(130 + t * (-65));
-    const b = Math.round(38 + t * 8);
-    return `rgb(${r},${g},${b})`;
+    const t = clamp(elevation / 5, 0, 1);
+    // Low: hsl(118 34% 30%)  →  High: hsl(32 28% 24%)
+    const h = Math.round(118 - t * 86);
+    const s = Math.round(34 - t * 6);
+    const l = Math.round(30 - t * 6);
+    return `hsl(${h} ${s}% ${l}%)`;
+}
+
+function getElevationSideColor(elevation, face) {
+    const t = clamp(elevation / 5, 0, 1);
+    // Shift hue by 90° across range; darken right/front faces for depth
+    const h = Math.round(118 - t * 90);
+    const s = Math.round(36 - t * 8);
+    const baseL = face === 'left' ? 48 : face === 'right' ? 34 : 40;
+    const l = Math.round(baseL - t * 14);
+    return `hsl(${h} ${s}% ${l}%)`;
+}
+
+function forEachCellByDepth(visitor) {
+    const tiles = [];
+    for (let c = 0; c < CONFIG.GRID_COLS; c++) {
+        for (let r = 0; r < CONFIG.GRID_ROWS; r++) {
+            const pos = hexToPixel(c, r);
+            tiles.push({ cell: state.grid[c][r], pos });
+        }
+    }
+
+    tiles.sort((a, b) => (a.pos.y - b.pos.y) || (a.pos.x - b.pos.x));
+    for (const tile of tiles) {
+        visitor(tile);
+    }
 }
 
 function drawHex(cx, cy, cell) {
-    const corners = hexCorners(cx, cy);
+    const baseCorners = hexCorners(cx, cy);
+    const topLift = getHexTopLift(cell);
+    const depth = getHexDepth(cell);
+    const skewX = getHexSkewX();
+    const topCorners = shiftPoints(baseCorners, skewX, -topLift);
+    const lowerCorners = shiftPoints(baseCorners, 0, depth - topLift);
+    const t = Date.now();
 
-    // --- Base hex fill ---
-    ctx.beginPath();
-    ctx.moveTo(corners[0].x, corners[0].y);
-    for (let i = 1; i < 6; i++) ctx.lineTo(corners[i].x, corners[i].y);
-    ctx.closePath();
+    let topColor;
+    let leftColor;
+    let frontColor;
+    let rightColor;
+    let edgeColor;
 
     if (cell.isRiver) {
-        // Deep animated water with multi-layered flow
-        const t = Date.now();
-        const wave1 = Math.sin(t * 0.003 + cell.col * 0.4 - cell.row * 0.15);
-        const wave2 = Math.sin(t * 0.005 + cell.col * 0.7 + cell.row * 0.2);
-        const wave3 = Math.sin(t * 0.002 + cell.col * 0.15);
-        const combined = (wave1 * 0.4 + wave2 * 0.35 + wave3 * 0.25);
-
-        const rb = Math.round(30 + combined * 18);
-        const gb = Math.round(110 + combined * 35);
-        const bb = Math.round(190 + combined * 25);
-        ctx.fillStyle = `rgb(${rb},${gb},${bb})`;
+        const wave = Math.sin(t * 0.0028 + cell.col * 0.55 - cell.row * 0.3) * 0.5
+            + Math.sin(t * 0.0043 + cell.col * 0.3 + cell.row * 0.22) * 0.5;
+        topColor = `hsl(198 64% ${49 + wave * 4}%)`;
+        leftColor = `hsl(200 54% ${35 + wave * 2}%)`;
+        frontColor = `hsl(204 58% ${31 + wave * 2}%)`;
+        rightColor = `hsl(207 55% ${28 + wave * 2}%)`;
+        edgeColor = '#275469';
     } else {
-        ctx.fillStyle = getElevationColor(cell.elevation);
+        topColor = getElevationColor(cell.elevation);
+        leftColor = getElevationSideColor(cell.elevation, 'left');
+        frontColor = getElevationSideColor(cell.elevation, 'front');
+        rightColor = getElevationSideColor(cell.elevation, 'right');
+        edgeColor = getElevationColorDark(cell.elevation);
     }
+
+    ctx.fillStyle = cell.isRiver ? 'rgba(17, 44, 58, 0.22)' : 'rgba(24, 36, 18, 0.26)';
+    ctx.beginPath();
+    ctx.ellipse(cx + skewX * 0.35, cy + depth + CONFIG.HEX_SIZE * 0.36, CONFIG.HEX_SIZE * 0.96, CONFIG.HEX_SIZE * 0.24, 0, 0, Math.PI * 2);
     ctx.fill();
 
-    // Outline
-    ctx.strokeStyle = cell.isRiver ? CONFIG.RIVER_COLOR_DARK : getElevationColorDark(cell.elevation);
-    ctx.lineWidth = 1;
-    ctx.stroke();
+    fillPolygon([topCorners[2], topCorners[3], lowerCorners[3], lowerCorners[2]], leftColor);
+    fillPolygon([topCorners[0], topCorners[1], lowerCorners[1], lowerCorners[0]], rightColor);
+    fillPolygon([topCorners[1], topCorners[2], lowerCorners[2], lowerCorners[1]], frontColor);
 
-    // --- Animated river surface detail ---
+    fillPolygon(topCorners, topColor);
+    strokePolygon(topCorners, edgeColor, 1.2);
+    strokePolygon([topCorners[1], topCorners[2], lowerCorners[2], lowerCorners[1]], edgeColor, 1);
+    strokePolygon([topCorners[2], topCorners[3], lowerCorners[3], lowerCorners[2]], edgeColor, 1);
+    strokePolygon([topCorners[0], topCorners[1], lowerCorners[1], lowerCorners[0]], edgeColor, 1);
+
+    if (!cell.isRiver) {
+        fillPolygon([
+            topCorners[4],
+            topCorners[5],
+            { x: cx + skewX + CONFIG.HEX_SIZE * 0.12, y: cy - topLift - CONFIG.HEX_SIZE * 0.14 },
+            { x: cx + skewX - CONFIG.HEX_SIZE * 0.38, y: cy - topLift - CONFIG.HEX_SIZE * 0.4 },
+        ], 'rgba(255,255,255,0.12)');
+
+        fillPolygon([
+            topCorners[5],
+            topCorners[0],
+            { x: cx + skewX + CONFIG.HEX_SIZE * 0.42, y: cy - topLift + CONFIG.HEX_SIZE * 0.06 },
+            { x: cx + skewX + CONFIG.HEX_SIZE * 0.02, y: cy - topLift - CONFIG.HEX_SIZE * 0.18 },
+        ], 'rgba(249, 215, 160, 0.14)');
+    }
+
     if (cell.isRiver) {
-        const t = Date.now();
-        // Flowing specular highlights
         ctx.save();
-        ctx.beginPath();
-        ctx.moveTo(corners[0].x, corners[0].y);
-        for (let i = 1; i < 6; i++) ctx.lineTo(corners[i].x, corners[i].y);
-        ctx.closePath();
+        drawPolygonPath(topCorners);
         ctx.clip();
 
-        // Animated curved flow lines
+        const shimmer = ctx.createLinearGradient(cx - CONFIG.HEX_SIZE, cy - topLift - CONFIG.HEX_SIZE, cx + CONFIG.HEX_SIZE, cy - topLift + CONFIG.HEX_SIZE * 0.4);
+        shimmer.addColorStop(0, 'rgba(255,255,255,0.02)');
+        shimmer.addColorStop(0.5, 'rgba(255,255,255,0.18)');
+        shimmer.addColorStop(1, 'rgba(255,255,255,0.04)');
+        ctx.fillStyle = shimmer;
+        ctx.fillRect(cx - CONFIG.HEX_SIZE, cy - topLift - CONFIG.HEX_SIZE, CONFIG.HEX_SIZE * 2, CONFIG.HEX_SIZE * 2);
+
         for (let i = -1; i <= 1; i++) {
-            const phase = (t * 0.04 + cell.col * 12 + i * 14) % 50;
-            const yOff = cy - CONFIG.HEX_SIZE + phase;
-            const xWobble = Math.sin(t * 0.003 + cell.col * 0.6 + i) * 4;
-            const alpha = 0.12 + Math.sin(t * 0.004 + i * 2) * 0.06;
-            ctx.strokeStyle = `rgba(180, 220, 255, ${alpha})`;
-            ctx.lineWidth = 1.5;
+            const phase = (t * 0.045 + cell.col * 11 + i * 15) % 42;
+            const xWobble = Math.sin(t * 0.003 + cell.row * 0.4 + i) * 4;
+            const lineY = cy - topLift - CONFIG.HEX_SIZE * 0.45 + phase;
+            ctx.strokeStyle = `rgba(211, 239, 255, ${0.12 + (i + 1) * 0.03})`;
+            ctx.lineWidth = 1.4;
             ctx.beginPath();
-            ctx.moveTo(cx - CONFIG.HEX_SIZE * 0.6 + xWobble, yOff);
-            ctx.quadraticCurveTo(cx + xWobble * 0.5, yOff + 5, cx + CONFIG.HEX_SIZE * 0.6 + xWobble, yOff);
+            ctx.moveTo(cx - CONFIG.HEX_SIZE * 0.68 + xWobble, lineY);
+            ctx.quadraticCurveTo(cx + xWobble * 0.2, lineY + 4, cx + CONFIG.HEX_SIZE * 0.62 + xWobble, lineY - 1);
             ctx.stroke();
         }
+
         ctx.restore();
     }
 
     // --- Flood overlay with animation ---
     if (cell.flooded && !cell.isRiver) {
-        const t = Date.now();
         const timeElapsed = t - (cell.floodedTime || state.floodStartTime);
         const spreadAnim = Math.min(1, timeElapsed / 400);
 
         ctx.save();
-        ctx.beginPath();
-        ctx.moveTo(corners[0].x, corners[0].y);
-        for (let i = 1; i < 6; i++) ctx.lineTo(corners[i].x, corners[i].y);
-        ctx.closePath();
+        drawPolygonPath(topCorners);
         ctx.clip();
 
-        // Rising water fill with shimmer
         const waterWave = Math.sin(t * 0.004 + cell.col * 0.5 + cell.row * 0.35) * 0.08;
         const baseAlpha = 0.5 * spreadAnim;
         const finalAlpha = Math.min(0.65, baseAlpha + waterWave);
 
-        ctx.fillStyle = `rgba(41, 128, 185, ${finalAlpha})`;
-        ctx.fill();
+        ctx.fillStyle = `rgba(44, 133, 190, ${finalAlpha})`;
+        ctx.fillRect(cx - CONFIG.HEX_SIZE, cy - topLift - CONFIG.HEX_SIZE, CONFIG.HEX_SIZE * 2, CONFIG.HEX_SIZE * 2);
 
-        // Animated ripple rings expanding outward
         if (spreadAnim > 0.2) {
-            const ripplePhase = ((t * 0.002 + cell.col * 1.3 + cell.row * 0.9) % 1);
+            const ripplePhase = (t * 0.002 + cell.col * 1.3 + cell.row * 0.9) % 1;
             const rippleRadius = CONFIG.HEX_SIZE * 0.15 + ripplePhase * CONFIG.HEX_SIZE * 0.5;
             const rippleAlpha = (1 - ripplePhase) * 0.35 * spreadAnim;
             ctx.strokeStyle = `rgba(133, 193, 233, ${rippleAlpha})`;
             ctx.lineWidth = 1.5;
             ctx.beginPath();
-            ctx.arc(cx, cy, rippleRadius, 0, Math.PI * 2);
+            ctx.arc(cx, cy - topLift * 0.55, rippleRadius, 0, Math.PI * 2);
             ctx.stroke();
 
-            // Second ripple offset
-            const ripplePhase2 = ((t * 0.002 + cell.col * 1.3 + cell.row * 0.9 + 0.5) % 1);
+            const ripplePhase2 = (t * 0.002 + cell.col * 1.3 + cell.row * 0.9 + 0.5) % 1;
             const rippleRadius2 = CONFIG.HEX_SIZE * 0.15 + ripplePhase2 * CONFIG.HEX_SIZE * 0.5;
             const rippleAlpha2 = (1 - ripplePhase2) * 0.25 * spreadAnim;
             ctx.strokeStyle = `rgba(174, 214, 241, ${rippleAlpha2})`;
             ctx.beginPath();
-            ctx.arc(cx, cy, rippleRadius2, 0, Math.PI * 2);
+            ctx.arc(cx, cy - topLift * 0.55, rippleRadius2, 0, Math.PI * 2);
             ctx.stroke();
         }
 
-        // Subtle flow lines on flood surface
         const flowPhase = (t * 0.03 + cell.col * 8) % 30;
         const flowAlpha = 0.1 * spreadAnim;
         ctx.strokeStyle = `rgba(200, 230, 255, ${flowAlpha})`;
         ctx.lineWidth = 1;
         ctx.beginPath();
-        const fy = cy - CONFIG.HEX_SIZE * 0.5 + flowPhase;
+        const fy = cy - topLift - CONFIG.HEX_SIZE * 0.3 + flowPhase;
         ctx.moveTo(cx - CONFIG.HEX_SIZE * 0.5, fy);
         ctx.quadraticCurveTo(cx, fy + 3, cx + CONFIG.HEX_SIZE * 0.5, fy);
         ctx.stroke();
@@ -592,156 +710,193 @@ function drawHex(cx, cy, cell) {
     }
 
     // --- Buildings ---
+    const surfaceX = cx + skewX * 0.56;
+    const surfaceY = cy - topLift + CONFIG.HEX_SIZE * 0.06;
     if (cell.building === 'house') {
-        drawHouse(cx, cy, cell.houseColor);
+        drawHouse(surfaceX, surfaceY, cell.houseColor, cell);
     } else if (cell.building === 'wall') {
-        drawWall(cx, cy);
+        drawWall(surfaceX, surfaceY);
     }
 
     // --- Hover ---
     if (hoverHex && hoverHex.col === cell.col && hoverHex.row === cell.row && !state.gameOver) {
-        ctx.beginPath();
-        ctx.moveTo(corners[0].x, corners[0].y);
-        for (let i = 1; i < 6; i++) ctx.lineTo(corners[i].x, corners[i].y);
-        ctx.closePath();
+        drawPolygonPath(topCorners);
         ctx.fillStyle = 'rgba(255,255,255,0.15)';
         ctx.fill();
-        ctx.strokeStyle = '#fff';
+        ctx.strokeStyle = '#f3fff3';
         ctx.lineWidth = 2;
         ctx.stroke();
     }
 }
 
-function drawHouse(cx, cy, color) {
-    const s = CONFIG.HEX_SIZE * 0.6;
+function drawHouse(cx, cy, color, cell) {
+    // Deterministic variation per tile so neighborhoods don't look cloned.
+    const hash = Math.sin(cell.col * 127.1 + cell.row * 311.7) * 43758.5453;
+    const frac = hash - Math.floor(hash);
+    const frac2 = Math.sin((cell.col + 17) * 61.7 + (cell.row + 9) * 241.9) * 15731.743;
+    const fracB = frac2 - Math.floor(frac2);
 
-    // Shadow
+    const footprintScale = 1.85 + frac * 0.35;
+    const s = CONFIG.HEX_SIZE * 0.56 * footprintScale;
+
+    const bodyPalette = ['#f2c66c', '#f09f79', '#91c7d8', '#9ecf8d', '#d7a3cf', '#d7c97a'];
+    const roofPalette = ['#d55353', '#d87a33', '#ce4f8c', '#7f6bdb', '#3d9f7a', '#be5ad5'];
+    const bodyMain = bodyPalette[Math.floor(frac * bodyPalette.length) % bodyPalette.length];
+    const bodyAlt = bodyPalette[Math.floor(fracB * bodyPalette.length) % bodyPalette.length];
+    const roofBase = roofPalette[Math.floor(frac * roofPalette.length) % roofPalette.length];
+    const roofAlt = roofPalette[Math.floor(fracB * roofPalette.length) % roofPalette.length];
+
     ctx.fillStyle = 'rgba(0,0,0,0.2)';
     ctx.beginPath();
-    ctx.ellipse(cx, cy + s * 0.85, s * 0.75, s * 0.15, 0, 0, Math.PI * 2);
+    ctx.ellipse(cx + s * 0.08, cy + s * 0.62, s * 0.98, s * 0.2, 0, 0, Math.PI * 2);
     ctx.fill();
 
-    // Body
-    ctx.fillStyle = color;
-    ctx.fillRect(cx - s * 0.65, cy - s * 0.15, s * 1.3, s * 0.95);
+    fillPolygon([
+        { x: cx - s * 0.95, y: cy + s * 0.24 },
+        { x: cx, y: cy - s * 0.02 },
+        { x: cx + s * 0.95, y: cy + s * 0.24 },
+        { x: cx, y: cy + s * 0.52 },
+    ], 'rgba(110, 128, 112, 0.52)');
 
-    // Body shading (darker bottom edge)
-    ctx.fillStyle = 'rgba(0,0,0,0.08)';
-    ctx.fillRect(cx - s * 0.65, cy + s * 0.5, s * 1.3, s * 0.3);
+    function drawHome(baseX, baseY, width, height, bodyColor, roofColor) {
+        const depth = width * 0.34;
+        const roofLift = height * 0.46;
 
-    // Roof
-    ctx.beginPath();
-    ctx.moveTo(cx - s * 0.85, cy - s * 0.15);
-    ctx.lineTo(cx, cy - s * 1.05);
-    ctx.lineTo(cx + s * 0.85, cy - s * 0.15);
-    ctx.closePath();
-    ctx.fillStyle = '#922b21';
-    ctx.fill();
-    // Roof highlight
-    ctx.beginPath();
-    ctx.moveTo(cx - s * 0.85, cy - s * 0.15);
-    ctx.lineTo(cx, cy - s * 1.05);
-    ctx.lineTo(cx, cy - s * 0.15);
-    ctx.closePath();
-    ctx.fillStyle = 'rgba(255,255,255,0.08)';
-    ctx.fill();
+        const frontLeftBottom = { x: baseX - width * 0.5, y: baseY };
+        const frontRightBottom = { x: baseX + width * 0.5, y: baseY };
+        const frontLeftTop = { x: frontLeftBottom.x, y: baseY - height };
+        const frontRightTop = { x: frontRightBottom.x, y: baseY - height };
 
-    // Chimney
-    ctx.fillStyle = '#6c3020';
-    ctx.fillRect(cx + s * 0.32, cy - s * 1.15, s * 0.22, s * 0.5);
-    ctx.fillStyle = '#555';
-    ctx.fillRect(cx + s * 0.28, cy - s * 1.18, s * 0.3, s * 0.08);
+        const backLeftBottom = { x: frontLeftBottom.x + depth, y: frontLeftBottom.y - depth * 0.42 };
+        const backRightBottom = { x: frontRightBottom.x + depth, y: frontRightBottom.y - depth * 0.42 };
+        const backLeftTop = { x: frontLeftTop.x + depth, y: frontLeftTop.y - depth * 0.42 };
+        const backRightTop = { x: frontRightTop.x + depth, y: frontRightTop.y - depth * 0.42 };
 
-    // Door
-    ctx.fillStyle = '#5d4037';
-    ctx.fillRect(cx - s * 0.14, cy + s * 0.25, s * 0.28, s * 0.55);
-    // Doorknob
-    ctx.fillStyle = '#f9ca24';
-    ctx.beginPath();
-    ctx.arc(cx + s * 0.07, cy + s * 0.52, s * 0.035, 0, Math.PI * 2);
-    ctx.fill();
+        fillPolygon([frontLeftTop, frontRightTop, frontRightBottom, frontLeftBottom], shadeHex(bodyColor, -0.03));
+        fillPolygon([frontRightTop, backRightTop, backRightBottom, frontRightBottom], shadeHex(bodyColor, -0.22));
+        fillPolygon([frontLeftTop, frontRightTop, backRightTop, backLeftTop], shadeHex(bodyColor, 0.1));
 
-    // Windows
-    ctx.fillStyle = '#f9e87c';
-    ctx.fillRect(cx + s * 0.25, cy + s * 0.0, s * 0.25, s * 0.25);
-    ctx.fillRect(cx - s * 0.5, cy + s * 0.0, s * 0.25, s * 0.25);
+        const ridgeFront = { x: baseX, y: frontLeftTop.y - roofLift };
+        const ridgeBack = { x: ridgeFront.x + depth, y: ridgeFront.y - depth * 0.42 };
 
-    // Window cross bars
-    ctx.strokeStyle = '#5d4037';
-    ctx.lineWidth = 0.8;
-    // Left window
-    ctx.beginPath();
-    ctx.moveTo(cx - s * 0.5, cy + s * 0.125);
-    ctx.lineTo(cx - s * 0.25, cy + s * 0.125);
-    ctx.moveTo(cx - s * 0.375, cy + s * 0.0);
-    ctx.lineTo(cx - s * 0.375, cy + s * 0.25);
-    ctx.stroke();
-    // Right window
-    ctx.beginPath();
-    ctx.moveTo(cx + s * 0.25, cy + s * 0.125);
-    ctx.lineTo(cx + s * 0.5, cy + s * 0.125);
-    ctx.moveTo(cx + s * 0.375, cy + s * 0.0);
-    ctx.lineTo(cx + s * 0.375, cy + s * 0.25);
-    ctx.stroke();
+        fillPolygon([frontLeftTop, ridgeFront, ridgeBack, backLeftTop], shadeHex(roofColor, 0.05));
+        fillPolygon([ridgeFront, frontRightTop, backRightTop, ridgeBack], shadeHex(roofColor, -0.14));
+        strokePolygon([frontLeftTop, ridgeFront, ridgeBack, backLeftTop], 'rgba(60, 45, 35, 0.45)', 1);
+        strokePolygon([ridgeFront, frontRightTop, backRightTop, ridgeBack], 'rgba(60, 45, 35, 0.4)', 1);
 
-    // Outline
-    ctx.strokeStyle = 'rgba(0,0,0,0.25)';
-    ctx.lineWidth = 1;
-    ctx.strokeRect(cx - s * 0.65, cy - s * 0.15, s * 1.3, s * 0.95);
+        fillPolygon([
+            { x: ridgeBack.x - width * 0.06, y: ridgeBack.y - height * 0.14 },
+            { x: ridgeBack.x + width * 0.06, y: ridgeBack.y - height * 0.14 },
+            { x: ridgeBack.x + width * 0.08, y: ridgeBack.y + height * 0.08 },
+            { x: ridgeBack.x - width * 0.04, y: ridgeBack.y + height * 0.08 },
+        ], '#b88f78');
+
+        const windowColor = 'rgba(226, 246, 255, 0.78)';
+        fillPolygon([
+            { x: baseX - width * 0.34, y: baseY - height * 0.6 },
+            { x: baseX - width * 0.16, y: baseY - height * 0.6 },
+            { x: baseX - width * 0.16, y: baseY - height * 0.36 },
+            { x: baseX - width * 0.34, y: baseY - height * 0.36 },
+        ], windowColor);
+        fillPolygon([
+            { x: baseX + width * 0.08, y: baseY - height * 0.6 },
+            { x: baseX + width * 0.26, y: baseY - height * 0.6 },
+            { x: baseX + width * 0.26, y: baseY - height * 0.36 },
+            { x: baseX + width * 0.08, y: baseY - height * 0.36 },
+        ], windowColor);
+
+        fillPolygon([
+            { x: baseX - width * 0.06, y: baseY - height * 0.28 },
+            { x: baseX + width * 0.06, y: baseY - height * 0.28 },
+            { x: baseX + width * 0.06, y: baseY },
+            { x: baseX - width * 0.06, y: baseY },
+        ], '#6f4b38');
+    }
+
+    const centerJitter = (frac - 0.5) * s * 0.12;
+    const sideJitter = (fracB - 0.5) * s * 0.14;
+
+    const drawPair = frac > 0.5;
+    if (drawPair) {
+        drawHome(
+            cx - s * 0.22 + sideJitter * 0.7,
+            cy + s * 0.42,
+            s * (0.62 + frac * 0.08),
+            s * (0.44 + fracB * 0.06),
+            bodyMain,
+            roofBase,
+        );
+        drawHome(
+            cx + s * 0.2 + centerJitter * 0.5,
+            cy + s * 0.38,
+            s * (0.66 + fracB * 0.08),
+            s * (0.48 + frac * 0.06),
+            bodyAlt,
+            roofAlt,
+        );
+    } else {
+        drawHome(
+            cx + centerJitter * 0.45,
+            cy + s * 0.4,
+            s * (0.78 + fracB * 0.1),
+            s * (0.54 + frac * 0.08),
+            bodyMain,
+            roofBase,
+        );
+    }
 }
 
 function drawWall(cx, cy) {
-    const s = CONFIG.HEX_SIZE * 0.65;
+    const s = CONFIG.HEX_SIZE * 0.68;
 
-    // Shadow
     ctx.fillStyle = 'rgba(0,0,0,0.18)';
     ctx.beginPath();
-    ctx.ellipse(cx, cy + s * 0.55, s * 0.9, s * 0.12, 0, 0, Math.PI * 2);
+    ctx.ellipse(cx, cy + s * 0.52, s * 0.96, s * 0.12, 0, 0, Math.PI * 2);
     ctx.fill();
 
-    // Bottom row of blocks (3 bricks)
-    const blockColors = ['#7f8c8d', '#95a5a6', '#85929e'];
-    for (let i = -1; i <= 1; i++) {
-        ctx.fillStyle = blockColors[i + 1];
-        ctx.fillRect(cx + i * s * 0.55 - s * 0.24, cy + s * 0.02, s * 0.47, s * 0.38);
-        // Brick highlight
-        ctx.fillStyle = 'rgba(255,255,255,0.08)';
-        ctx.fillRect(cx + i * s * 0.55 - s * 0.24, cy + s * 0.02, s * 0.47, s * 0.12);
-    }
-    // Top row (2 offset bricks)
-    for (let i = 0; i <= 1; i++) {
-        ctx.fillStyle = blockColors[i];
-        ctx.fillRect(cx + (i - 0.5) * s * 0.55 - s * 0.24, cy - s * 0.38, s * 0.47, s * 0.38);
-        ctx.fillStyle = 'rgba(255,255,255,0.08)';
-        ctx.fillRect(cx + (i - 0.5) * s * 0.55 - s * 0.24, cy - s * 0.38, s * 0.47, s * 0.12);
-    }
+    const topFace = [
+        { x: cx - s * 0.98, y: cy - s * 0.16 },
+        { x: cx, y: cy - s * 0.32 },
+        { x: cx + s * 0.98, y: cy - s * 0.16 },
+        { x: cx, y: cy + s * 0.02 },
+    ];
+    const wallDrop = s * 0.22;
+    const leftFace = [
+        topFace[0],
+        topFace[3],
+        { x: topFace[3].x, y: topFace[3].y + wallDrop },
+        { x: topFace[0].x, y: topFace[0].y + wallDrop },
+    ];
+    const rightFace = [
+        topFace[3],
+        topFace[2],
+        { x: topFace[2].x, y: topFace[2].y + wallDrop },
+        { x: topFace[3].x, y: topFace[3].y + wallDrop },
+    ];
 
-    // Mortar lines
-    ctx.strokeStyle = CONFIG.WALL_OUTLINE;
-    ctx.lineWidth = 0.8;
-    for (let i = -1; i <= 1; i++) {
-        ctx.strokeRect(cx + i * s * 0.55 - s * 0.24, cy + s * 0.02, s * 0.47, s * 0.38);
-    }
-    for (let i = 0; i <= 1; i++) {
-        ctx.strokeRect(cx + (i - 0.5) * s * 0.55 - s * 0.24, cy - s * 0.38, s * 0.47, s * 0.38);
-    }
+    fillPolygon(leftFace, '#879497');
+    fillPolygon(rightFace, '#6f7d80');
+    fillPolygon(topFace, '#bcc7c9');
+    fillPolygon([topFace[0], topFace[1], topFace[3]], 'rgba(255,255,255,0.16)');
 
-    // Top cap with bevelled look
-    ctx.fillStyle = '#6c7a7a';
-    ctx.fillRect(cx - s * 0.82, cy - s * 0.58, s * 1.64, s * 0.18);
-    ctx.fillStyle = 'rgba(255,255,255,0.12)';
-    ctx.fillRect(cx - s * 0.82, cy - s * 0.58, s * 1.64, s * 0.06);
-    ctx.strokeStyle = CONFIG.WALL_OUTLINE;
-    ctx.strokeRect(cx - s * 0.82, cy - s * 0.58, s * 1.64, s * 0.18);
+    strokePolygon(topFace, CONFIG.WALL_OUTLINE, 1.1);
+    strokePolygon(leftFace, CONFIG.WALL_OUTLINE, 1);
+    strokePolygon(rightFace, CONFIG.WALL_OUTLINE, 1);
+
+    for (let offset = -0.45; offset <= 0.45; offset += 0.45) {
+        ctx.strokeStyle = 'rgba(79, 94, 97, 0.55)';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(cx + offset * s, cy - s * 0.08);
+        ctx.lineTo(cx + offset * s, cy + s * 0.22);
+        ctx.stroke();
+    }
 }
 
 function drawGrid() {
-    for (let c = 0; c < CONFIG.GRID_COLS; c++) {
-        for (let r = 0; r < CONFIG.GRID_ROWS; r++) {
-            const pos = hexToPixel(c, r);
-            drawHex(pos.x + camX, pos.y + camY, state.grid[c][r]);
-        }
-    }
+    forEachCellByDepth(({ cell, pos }) => {
+        drawHex(pos.x + camX, pos.y + camY, cell);
+    });
 }
 
 // Simple decorative clouds
@@ -778,73 +933,84 @@ function drawClouds() {
 
 // Decorative trees on empty land cells
 function drawTree(cx, cy, cell) {
-    // Only draw on empty land cells with some probability based on position
     if (cell.isRiver || cell.building || cell.flooded) return;
 
-    // Deterministic "random" based on position – only some cells get trees
     const hash = Math.sin(cell.col * 127.1 + cell.row * 311.7) * 43758.5453;
     const frac = hash - Math.floor(hash);
-    if (frac > 0.2) return; // ~20% chance of tree
+    if (frac > 0.22) return;
 
-    const s = CONFIG.HEX_SIZE * 0.35;
+    const topLift = getHexTopLift(cell);
+    const surfaceX = cx + getHexSkewX() * 0.56;
+    const surfaceY = cy - topLift - CONFIG.HEX_SIZE * 0.1;
+    const s = CONFIG.HEX_SIZE * 0.42;
 
-    // Shadow
     ctx.fillStyle = 'rgba(0,0,0,0.1)';
     ctx.beginPath();
-    ctx.ellipse(cx, cy + s * 0.7, s * 0.5, s * 0.12, 0, 0, Math.PI * 2);
+    ctx.ellipse(surfaceX, surfaceY + s * 1.05, s * 0.56, s * 0.16, 0, 0, Math.PI * 2);
     ctx.fill();
 
-    // Trunk
-    ctx.fillStyle = '#5d3a1a';
-    ctx.fillRect(cx - s * 0.12, cy - s * 0.2, s * 0.24, s * 1.0);
+    const trunkTop = [
+        { x: surfaceX - s * 0.12, y: surfaceY - s * 0.16 },
+        { x: surfaceX, y: surfaceY - s * 0.26 },
+        { x: surfaceX + s * 0.12, y: surfaceY - s * 0.16 },
+        { x: surfaceX, y: surfaceY - s * 0.06 },
+    ];
+    const trunkDrop = s * 0.62;
+    fillPolygon([trunkTop[0], trunkTop[3], { x: trunkTop[3].x, y: trunkTop[3].y + trunkDrop }, { x: trunkTop[0].x, y: trunkTop[0].y + trunkDrop }], '#6a482c');
+    fillPolygon([trunkTop[3], trunkTop[2], { x: trunkTop[2].x, y: trunkTop[2].y + trunkDrop }, { x: trunkTop[3].x, y: trunkTop[3].y + trunkDrop }], '#4f341f');
+    fillPolygon(trunkTop, '#836040');
 
-    // Bottom canopy layer (widest)
-    ctx.fillStyle = '#1e8449';
-    ctx.beginPath();
-    ctx.moveTo(cx - s * 0.9, cy - s * 0.2);
-    ctx.lineTo(cx, cy - s * 1.3);
-    ctx.lineTo(cx + s * 0.9, cy - s * 0.2);
-    ctx.closePath();
-    ctx.fill();
+    function drawCanopyLayer(centerY, width, height, colors) {
+        const peak = { x: surfaceX, y: centerY - height };
+        const left = { x: surfaceX - width, y: centerY };
+        const right = { x: surfaceX + width, y: centerY };
+        const front = { x: surfaceX, y: centerY + height * 0.3 };
 
-    // Middle canopy layer
-    ctx.fillStyle = '#27ae60';
-    ctx.beginPath();
-    ctx.moveTo(cx - s * 0.7, cy - s * 0.8);
-    ctx.lineTo(cx, cy - s * 1.7);
-    ctx.lineTo(cx + s * 0.7, cy - s * 0.8);
-    ctx.closePath();
-    ctx.fill();
+        fillPolygon([left, peak, front], colors.left);
+        fillPolygon([peak, right, front], colors.right);
+        fillPolygon([left, peak, right], colors.top);
+        strokePolygon([left, peak, right], 'rgba(23, 55, 39, 0.35)', 0.9);
+    }
 
-    // Top canopy layer
-    ctx.fillStyle = '#2ecc71';
-    ctx.beginPath();
-    ctx.moveTo(cx - s * 0.45, cy - s * 1.3);
-    ctx.lineTo(cx, cy - s * 2.0);
-    ctx.lineTo(cx + s * 0.45, cy - s * 1.3);
-    ctx.closePath();
-    ctx.fill();
+    drawCanopyLayer(surfaceY - s * 0.52, s * 0.78, s * 0.86, {
+        left: '#3d7b4f',
+        right: '#2c5d3c',
+        top: '#5aa46a',
+    });
+    drawCanopyLayer(surfaceY - s * 1.05, s * 0.56, s * 0.72, {
+        left: '#4c935d',
+        right: '#357046',
+        top: '#6fbd7e',
+    });
 }
 
 function drawTrees() {
-    for (let c = 0; c < CONFIG.GRID_COLS; c++) {
-        for (let r = 0; r < CONFIG.GRID_ROWS; r++) {
-            const pos = hexToPixel(c, r);
-            drawTree(pos.x + camX, pos.y + camY, state.grid[c][r]);
-        }
-    }
+    forEachCellByDepth(({ cell, pos }) => {
+        drawTree(pos.x + camX, pos.y + camY, cell);
+    });
 }
 
 function render() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // Sky gradient background - richer palette
     const grad = ctx.createLinearGradient(0, 0, 0, canvas.height);
-    grad.addColorStop(0, '#2980b9');
-    grad.addColorStop(0.3, '#5dade2');
-    grad.addColorStop(0.65, '#aed6f1');
-    grad.addColorStop(1, '#d5f5e3');
+    grad.addColorStop(0, '#85bfd0');
+    grad.addColorStop(0.35, '#bfd8d7');
+    grad.addColorStop(0.72, '#dde5ce');
+    grad.addColorStop(1, '#cbd4bb');
     ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    const glow = ctx.createRadialGradient(canvas.width * 0.5, canvas.height * 0.16, 20, canvas.width * 0.5, canvas.height * 0.16, canvas.width * 0.42);
+    glow.addColorStop(0, 'rgba(255, 244, 196, 0.34)');
+    glow.addColorStop(1, 'rgba(255, 244, 196, 0)');
+    ctx.fillStyle = glow;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    const haze = ctx.createLinearGradient(0, canvas.height * 0.2, 0, canvas.height * 0.75);
+    haze.addColorStop(0, 'rgba(255,255,255,0)');
+    haze.addColorStop(1, 'rgba(202, 214, 186, 0.35)');
+    ctx.fillStyle = haze;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     drawClouds();
@@ -897,7 +1063,11 @@ canvas.addEventListener('mousemove', (e) => {
             text = 'River (0.0m)';
         } else {
             text = `Elevation: ${cell.elevation.toFixed(2)}m`;
-            if (cell.building) text += ` | ${cell.building === 'house' ? '🏠 House' : '🧱 Wall'}`;
+            if (cell.building === 'house') {
+                text += ' | 🏠 Homes';
+            } else if (cell.building === 'wall') {
+                text += ` | 🧱 Wall crest ${(cell.elevation + CONFIG.WALL_HEIGHT).toFixed(2)}m`;
+            }
             if (cell.flooded) text += ' | 🌊 Flooded';
         }
         tooltip.textContent = text;
@@ -1028,6 +1198,9 @@ function endTurn() {
                          state.lastFloodMag >= 2 ? '🌊 Flood!' : '💧 Minor Flood';
         alertTitle.textContent = severity;
         let msg = `Flood magnitude: ${state.lastFloodMag.toFixed(2)}m\nIncome collected: £${income}`;
+        if (state.overtoppedWalls > 0) {
+            msg += `\n🧱 ${state.overtoppedWalls} wall${state.overtoppedWalls > 1 ? 's were' : ' was'} overtopped.`;
+        }
         if (state.housesDestroyed > 0) {
             msg += `\n🏚️ ${state.housesDestroyed} house${state.housesDestroyed > 1 ? 's' : ''} destroyed!`;
         } else {

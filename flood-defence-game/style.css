@@ -1,9 +1,22 @@
 /* ============================================
-   FLOOD DEFENCE – Stylesheet
-   Low-poly cartoon aesthetic
-   ============================================ */
+    FLOOD DEFENCE – Stylesheet
+    Civic low-poly aesthetic
+    ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Rajdhani:wght@500;600;700&display=swap');
+
+:root {
+     --bg-top: #98c2c2;
+     --bg-bottom: #cfd8bd;
+     --hud-bg: rgba(20, 49, 57, 0.82);
+     --hud-border: rgba(183, 224, 214, 0.22);
+     --panel-highlight: rgba(220, 255, 246, 0.12);
+     --text-main: #e8f7ef;
+     --text-soft: #b9d5cb;
+     --accent: #8fe0bd;
+     --accent-strong: #b8f07d;
+     --warning: #f0a96b;
+}
 
 * {
     margin: 0;
@@ -12,10 +25,13 @@
 }
 
 body {
-    background: #1a1a2e;
+    background:
+        radial-gradient(circle at top, rgba(255, 245, 209, 0.45), transparent 32%),
+        linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
     overflow: hidden;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     user-select: none;
+    color: var(--text-main);
 }
 
 #game-container {
@@ -27,18 +43,22 @@ body {
 /* ---- HUD ---- */
 #hud {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 56px;
-    background: linear-gradient(180deg, rgba(20, 20, 40, 0.95), rgba(20, 20, 40, 0.8));
+    top: 16px;
+    left: 18px;
+    right: 18px;
+    min-height: 62px;
+    background:
+        linear-gradient(180deg, var(--panel-highlight), transparent),
+        linear-gradient(135deg, rgba(22, 51, 59, 0.94), var(--hud-bg));
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 18px;
+    padding: 10px 18px;
     z-index: 10;
-    border-bottom: 2px solid #3a3a5c;
-    backdrop-filter: blur(6px);
+    border: 1px solid var(--hud-border);
+    border-radius: 18px;
+    box-shadow: 0 18px 42px rgba(21, 39, 40, 0.24);
+    backdrop-filter: blur(14px);
 }
 
 #hud-left {
@@ -48,31 +68,33 @@ body {
 }
 
 #hud-left span {
-    color: #e0e0e0;
-    font-size: 15px;
+    color: var(--text-soft);
+    font-size: 18px;
     font-weight: 700;
+    letter-spacing: 0.04em;
 }
 
 #money-display {
-    color: #5ddf5d !important;
-    font-size: 18px !important;
-    font-family: 'Fredoka One', cursive;
+    color: var(--accent-strong) !important;
+    font-size: 24px !important;
+    font-family: 'Michroma', sans-serif;
 }
 
 #income-display {
-    color: #a0d8a0 !important;
+    color: #b8e9c7 !important;
 }
 
 #turn-display {
-    color: #88c8f8 !important;
+    color: #a6e8df !important;
 }
 
 #hud-center h1 {
-    font-family: 'Fredoka One', cursive;
-    font-size: 22px;
-    color: #6ec6ff;
-    text-shadow: 0 2px 8px rgba(100, 180, 255, 0.3);
-    letter-spacing: 1px;
+    font-family: 'Michroma', sans-serif;
+    font-size: 20px;
+    color: #edf9f4;
+    text-shadow: 0 2px 20px rgba(143, 224, 189, 0.24);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
 }
 
 #hud-right {
@@ -82,46 +104,49 @@ body {
 }
 
 .tool-btn {
-    background: #2a2a4a;
-    border: 2px solid #4a4a6a;
-    color: #ccc;
-    padding: 6px 14px;
-    border-radius: 8px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(0,0,0,0.08));
+    border: 1px solid rgba(204, 239, 226, 0.18);
+    color: var(--text-main);
+    padding: 7px 16px;
+    border-radius: 999px;
     cursor: pointer;
-    font-family: 'Nunito', sans-serif;
-    font-size: 13px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
     font-weight: 700;
-    transition: all 0.2s;
+    letter-spacing: 0.05em;
+    transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
 }
 
 .tool-btn:hover {
-    background: #3a3a5a;
-    border-color: #6a6a8a;
+    background: linear-gradient(180deg, rgba(198, 236, 227, 0.16), rgba(8, 28, 31, 0.18));
+    border-color: rgba(219, 255, 245, 0.34);
+    transform: translateY(-1px);
 }
 
 .tool-btn.active {
-    background: #3a5a3a;
-    border-color: #5ddf5d;
-    color: #5ddf5d;
-    box-shadow: 0 0 10px rgba(93, 223, 93, 0.2);
+    background: linear-gradient(135deg, rgba(109, 186, 143, 0.35), rgba(70, 114, 83, 0.35));
+    border-color: rgba(184, 240, 125, 0.55);
+    color: #f1ffe6;
+    box-shadow: 0 0 18px rgba(184, 240, 125, 0.16);
 }
 
 .action-btn {
-    background: linear-gradient(135deg, #e67e22, #d35400);
-    border: 2px solid #e67e22;
-    color: #fff;
-    padding: 6px 18px;
-    border-radius: 8px;
+    background: linear-gradient(135deg, #d88c58, #bd6d4d);
+    border: 1px solid rgba(255, 228, 203, 0.24);
+    color: #fff9f2;
+    padding: 7px 18px;
+    border-radius: 999px;
     cursor: pointer;
-    font-family: 'Nunito', sans-serif;
-    font-size: 13px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
     font-weight: 700;
-    transition: all 0.2s;
+    letter-spacing: 0.05em;
+    transition: transform 0.18s ease, filter 0.18s ease;
 }
 
 .action-btn:hover {
-    background: linear-gradient(135deg, #f39c12, #e67e22);
-    transform: scale(1.05);
+    filter: brightness(1.08);
+    transform: translateY(-1px);
 }
 
 /* ---- Canvas ---- */
@@ -135,15 +160,16 @@ body {
 /* ---- Tooltip ---- */
 #tooltip {
     position: absolute;
-    background: rgba(20, 20, 40, 0.92);
-    color: #ddd;
-    padding: 6px 12px;
-    border-radius: 6px;
-    font-size: 12px;
+    background: rgba(16, 37, 42, 0.92);
+    color: #eefaf1;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 14px;
     pointer-events: none;
-    border: 1px solid #4a4a6a;
+    border: 1px solid rgba(196, 238, 227, 0.24);
     z-index: 20;
     white-space: nowrap;
+    box-shadow: 0 14px 30px rgba(10, 21, 24, 0.18);
 }
 
 /* ---- Overlays ---- */
@@ -154,36 +180,38 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 100;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(4px);
+    background: rgba(9, 18, 20, 0.42);
+    backdrop-filter: blur(6px);
 }
 
 #flood-alert-content, #game-over-content {
-    background: linear-gradient(135deg, #1a2a4a, #1a1a3a);
-    border: 2px solid #4a6a9a;
-    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(20, 46, 50, 0.96), rgba(28, 58, 58, 0.96));
+    border: 1px solid rgba(213, 240, 232, 0.24);
+    border-radius: 22px;
     padding: 30px 50px;
     text-align: center;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    box-shadow: 0 20px 44px rgba(0,0,0,0.28);
 }
 
 #flood-alert-content h2 {
-    font-family: 'Fredoka One', cursive;
-    color: #4da6ff;
+    font-family: 'Michroma', sans-serif;
+    color: #b8f0dd;
     font-size: 28px;
     margin-bottom: 8px;
+    letter-spacing: 0.08em;
 }
 
 #game-over-content h2 {
-    font-family: 'Fredoka One', cursive;
-    color: #ff6b6b;
+    font-family: 'Michroma', sans-serif;
+    color: #ffcfaf;
     font-size: 32px;
     margin-bottom: 10px;
+    letter-spacing: 0.08em;
 }
 
 #flood-alert-content p, #game-over-content p {
-    color: #c0c0d0;
-    font-size: 15px;
+    color: var(--text-soft);
+    font-size: 18px;
     margin-bottom: 18px;
     max-width: 400px;
     line-height: 1.5;
@@ -191,24 +219,54 @@ body {
 }
 
 #flood-alert-ok, #game-over-restart {
-    background: linear-gradient(135deg, #3498db, #2980b9);
+    background: linear-gradient(135deg, #5fada4, #487d82);
     border: none;
-    color: #fff;
+    color: #f4fff9;
     padding: 10px 30px;
-    border-radius: 8px;
+    border-radius: 999px;
     cursor: pointer;
-    font-family: 'Nunito', sans-serif;
-    font-size: 15px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 17px;
     font-weight: 700;
-    transition: all 0.2s;
+    letter-spacing: 0.05em;
+    transition: transform 0.18s ease, filter 0.18s ease;
 }
 
 #game-over-restart {
-    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    background: linear-gradient(135deg, #d88c58, #bd6d4d);
 }
 
 #flood-alert-ok:hover, #game-over-restart:hover {
-    transform: scale(1.08);
+    filter: brightness(1.08);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 920px) {
+    #hud {
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        padding: 12px;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #hud-left,
+    #hud-right {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #hud-center {
+        width: 100%;
+        text-align: center;
+        order: -1;
+    }
+
+    #hud-center h1 {
+        font-size: 16px;
+    }
 }
 
 .hidden {
