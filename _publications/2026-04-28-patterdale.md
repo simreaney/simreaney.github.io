@@ -1,0 +1,11 @@
+---
+title: "Hydraulic effects of channel realignment and floodplain reconnection in a headwater stream"
+collection: publications
+permalink: /publication/2026-04-28-patterdale
+date: 2026-02-28
+venue: 'Water Resources Research'
+citation: 'Perks, M. T., Barber, N., Heritage, G. L., Knaggs, J., Reaney, S. M., Runeckles, H., et al. (2026). Hydraulic effects of channel realignment and floodplain reconnection in a headwater stream. Water Resources Research, 62, e2025WR041858. https://doi.org/10.1029/2025WR041858'
+---
+Channel realignment and floodplain reconnection are increasingly used as nature-based solutions for flood management, yet their hydraulic effects remain poorly quantified in field settings of moderate-gradient, small order channels. This study examines the impact of such interventions on hydraulic response in a headwater catchment, Goldrill Beck, Cumbria, UK. Here, 1-km of a historically engineered and confined single-thread channel was restored to a more geomorphically complex configuration. Using a combination of hydrological observational data spanning pre- and post-realignment conditions and two-dimensional hydraulic modeling (LISFLOOD-FP), changes in key hydraulic metrics (flood wave transmission and celerity, reach-scale hysteresis, and peak flow attenuation) were assessed. Results indicate that realignment increased flood wave travel time (median transmission time increased from 15 to 40 min), reduced flow celerity, and altered hysteresis patterns, suggesting enhanced in-channel and floodplain storage under low to intermediate flow conditions. Realignment also improved the diversity of hydraulic biotopes and aquatic habitats, whilst increasing the wetted area by 47%. However, during more extreme events, transmission times decreased, and peak discharge was slightly elevated, highlighting limitations in attenuation potential for large floods. The findings contribute to the evidence base for renaturalization of watercourses for flood mitigation and habitat enhancement, emphasizing the role of valley morphometry, channel morphology, and floodplain roughness in influencing hydraulic responses.
+
+[Full Text](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025WR041858}
