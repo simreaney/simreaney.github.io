@@ -23,7 +23,37 @@ permalink: /llms-full.txt
   {% endif %}
 {% endfor %}
 
-## 2. Research & Blog Posts
+## 2. Publications
+
+{% assign sorted_pubs = site.publications | sort: 'date' | reverse %}
+{% for pub in sorted_pubs %}
+### {{ pub.title }}
+{% if pub.venue %}**Venue:** {{ pub.venue }}{% endif %}
+{% if pub.date %}**Date:** {{ pub.date | date: "%Y-%m-%d" }}{% endif %}
+**URL:** {{ pub.url | prepend: site.url }}
+
+{% if pub.excerpt %}{{ pub.excerpt | strip_html | strip_newlines }}{% endif %}
+{{ pub.content | strip_html }}
+
+---
+{% endfor %}
+
+## 3. Talks & Presentations
+
+{% assign sorted_talks = site.talks | sort: 'date' | reverse %}
+{% for talk in sorted_talks %}
+### {{ talk.title }}
+{% if talk.venue %}**Location/Event:** {{ talk.venue }}{% endif %}
+{% if talk.date %}**Date:** {{ talk.date | date: "%Y-%m-%d" }}{% endif %}
+**URL:** {{ talk.url | prepend: site.url }}
+
+{% if talk.excerpt %}{{ talk.excerpt | strip_html | strip_newlines }}{% endif %}
+{{ talk.content | strip_html }}
+
+---
+{% endfor %}
+
+## 4. Blog Posts & Articles
 
 {% for post in site.posts %}
 ### {{ post.title }}
@@ -33,28 +63,4 @@ permalink: /llms-full.txt
 {{ post.content | strip_html }}
 
 ---
-
-## 3. Publications Directory
-
-{% for pub in site.publications %}
-### {{ pub.title }}
-**Citation/URL:** {{ pub.url | prepend: site.url }}
-
-{{ pub.content | strip_html }}
-
----
-{% endfor %}
-
-## 3. talks Directory
-
-{% for pub in site.talks %}
-### {{ pub.title }}
-**Citation/URL:** {{ pub.url | prepend: site.url }}
-
-{{ pub.content | strip_html }}
-
----
-{% endfor %}
-
-
 {% endfor %}
