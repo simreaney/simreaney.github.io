@@ -1,0 +1,60 @@
+---
+layout: null
+permalink: /llms-full.txt
+---
+# Sim Reaney — Complete Site Context & Documentation
+
+> Full text context compiled automatically for LLMs and research crawlers.
+> Primary focus: Catchment Hydrology, Diffuse Pollution Modeling, Natural Flood Management (NFM), and Spatial Environmental Modeling.
+
+---
+
+## 1. Key Pages
+
+{% assign static_pages = site.pages | sort: "title" %}
+{% for page in static_pages %}
+  {% if page.content != empty and page.title and page.url != "/llms-full.txt" and page.url != "/llms.txt" %}
+### {{ page.title }}
+**URL:** {{ page.url | prepend: site.url }}
+
+{{ page.content | strip_html | strip_newlines | replace: '  ', ' ' }}
+
+---
+  {% endif %}
+{% endfor %}
+
+## 2. Research & Blog Posts
+
+{% for post in site.posts %}
+### {{ post.title }}
+**Date:** {{ post.date | date: "%Y-%m-%d" }}
+**URL:** {{ post.url | prepend: site.url }}
+
+{{ post.content | strip_html }}
+
+---
+
+## 3. Publications Directory
+
+{% for pub in site.publications %}
+### {{ pub.title }}
+**Citation/URL:** {{ pub.url | prepend: site.url }}
+
+{{ pub.content | strip_html }}
+
+---
+{% endfor %}
+
+## 3. talks Directory
+
+{% for pub in site.talks %}
+### {{ pub.title }}
+**Citation/URL:** {{ pub.url | prepend: site.url }}
+
+{{ pub.content | strip_html }}
+
+---
+{% endfor %}
+
+
+{% endfor %}
