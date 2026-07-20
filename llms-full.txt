@@ -52,15 +52,3 @@ permalink: /llms-full.txt
 
 ---
 {% endfor %}
-
-## 4. Blog Posts & Articles
-
-{% for post in site.posts %}
-### {{ post.title }}
-**Date:** {{ post.date | date: "%Y-%m-%d" }}
-**URL:** {{ post.url | prepend: site.url }}
-
-{{ post.content | strip_html }}
-
----
-{% endfor %}
