@@ -1,3 +1,5 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Warwickshire Butterfly Transects</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,7 +67,7 @@ p{ margin:0; }
 
 /* ---------- page nav ---------- */
 .page-nav{ position:sticky; top:0; z-index:40; background:var(--paper); border-bottom:1px solid var(--hairline); }
-.page-nav-inner{ max-width:1120px; margin:0 auto; padding:12px 28px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+.page-nav-inner{ max-width:1120px; margin:0 auto; padding:12px 28px; display:flex; align-items:center; justify-content:space-between; gap:16px; overflow-x:auto; }
 .page-nav-brand{ font-family:Fraunces, Georgia, serif; font-weight:600; font-size:.92rem; color:var(--ink); white-space:nowrap; }
 .page-tabs{ display:flex; gap:2px; background:var(--paper-sunken); padding:3px; border-radius:999px; flex:none; }
 .page-tab{
@@ -110,6 +112,8 @@ section:last-of-type{ border-bottom:none; }
 
 .grid-2x2{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
 @media (max-width:760px){ .grid-2x2{ grid-template-columns:1fr; } .kpi-strip{ grid-template-columns:repeat(2,1fr); margin-top:24px;} }
+.kpi-strip.cols-3{ grid-template-columns:repeat(3,1fr); }
+@media (max-width:560px){ .kpi-strip.cols-3{ grid-template-columns:1fr; } }
 
 .legend{ display:flex; gap:20px; flex-wrap:wrap; margin-bottom:20px; }
 .legend-item{ display:flex; align-items:center; gap:8px; font-size:.85rem; color:var(--ink-secondary); }
@@ -117,6 +121,7 @@ section:last-of-type{ border-bottom:none; }
 .legend-swatch.dashed{ background:none; border-top:3px dashed; height:0; }
 
 .card svg, #species-chart svg{ display:block; width:100%; height:auto; }
+#coverage-heatmap svg{ width:auto; max-width:none; }
 svg text{ font-family:Archivo, sans-serif; fill:var(--ink-muted); font-size:11px; }
 svg text.tick-mono{ font-family:"JetBrains Mono", monospace; font-variant-numeric:tabular-nums; }
 .axis-line{ stroke:var(--hairline-strong); stroke-width:1; }
@@ -175,6 +180,12 @@ table.data-table tr.muted td{ color:var(--ink-muted); font-style:italic; }
 .lb-track{ position:relative; height:14px; background:var(--paper-sunken); border-radius:3px; }
 .lb-bar{ position:absolute; top:0; height:100%; border-radius:3px; }
 .lb-val{ font-family:"JetBrains Mono",monospace; font-size:.78rem; font-variant-numeric:tabular-nums; color:var(--ink-secondary); }
+@media (max-width:560px){
+  .dumbbell-row{ grid-template-columns:32px 1fr 108px; gap:8px; height:auto; min-height:30px; padding:4px 0; }
+  .dumbbell-val{ font-size:.7rem; white-space:normal; line-height:1.35; }
+  .leaderboard-row{ grid-template-columns:86px 1fr 46px; gap:8px; }
+  .lb-label{ font-size:.78rem; }
+}
 
 /* ---------- callouts ---------- */
 .stat-callout{ display:flex; gap:16px; align-items:baseline; padding:14px 16px; background:var(--accent-warm-soft);
@@ -273,7 +284,7 @@ footer .lede{ font-size:.82rem; }
       <h2>Does any individual survey show a real trend?</h2>
       <p class="lede">A Theil–Sen slope and Mann-Kendall significance test for Fisher's α and species richness, computed independently for each survey with at least three seasons of data.</p>
     </div>
-    <div class="card">
+    <div class="card" style="overflow-x:auto;">
       <table class="trend" id="trend-table"></table>
     </div>
     <p class="card-note" style="margin-top:12px;">Coxmere (2 seasons) and Brandens Wood (1 season) don't yet have enough seasons for a trend test — shown descriptively only in the summary dataset.</p>
@@ -350,7 +361,7 @@ footer .lede{ font-size:.82rem; }
       <h2>How complete is the record — and how it was built</h2>
       <p class="lede">Not every scheduled week was walked. Shading below is the share of that season's weekly visits that were actually walked, by site.</p>
     </div>
-    <div class="card">
+    <div class="card" style="overflow-x:auto;">
       <div id="coverage-heatmap"></div>
     </div>
 
@@ -409,7 +420,7 @@ footer .lede{ font-size:.82rem; }
       <h2>What went into this dataset</h2>
       <p class="lede">Three raw inputs, consolidated by the scripts alongside this report — see the data dictionary below for how each processed file relates to these.</p>
     </div>
-    <div class="kpi-strip" id="ds-source-kpis" style="margin-top:0; grid-template-columns:repeat(3,1fr);"></div>
+    <div class="kpi-strip cols-3" id="ds-source-kpis" style="margin-top:0;"></div>
   </section>
 
   <section id="ds-sites">
@@ -451,7 +462,7 @@ footer .lede{ font-size:.82rem; }
       <h2>The processed files</h2>
       <p class="lede">Every file in <code>processed/</code>, what grain it's at, and what it's for.</p>
     </div>
-    <div class="card">
+    <div class="card" style="overflow-x:auto;">
       <table class="data-table" id="ds-dictionary-table"></table>
     </div>
   </section>
@@ -512,15 +523,26 @@ function showTooltip(x, y, html){
 }
 function hideTooltip(){ tooltip.classList.remove("show"); }
 
+/* Charts render at a viewBox width matched to the container's actual pixel
+   width (clamped between a legible floor and the desktop design width), so
+   the fixed-px SVG text stays true size instead of shrinking when the CSS
+   width:100% scaling squeezes a desktop-sized chart into a phone-width card. */
+function measuredWidth(container, designWidth, floor){
+  const w = (container && container.getBoundingClientRect) ? container.getBoundingClientRect().width : 0;
+  if (!w) return designWidth;
+  return Math.max(floor || 240, Math.min(designWidth, w));
+}
+
 const CHART_W = 520, CHART_H = 220;
 const MARGIN = {top:14, right:18, bottom:26, left:40};
 
 /* ---------------- small-multiple line chart ---------------- */
 function lineChart(container, opts){
   const {series, yFormat, years} = opts;
-  const innerW = CHART_W - MARGIN.left - MARGIN.right;
+  const chartW = measuredWidth(container, CHART_W);
+  const innerW = chartW - MARGIN.left - MARGIN.right;
   const innerH = CHART_H - MARGIN.top - MARGIN.bottom;
-  const svg = el("svg", {viewBox:`0 0 ${CHART_W} ${CHART_H}`, role:"img"});
+  const svg = el("svg", {viewBox:`0 0 ${chartW} ${CHART_H}`, role:"img"});
   const g = el("g", {transform:`translate(${MARGIN.left},${MARGIN.top})`});
   svg.appendChild(g);
 
@@ -604,9 +626,10 @@ function renderLegend(container, items){
 /* ---------------- scatter ---------------- */
 function scatterChart(container, opts){
   const {points, xLabel, yLabel, xFormat, yFormat, zeroBaseline=true} = opts;
-  const innerW = CHART_W - MARGIN.left - MARGIN.right - 6;
+  const chartW = measuredWidth(container, CHART_W);
+  const innerW = chartW - MARGIN.left - MARGIN.right - 6;
   const innerH = CHART_H - MARGIN.top - MARGIN.bottom;
-  const svg = el("svg", {viewBox:`0 0 ${CHART_W} ${CHART_H+22}`});
+  const svg = el("svg", {viewBox:`0 0 ${chartW} ${CHART_H+22}`});
   const g = el("g", {transform:`translate(${MARGIN.left},${MARGIN.top})`});
   svg.appendChild(g);
 
@@ -675,9 +698,11 @@ function scatterChart(container, opts){
 /* ---------------- phenology area/line ---------------- */
 function areaChart(container, opts){
   const {points, color} = opts; // {x:week, y:value}
-  const innerW = 940, innerH = 220;
+  const innerH = 220;
   const M = {top:14,right:20,bottom:30,left:44};
-  const svg = el("svg", {viewBox:`0 0 ${innerW+M.left+M.right} ${innerH+M.top+M.bottom}`});
+  const totalW = measuredWidth(container, 940 + M.left + M.right, 280);
+  const innerW = totalW - M.left - M.right;
+  const svg = el("svg", {viewBox:`0 0 ${totalW} ${innerH+M.top+M.bottom}`});
   const g = el("g", {transform:`translate(${M.left},${M.top})`});
   svg.appendChild(g);
   const x0 = Math.min(...points.map(p=>p.x)), x1 = Math.max(...points.map(p=>p.x));
@@ -766,7 +791,7 @@ function hexToRgb(h){ const n = parseInt(h.slice(1),16); return [(n>>16)&255,(n>
 function coverageHeatmap(container, sites, years, lookup){
   const cell = 46, rowLabelW = 150, top = 28;
   const w = rowLabelW + years.length*cell, h = top + sites.length*cell + 10;
-  const svg = el("svg", {viewBox:`0 0 ${w} ${h}`});
+  const svg = el("svg", {viewBox:`0 0 ${w} ${h}`, width:w, height:h});
   years.forEach((y,ci) => {
     const t = el("text", {x:rowLabelW+ci*cell+cell/2, y:16, "text-anchor":"middle", style:"font-weight:600;"});
     t.textContent = "'"+String(y).slice(2); svg.appendChild(t);
@@ -976,6 +1001,7 @@ function init(){
       `<div class="card-note">${INFO_CONTENT[m.key].short}</div>`;
     const chartDiv = document.createElement("div");
     wrap.appendChild(chartDiv);
+    grid.appendChild(wrap);
     const d = groupSeries[m.key];
     const series = [
       {name:"Coughton Park", color:"var(--series-a)", points: (d["Coughton Park"].years).map((y,i)=>({x:y,y:d["Coughton Park"].values[i]}))},
@@ -983,7 +1009,6 @@ function init(){
       {name:"Coxmere", color:"var(--series-c)", dashed:true, points: (d["Coxmere"].years).map((y,i)=>({x:y,y:d["Coxmere"].values[i]}))},
     ];
     lineChart(chartDiv, {series, years: allYears, yFormat: m.fmt});
-    grid.appendChild(wrap);
   });
 
   // ---- per-site trend table ----
