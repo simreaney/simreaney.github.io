@@ -1,6 +1,6 @@
 ---
 title: "BIOPICCC - Built Infrastructure for Older People in Conditions of Climate Change"
-excerpt: "Looking into changing heatwaves and cold wavew under projected climate change"
+excerpt: "Looking into changing heatwaves and cold waves under projected climate change"
 collection: portfolio
 date: "2009-10-08"
 ---

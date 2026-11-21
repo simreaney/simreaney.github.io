@@ -17,9 +17,9 @@ SCIMAP works by combining a map of the relative risk of generating diffuse pollu
 By combining the risk of pollution generation and the risk of connection we can determine the risk that pollution gets into the water environment.
 
 3. Moving the risk through the river
-In the final stage, we route the connected risk across the landscape, accumulating it along flow paths. If we want, we can dilute the accumulated risk by the uplsope contributing runoff to get a risk concentration.
+In the final stage, we route the connected risk across the landscape, accumulating it along flow paths. If we want, we can dilute the accumulated risk by the upslope contributing runoff to get a risk concentration.
 
 4. What do we now know?
 The maps allow us to compare locations to see which are most likely to be problem locations, and hence where we should prioritise restoration, such as catchment sensitive farming.
 
-SCIMAP is widely used within the UK and overseas to help spatailly target mitigation works within catchments. The approach as been extented to consider microbial (FIO) diffuse pollution and the targetting of natural flood risk management measures within catchments. There is both a desktop version of the software and a web based version for the UK avaialbe at [my.SCIMAP](http://my.scimap.org.uk)
+SCIMAP is widely used within the UK and overseas to help spatially target mitigation works within catchments. The approach has been extended to consider microbial (FIO) diffuse pollution and the targeting of natural flood risk management measures within catchments. There is both a desktop version of the software and a web based version for the UK available at [my.SCIMAP](http://my.scimap.org.uk)
