@@ -68,14 +68,14 @@ Figure 2 Changes in the clear skies and snowiness index over the 2014 calendar y
 
 From the results, it can be seen that the snowiness index correctly
 identify days with snow cover when the index value exceeds 0.87. There
-is a strong seasonal trend in the snowiness index values wit the lowest
+is a strong seasonal trend in the snowiness index values with the lowest
 values in the summer. The 'blue skies' index shows the high level of
 cloud cover year the year with relatively few days being cloud free, 8.5% of days have a index value greater than 0.75. The example image in Figure 2 from 12/05/14 shows issues with condensation within the
 waterproof housing of the camera install. This condensation reduces the
 image quality for fine detail but it is still possible to extract
 information on the sky status.
 
-### Initial Results for Scene 'Intrestingness'
+### Initial Results for Scene 'Interestingness'
 
 Figure 3 below shows the changes over time for the daily differences
 when compared to the previous day and to the mean image. The mean image

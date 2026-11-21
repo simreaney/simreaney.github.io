@@ -1,5 +1,5 @@
 ---
-title: "Die Identifizierung von Hochwasserherkunftsgebieten anhand des Konnektivitätsmodels SCIMAP-Flood am Beispiel der Urft."
+title: "Die Identifizierung von Hochwasserherkunftsgebieten anhand des Konnektivitätsmodells SCIMAP-Flood am Beispiel der Urft."
 collection: talks
 type: "Talk"
 permalink: /talks/2026-07-03-SCIMAP-Flood-Germany

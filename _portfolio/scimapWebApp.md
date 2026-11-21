@@ -9,7 +9,7 @@ Sim Reaney¹ and Peter Wells²
 * (1): Department of Geography, Durham University
 * (2): Lutra Consulting
 
-Presented at 11th International Conference on Hydroinfomatics (HIC 2014), 17-21 Aug 2014, New York City, USA. City College of New York.
+Presented at 11th International Conference on Hydroinformatics (HIC 2014), 17-21 Aug 2014, New York City, USA. City College of New York.
 
 **Abstract**
 Non-point (diffuse) pollution is a key environmental pressure effecting water quality and ecology in lakes and rivers. Many governmental and NGO bodies are working to tacking the problem but their efforts are constrained by the complexities of the problem. To enable the spatial targeting of the mitigation measures at the landscape scale, the SCIMAP risk mapping approach was developed by Durham and Lancaster Universities in the UK. The approach was well received but the desktop implementation created problems for users.  NGO users generally did not have the required datasets or GIS skills. Governmental users within a corporate managed IT environment were not able to install the desktop software. Using web based technologies, it has been possible to overcome the problems faced by both sets of users. 

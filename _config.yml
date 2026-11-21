@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Sim M. Reaney, Durham University"
 title_separator          : "-"
 name                     : &name "Sim Reaney"
-description              : &description "personal description"
+description              : &description "Professor Sim Reaney, Durham University: catchment hydrology research on flood hazards, diffuse pollution and nature-based solutions."
 url                      : https://simreaney.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "simreaney/simreaney.github.io"
